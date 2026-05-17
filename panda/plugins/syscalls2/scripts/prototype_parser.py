@@ -268,8 +268,10 @@ def parse_numbers_volatility(rootdir, arch, os):
     syscall_numbers = {}
     for table_nr, table in enumerate(syscalls):
         for syscall_tnr, syscall_name in enumerate(table):
+            if not syscall_name:
+                continue
             syscall_nr = table_nr << 12 | syscall_tnr
-            syscall_numbers[syscall_name] = syscall_nr
+            syscall_numbers[(syscall_nr, None)] = syscall_name
     del module
     return syscall_numbers
 

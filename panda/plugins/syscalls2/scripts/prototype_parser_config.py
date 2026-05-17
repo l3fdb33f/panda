@@ -226,6 +226,7 @@ WINDOWS_VARIANTS = (
     ('win8_sp0:x86:volatility', 'windows_8sp0_x86_prototypes.txt', 32),
     ('win8_sp1:x64:volatility', 'windows_8sp1_x64_prototypes.txt', 64),
     ('win8_sp1:x86:volatility', 'windows_8sp1_x86_prototypes.txt', 32),
+    ('win10_19041:x64:volatility', 'windows_10_x64_prototypes.txt', 64),
 )
 CONFIG_WINDOWS = { s: {
     'bits': bits,

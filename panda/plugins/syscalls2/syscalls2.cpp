@@ -303,6 +303,27 @@ Profile profiles[PROFILE_LAST] = {
         .windows_arg_offset = -1,
         .syscall_interrupt_number = 0x80,
     },
+    {   /* PROFILE_WINDOWS_10_X64 */
+        .enter_switch = syscall_enter_switch_windows_10_x64,
+        .return_switch = syscall_return_switch_windows_10_x64,
+        .get_return_val = get_return_val_x64,
+        .calc_retaddr = calc_retaddr_windows_x64,
+        .get_32 = get_32_windows_x64,
+        .get_s32 = get_s32_generic,
+        .get_64 = get_64_windows_x64,
+        .get_s64 = get_s64_generic,
+        .get_return_32 = get_return_32_windows_x64,
+        .get_return_s32 = get_return_s32_generic,
+        .get_return_64 = get_return_64_windows_x64,
+        .get_return_s64 = get_return_s64_generic,
+#if defined(TARGET_X86_64)
+        .windows_return_addr_register = R_ECX,
+#else
+        .windows_return_addr_register = -1,
+#endif
+        .windows_arg_offset = -1,
+        .syscall_interrupt_number = 0x80,
+    },
     {   /* PROFILE_LINUX_X64 */
         .enter_switch = syscall_enter_switch_linux_x64,
         .return_switch = syscall_return_switch_linux_x64,
@@ -876,8 +897,8 @@ void sysinfo_load(int profile){
 
 // x86_64 logic
 #if defined(TARGET_X86_64)
-    if (profile == PROFILE_WINDOWS_7_X64 || profile == PROFILE_LINUX_X64
-        || profile == PROFILE_FREEBSD_X64){
+    if (profile == PROFILE_WINDOWS_7_X64 || profile == PROFILE_WINDOWS_10_X64
+        || profile == PROFILE_LINUX_X64   || profile == PROFILE_FREEBSD_X64) {
         arch = "x64";
     } else if (profile == PROFILE_LINUX_X86 || profile == PROFILE_WINDOWS_2000_X86
         || profile == PROFILE_WINDOWS_XPSP2_X86 || profile == PROFILE_WINDOWS_XPSP3_X86
@@ -1297,6 +1318,10 @@ bool init_plugin(void *self) {
     // Unused in some architectures
     const char *UNUSED(abi) = panda_parse_string_opt(plugin_args, "abi", NULL, "Syscall ABI if a nonstandard value is used. Currently supported for mips(64) with values: n64, n32, and o32");
 
+    // load-os overrides panda_os_variant for syscall profile selection.
+    // Needed for Win10 because panda_set_os_name rejects windows-64-10*.
+    const char *load_os = panda_parse_string_opt(plugin_args, "load-os", NULL, "Override OS variant for syscall profile selection (e.g. windows-64-10sp0)");
+
     default_profile = PROFILE_LAST;
     if (panda_os_familyno == OS_UNKNOWN)
     {
@@ -1334,10 +1359,6 @@ bool init_plugin(void *self) {
 #endif
 #endif
     } else if (panda_os_familyno == OS_WINDOWS) {
-        if ((panda_os_bits != 32) && (0 != strncmp(panda_os_variant, "7", 1))) {
-            std::cerr << PANDA_MSG "only windows 7 supported for 64-bit windows" << std::endl;
-            return false;
-        }
 #if defined(TARGET_I386)
 #if !defined(TARGET_X86_64)
         if (0 == strcmp(panda_os_variant, "xpsp2")) {
@@ -1360,6 +1381,12 @@ bool init_plugin(void *self) {
         if (0 == strncmp(panda_os_variant, "7", 1)) {
             std::cerr << PANDA_MSG "using profile for windows 7 x64 64-bit" << std::endl;
             default_profile = PROFILE_WINDOWS_7_X64;
+        }
+        if (0 == strncmp(panda_os_variant, "10", 2) ||
+            (load_os != NULL && 0 == strncmp(load_os, "windows-64-10", 13)) ||
+            (load_os != NULL && 0 == strncmp(load_os, "windows_64_10", 13))) {
+            std::cerr << PANDA_MSG "using profile for windows 10 x64 64-bit" << std::endl;
+            default_profile = PROFILE_WINDOWS_10_X64;
         }
 #endif
 #endif
