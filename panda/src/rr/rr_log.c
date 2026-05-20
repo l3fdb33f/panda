@@ -953,6 +953,7 @@ static inline RR_log_entry* get_next_entry_checked(RR_log_entry_kind kind,
     if (!entry) return NULL;
 
     RR_header header = entry->header;
+
     // XXX FIXME this is a temporary hack to get around the fact that we
     // cannot currently do a tb_flush and a savevm in the same instant.
     if (header.prog_point.guest_instr_count == 0) {
@@ -1065,6 +1066,16 @@ bool rr_replay_pending_interrupts(RR_callsite_id callsite_id, uint32_t* pending_
 }
 
 bool rr_replay_intno(uint32_t *intno) {
+    RR_log_entry *head = get_next_entry();
+
+    if (head != NULL
+            && head->header.kind == RR_INTERRUPT_REQUEST
+            && head->header.callsite_loc == RR_CALLSITE_CPU_HANDLE_INTERRUPT_AFTER
+            && head->header.prog_point.guest_instr_count == rr_get_guest_instr_count()) {
+        panda_current_interrupt_request = head->variant.interrupt_request;
+        rr_queue_pop_front();
+    }
+
     RR_log_entry *current_item =
         get_next_entry_checked(RR_INPUT_4, RR_CALLSITE_CPU_HANDLE_INTERRUPT_INTNO, true);
     if (!current_item) return false;

@@ -632,7 +632,8 @@ static inline bool cpu_handle_interrupt(CPUState *cpu,
            True when it is, and we should restart on a new TB,
            and via longjmp via cpu_loop_exit.  */
         else {
-            if (cc->cpu_exec_interrupt(cpu, interrupt_request)) {
+            bool irq_fired = cc->cpu_exec_interrupt(cpu, interrupt_request);
+            if (irq_fired) {
                 replay_interrupt();
                 *last_tb = NULL;
             }
