@@ -29,6 +29,7 @@
 #include "hw/i386/pc.h"
 #include "hw/i386/apic-msidef.h"
 #include "qapi/error.h"
+#include "panda/rr/rr_api.h"
 
 #define MAX_APICS 255
 #define MAX_APIC_WORDS 8
@@ -623,6 +624,7 @@ static uint32_t apic_get_current_count(APICCommonState *s)
 
 static void apic_timer_update(APICCommonState *s, int64_t current_time)
 {
+    if (rr_in_replay()) return;
     if (apic_next_timer(s, current_time)) {
         timer_mod(s->timer, s->next_time);
     } else {
@@ -633,7 +635,7 @@ static void apic_timer_update(APICCommonState *s, int64_t current_time)
 static void apic_timer(void *opaque)
 {
     APICCommonState *s = opaque;
-
+    if (rr_in_replay()) return;
     apic_local_deliver(s, APIC_LVT_TIMER);
     apic_timer_update(s, s->next_time);
 }
