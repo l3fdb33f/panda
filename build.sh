@@ -73,6 +73,11 @@ COMPILER_CONFIG=""
 gcc --version | awk '/gcc/   && ($3+0)>11.2{print "WARNING: Your GCC is too new: disabling -Werror and hoping this builds"; exit 1}' || COMPILER_CONFIG+="--extra-cflags=-Wno-error"
 g++ --version | awk '/g\+\+/ && ($3+0)>11.2{print "WARNING: Your G++ is too new: disabling -Werror and hoping this builds"; exit 1}' ||  COMPILER_CONFIG+=" --extra-cxxflags=-Wno-error"
 
+# GCC 15+ defaults to C23, where 'bool' is a keyword (not a macro expanding to _Bool).
+# PANDA's cb-macros.h relies on bool->_Bool expansion for MAKE_CALLBACK__Bool lookup.
+# Force gnu11 to restore pre-C23 preprocessor behaviour.
+gcc --version | awk '/gcc/ && ($3+0)>=15{exit 1}' || COMPILER_CONFIG+=" --extra-cflags=-std=gnu11 --extra-cxxflags=-std=gnu++11"
+
 ### Check for protobuf v2.
 if ! pkg-config --exists protobuf; then
     msg "No pkg-config for protobuf. Continuing anyway..."

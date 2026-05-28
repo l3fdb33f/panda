@@ -22,6 +22,7 @@
 #include <wireshark/config.h>
 #include <wiretap/wtap.h>
 #include <wiretap/wtap_opttypes.h>
+#include <wsutil/buffer.h>
 
 // These need to be extern "C" so that the ABI is compatible with
 // QEMU/PANDA, which is written in C
@@ -35,16 +36,10 @@ extern uint64_t rr_get_guest_instr_count(void);
 panda_arg_list *args;
 wtap_dumper *plugin_log;
 
-#if ((VERSION_MAJOR > 4) || (VERSION_MAJOR==4 && VERSION_MINOR > 2))
-#define TOONEW
-#endif
+// Versions 4.3+ removed the buf arg from wtap_dump; data goes in rec.data instead.
+#define WTAP_DUMP_NO_BUF ((VERSION_MAJOR == 4 && VERSION_MINOR >= 3) || VERSION_MAJOR > 4)
 
 bool init_plugin(void *self) {
-#ifdef TOONEW
-    printf("Wireshark too new. Please update the network plugin\n");
-    return false;
-#else
-
     panda_cb pcb;
     int err;
     int i;
@@ -56,6 +51,9 @@ bool init_plugin(void *self) {
     .encap = WTAP_ENCAP_ETHERNET,
     .snaplen = 65535,
     .shb_hdrs = NULL,
+    #if WTAP_DUMP_NO_BUF
+    .shb_iface_to_global = NULL,
+    #endif
     .idb_inf = NULL,
     #if (VERSION_MAJOR>=4 && VERSION_MINOR>=1)
     .nrbs_growing = NULL,
@@ -63,7 +61,12 @@ bool init_plugin(void *self) {
     .nrb_hdrs = NULL,
     #endif
     .dsbs_initial = NULL,
-    .dsbs_growing = NULL
+    .dsbs_growing = NULL,
+    #if WTAP_DUMP_NO_BUF
+    .mevs_growing = NULL,
+    .dpibs_growing = NULL,
+    .dont_copy_idbs = false,
+    #endif
     };
     #endif
 
@@ -124,7 +127,6 @@ bool init_plugin(void *self) {
     pcb.replay_handle_packet = handle_packet;
     panda_register_callback(self, PANDA_CB_REPLAY_HANDLE_PACKET, pcb);
     return true;
-#endif
 }
 
 void uninit_plugin(void *self) {
@@ -138,8 +140,14 @@ void uninit_plugin(void *self) {
     #endif
     #if (VERSION_MAJOR>=4)
     gchar *write_err_info;
+    // Wireshark 4.4+ changed needs_reload from gboolean* to bool*
+    #if (VERSION_MAJOR > 4 || VERSION_MINOR >= 4)
+    bool needs_reload;
+    bool ret = wtap_dump_close(plugin_log, &needs_reload, &err, &write_err_info);
+    #else
     gboolean needs_reload;
     gboolean ret = wtap_dump_close(plugin_log, &needs_reload, &err, &write_err_info);
+    #endif
     #else
        #if (VERSION_MAJOR==3 && VERSION_MINOR>=4)
        gchar *write_err_info;
@@ -153,7 +161,6 @@ void uninit_plugin(void *self) {
     }
 }
 
-#ifndef TOONEW
 void handle_packet(CPUState *env, uint8_t *buf, size_t size, uint8_t direction,
                    uint64_t buf_addr_rec) {
     int err;
@@ -165,6 +172,23 @@ void handle_packet(CPUState *env, uint8_t *buf, size_t size, uint8_t direction,
              rr_get_guest_instr_count());
     gboolean ret = false;
     #if (VERSION_MAJOR >= 2 && VERSION_MINOR >= 6 && VERSION_MICRO >= 3) || (VERSION_MAJOR>=3)
+    #if WTAP_DUMP_NO_BUF
+    wtap_rec rec;
+    wtap_rec_init(&rec, size);
+    rec.rec_type = REC_TYPE_PACKET;
+    rec.ts.secs = now_tv.tv_sec;
+    rec.ts.nsecs = now_tv.tv_usec * 1000;
+    rec.rec_header.packet_header.caplen = size;
+    rec.rec_header.packet_header.len = size;
+    rec.rec_header.packet_header.pkt_encap = WTAP_ENCAP_ETHERNET;
+    wtap_block_t pkt_block = wtap_block_create(WTAP_BLOCK_PACKET);
+    wtap_block_add_string_option(pkt_block, OPT_COMMENT, comment_buf, strlen(comment_buf) + 1);
+    rec.block = pkt_block;
+    rec.block_was_modified = true;
+    ws_buffer_append(&rec.data, buf, size);
+    ret = wtap_dump(plugin_log, &rec, &err, &err_info);
+    wtap_rec_cleanup(&rec);
+    #else
     wtap_rec rec;
     memset(&rec, 0, sizeof rec);
     rec.rec_type = REC_TYPE_PACKET;
@@ -189,9 +213,9 @@ void handle_packet(CPUState *env, uint8_t *buf, size_t size, uint8_t direction,
         /*err*/ &err,
         /*err_info*/ &err_info);
     #if ((VERSION_MAJOR >= 3) && (VERSION_MINOR >= 5)) || (VERSION_MAJOR >= 4)
-    /* this will also dereference pkt_block */
     wtap_rec_reset(&rec);
     #endif
+    #endif // WTAP_DUMP_NO_BUF
     #else
     struct wtap_pkthdr header;
         #if VERSION_MAJOR >= 2
@@ -226,4 +250,3 @@ void handle_packet(CPUState *env, uint8_t *buf, size_t size, uint8_t direction,
     }
     return;
 }
-#endif

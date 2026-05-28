@@ -89,7 +89,7 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 . $HOME/.cargo/env
 
 # Install libcapstone v5 release if it's not present
-if [[ !$(ldconfig -p | grep -q libcapstone.so.5) ]]; then
+if ! ldconfig -p | grep -q libcapstone.so.5; then
   echo "Installing libcapstone v5"
   pushd /tmp
   curl -LJO https://github.com/capstone-engine/capstone/releases/download/${CAPSTONE_VERSION}/libcapstone-dev_${CAPSTONE_VERSION}_amd64.deb

@@ -37,8 +37,8 @@ osi_linux
 osi_test
 pc_search
 pri
-pri_dwarf
-dwarf2
+#pri_dwarf  # disabled: uses removed Dwarf_Loc API (libdwarf 0.8+ dropped it)
+#dwarf2     # disabled: depends on pri_dwarf
 pri_simple
 proc_start_linux
 proc_trace

@@ -24,6 +24,7 @@ PANDAENDCOMMENT */
  * to call these LLVM versions of helper functions.
  */
 
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <regex>

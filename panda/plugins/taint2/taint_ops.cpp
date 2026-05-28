@@ -24,8 +24,10 @@ PANDAENDCOMMENT */
 #define __STDC_FORMAT_MACROS
 #endif
 
+#include <cstdint>
 #include <cstdio>
 #include <cstdarg>
+#include <sstream>
 
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/Instructions.h>
