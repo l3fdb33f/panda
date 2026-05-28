@@ -30,6 +30,7 @@
 #include "hw/i386/apic-msidef.h"
 #include "qapi/error.h"
 #include "panda/rr/rr_api.h"
+#include "sysemu/cpus.h"
 
 #define MAX_APICS 255
 #define MAX_APIC_WORDS 8
@@ -863,7 +864,14 @@ static void apic_pre_save(APICCommonState *s)
 static void apic_post_load(APICCommonState *s)
 {
     if (s->timer_expiry != -1) {
-        timer_mod(s->timer, s->timer_expiry);
+        if (use_icount) {
+            /* Snapshot expiry is in pre-icount real-time ns; it is already
+             * past on the icount virtual clock.  Drop the saved timer — the
+             * guest will reprogram it once execution resumes. */
+            timer_del(s->timer);
+        } else {
+            timer_mod(s->timer, s->timer_expiry);
+        }
     } else {
         timer_del(s->timer);
     }

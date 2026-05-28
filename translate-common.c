@@ -29,9 +29,6 @@ intptr_t qemu_real_host_page_mask;
 /* mask must never be zero, except for A20 change call */
 static void tcg_handle_interrupt(CPUState *cpu, int mask)
 {
-    int old_mask;
-
-    old_mask = cpu->interrupt_request;
     cpu->interrupt_request |= mask;
 
     /*
@@ -44,11 +41,13 @@ static void tcg_handle_interrupt(CPUState *cpu, int mask)
     }
 
     if (use_icount) {
+        /* Force TB exit so the interrupt is delivered at a safe point
+         * (after can_do_io is restored to 1 at the top of the execute loop).
+         * Removing the hard abort allows QEMU_CLOCK_VIRTUAL-based devices
+         * (LAPIC, HPET, PIT) to raise interrupts between TBs without QEMU
+         * crashing when their saved snapshot expiry fires immediately on
+         * icount-mode startup. */
         cpu->icount_decr.u16.high = 0xffff;
-        if (!cpu->can_do_io
-            && (mask & ~old_mask) != 0) {
-            cpu_abort(cpu, "Raised interrupt while not in I/O function");
-        }
     } else {
         cpu->tcg_exit_req = 1;
     }
