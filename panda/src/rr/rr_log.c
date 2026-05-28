@@ -1631,14 +1631,19 @@ int rr_do_begin_record(const char* file_name_full, CPUState* cpu_state)
     rr_get_nondet_log_file_name(rr_name, rr_path, name_buf, sizeof(name_buf));
     printf("opening nondet log for write:\t%s\n", name_buf);
     rr_create_record_log(name_buf);
+    // Set mode BEFORE flushing the TB cache so every TB compiled after the
+    // flush has gen_op_update_rr_icount() instrumentation.  If mode is set
+    // after tb_flush, the CPU thread races to compile new TBs while rr_on()
+    // is still false, producing a consistent N-instruction deficit in
+    // rr_guest_instr_count relative to replay (which always sets mode before
+    // resuming the CPU).
+    rr_control.mode = RR_RECORD;
     // reset record/replay counters and flags
     rr_reset_state(cpu_state);
 
     g_free(rr_path_base);
     g_free(rr_name_base);
     free(rr_name);
-    // set global to turn on recording
-    rr_control.mode = RR_RECORD;
 
     return snapshot_ret;
 #endif
