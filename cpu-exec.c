@@ -823,10 +823,18 @@ int cpu_exec(CPUState *cpu)
             detect_infinite_loops();
             rr_maybe_progress();
 
-            /* Replay skipped calls from the I/O thread here. */
-            if (rr_in_replay()) {
+            /* Replay skipped calls from the I/O thread here.
+             * Guard with rr_replay_in_progress so that if rr_replay_skipped_calls_internal
+             * processes a RR_CALL_CPU_MEM_UNMAP entry (which holds the global bounce buffer
+             * during cpu_physical_memory_unmap), any nested RR_DO_RECORD_OR_REPLAY triggered
+             * by the resulting MMIO dispatch does not recursively enter
+             * rr_replay_skipped_calls() and attempt a second cpu_physical_memory_map while
+             * bounce.in_use is already true. */
+            if (rr_in_replay() && !rr_replay_in_progress) {
+                rr_replay_in_progress = 1;
                 rr_skipped_callsite_location = RR_CALLSITE_MAIN_LOOP_WAIT;
                 rr_replay_skipped_calls();
+                rr_replay_in_progress = 0;
             }
 
             if (cpu_handle_interrupt(cpu, &last_tb)) {

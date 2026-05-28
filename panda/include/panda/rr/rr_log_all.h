@@ -90,6 +90,8 @@ extern volatile sig_atomic_t rr_skipped_callsite_location;
 extern volatile sig_atomic_t rr_record_in_progress;
 // should be true iff we are executing device code
 extern volatile sig_atomic_t rr_record_in_main_loop_wait;
+// guard against re-entrant replay skipped-call processing
+extern volatile sig_atomic_t rr_replay_in_progress;
 
 // mz Routine that handles the situation when program points disagree during
 // mz replay. Typically, this means a fatal error - the routine prints some
@@ -349,8 +351,12 @@ static inline void rr_replay_skipped_calls(void)
             }                                                                  \
         } break;                                                               \
         case RR_REPLAY: {                                                      \
-            rr_skipped_callsite_location = LOCATION;                           \
-            rr_replay_skipped_calls();                                         \
+            if (!rr_replay_in_progress) {                                      \
+                rr_replay_in_progress = 1;                                     \
+                rr_skipped_callsite_location = LOCATION;                       \
+                rr_replay_skipped_calls();                                     \
+                rr_replay_in_progress = 0;                                     \
+            }                                                                  \
             REPLAY_ACTION;                                                     \
         } break;                                                               \
         case RR_OFF:                                                           \
@@ -368,9 +374,11 @@ static inline void rr_replay_skipped_calls(void)
 //
 
 static inline void rr_replay_skipped_calls_from(RR_callsite_id location) {
-    if (rr_in_replay()) {
+    if (rr_in_replay() && !rr_replay_in_progress) {
+        rr_replay_in_progress = 1;
         rr_skipped_callsite_location = location;
         rr_replay_skipped_calls();
+        rr_replay_in_progress = 0;
     }
 }
 
