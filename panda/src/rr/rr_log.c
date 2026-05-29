@@ -1609,6 +1609,12 @@ int rr_do_begin_record(const char* file_name_full, CPUState* cpu_state)
         snapshot_ret = load_vmstate(rr_control.snapshot);
     }
 
+    // Stop the CPU so the snapshot is taken at a clean TB boundary, matching
+    // the vm_stop in rr_do_begin_replay.  Without this, any icount-related
+    // partial-TB state can produce a systematic instruction-count skew between
+    // recording and replay.
+    vm_stop(RUN_STATE_PAUSED);
+
     // write PANDA memory snapshot
     global_state_store_running(); // force running state
     rr_get_snapshot_file_name(rr_name, rr_path, name_buf, sizeof(name_buf));
@@ -1619,7 +1625,12 @@ int rr_do_begin_record(const char* file_name_full, CPUState* cpu_state)
 
     set_rr_snapshot();
 
+    // Save all device state so replay starts with identical device conditions.
+    // Without this, devices like the APIC and PIT are excluded from the snapshot
+    // (only "ram" and "cpu" are saved), causing device-driven divergence.
+    panda_complete_rr_snapshot = 1;
     snapshot_ret = qemu_savevm_state(snp, &err);
+    panda_complete_rr_snapshot = 0;
     qemu_fclose(snp);
     // log_all_cpu_states();
 
@@ -1640,6 +1651,9 @@ int rr_do_begin_record(const char* file_name_full, CPUState* cpu_state)
     rr_control.mode = RR_RECORD;
     // reset record/replay counters and flags
     rr_reset_state(cpu_state);
+
+    // Resume CPU execution now that recording is fully configured.
+    vm_start();
 
     g_free(rr_path_base);
     g_free(rr_name_base);
