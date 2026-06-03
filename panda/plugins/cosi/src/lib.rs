@@ -19,6 +19,10 @@ mod downloader;
 mod ffi;
 mod kaslr;
 mod structs;
+/// Windows x64 OS-introspection walkers (build-agnostic via the loaded ISF).
+mod win;
+/// Windows syscall tracer (COSI + syscalls2 synthesis).
+mod strace;
 
 use kaslr::kaslr_offset;
 
@@ -32,6 +36,12 @@ use crate::structs::*;
 struct Args {
     #[arg(about = "Path to a volatility 3 symbol table to use (.xz compressed json)")]
     profile: String,
+
+    #[arg(about = "Enable the Windows syscall tracer (requires syscalls2)")]
+    win_strace: bool,
+
+    #[arg(about = "One-shot self-test of the osi->osi_cosi->cosi round-trip (requires osi+osi_cosi)")]
+    osi_selftest: bool,
 }
 
 static ARGS: Lazy<Args> = Lazy::new(Args::from_panda_args);
@@ -84,21 +94,57 @@ fn symbol_table() -> &'static VolatilityJson {
 }
 
 static READY_FOR_KASLR_SEARCH: AtomicBool = AtomicBool::new(false);
+/// One-shot guard for the Windows OSI validation dump.
+static WIN_DUMPED: AtomicBool = AtomicBool::new(false);
 
 #[panda::init]
 fn init(_: &mut PluginHandle) -> bool {
     // Ensure symbol table is initialized
     let _ = symbol_table();
 
-    let first_syscall = panda::PppCallback::new();
-
+    // Windows OSI live-validation: drive the dump from a kernel-mode basic
+    // block. Unlike syscall entry (KPTI shadow CR3, where ntoskrnl globals are
+    // unmapped), normal kernel execution runs with the real kernel CR3, so a
+    // plain virtual_memory_read reaches all kernel memory. try_dump() probes the
+    // context and only commits once PsActiveProcessHead resolves; then disables.
+    //
+    // The per-block callback is EXPENSIVE under TCG, so it stays disabled during
+    // the long cold boot and is enabled only after the first syscall (when the
+    // kernel is up); it disables itself the moment the dump succeeds.
     #[cfg(not(feature = "ppc"))]
     {
+        let bb = panda::Callback::new();
+        if win::is_windows() {
+            bb.before_block_exec(move |cpu: &mut CPUState, _| {
+                if WIN_DUMPED.load(Ordering::SeqCst) || !panda::in_kernel_mode(cpu) {
+                    return;
+                }
+                if win::try_dump(cpu) {
+                    WIN_DUMPED.store(true, Ordering::SeqCst);
+                    if ARGS.osi_selftest {
+                        strace::osi_selftest(cpu);
+                    }
+                    bb.disable();
+                }
+            });
+            bb.disable(); // remain off until the first syscall
+        }
+
+        let first_syscall = panda::PppCallback::new();
         first_syscall.on_all_sys_enter(move |_, _, _| {
             READY_FOR_KASLR_SEARCH.store(true, Ordering::SeqCst);
-
+            if win::is_windows() {
+                bb.enable();
+            }
             first_syscall.disable();
         });
+
+        // Windows syscall tracer (COSI + syscalls2). Gated behind win_strace so
+        // the per-syscall callback overhead is only paid when requested.
+        if win::is_windows() && ARGS.win_strace {
+            strace::init();
+            strace::init_proc_switch();
+        }
     }
 
     #[cfg(any(feature = "mips", feature = "mipsel"))] {

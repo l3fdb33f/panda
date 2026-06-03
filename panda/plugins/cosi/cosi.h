@@ -31,6 +31,20 @@ typedef struct Vec_CosiModule Vec_CosiModule;
 
 typedef struct Vec_CosiProc Vec_CosiProc;
 
+typedef struct Vec_WinHandle Vec_WinHandle;
+
+typedef struct Vec_WinMod Vec_WinMod;
+
+typedef struct Vec_WinProc Vec_WinProc;
+
+typedef struct WinHandle WinHandle;
+
+typedef struct WinMod WinMod;
+
+typedef struct WinProc WinProc;
+
+typedef struct WinProcParams WinProcParams;
+
 typedef struct Path {
   target_ptr_t dentry;
   target_ptr_t mnt;
@@ -476,5 +490,137 @@ char *cosi_module_name(const struct CosiModule *module);
  * the `free_cosi_str` function.
  */
 char *cosi_module_file(const struct CosiModule *module);
+
+/**
+ * ntoskrnl base address (KASLR-resolved), or 0 if undetermined.
+ */
+target_ptr_t cosi_win_kernel_base(CPUState *cpu);
+
+/**
+ * Pointer to the current _EPROCESS, or 0.
+ */
+target_ptr_t cosi_win_current_eprocess(CPUState *cpu);
+
+/**
+ * Current process as a WinProc (pid/ppid/name/eprocess), or null. Free with
+ * `cosi_win_free_proc` (a Box of a single WinProc). Used by the osi bridge.
+ */
+struct WinProc *cosi_win_current_proc(CPUState *cpu);
+
+void cosi_win_free_proc(struct WinProc *_p);
+
+/**
+ * Current thread id, or 0.
+ */
+uint64_t cosi_win_current_tid(CPUState *cpu);
+
+/**
+ * WinProc for a given _EPROCESS pointer. Free with `cosi_win_free_proc`.
+ */
+struct WinProc *cosi_win_proc_at(CPUState *cpu, target_ptr_t eprocess);
+
+/**
+ * Get the active process list. Returns null if it could not be walked.
+ * Free with `cosi_win_free_proc_list`.
+ */
+struct Vec_WinProc *cosi_win_get_proc_list(CPUState *cpu);
+
+uintptr_t cosi_win_proc_list_len(const struct Vec_WinProc *list);
+
+const struct WinProc *cosi_win_proc_list_get(const struct Vec_WinProc *list, uintptr_t index);
+
+void cosi_win_free_proc_list(struct Vec_WinProc *_list);
+
+uint64_t cosi_win_proc_pid(const struct WinProc *proc_);
+
+uint64_t cosi_win_proc_ppid(const struct WinProc *proc_);
+
+target_ptr_t cosi_win_proc_eprocess(const struct WinProc *proc_);
+
+/**
+ * Process image name (ImageFileName). Must be freed with `free_cosi_str`.
+ */
+char *cosi_win_proc_name(const struct WinProc *proc_);
+
+/**
+ * Get the loaded kernel module list. Free with `cosi_win_free_module_list`.
+ */
+struct Vec_WinMod *cosi_win_get_module_list(CPUState *cpu);
+
+uintptr_t cosi_win_module_list_len(const struct Vec_WinMod *list);
+
+const struct WinMod *cosi_win_module_list_get(const struct Vec_WinMod *list, uintptr_t index);
+
+void cosi_win_free_module_list(struct Vec_WinMod *_list);
+
+target_ptr_t cosi_win_module_base(const struct WinMod *m);
+
+uint32_t cosi_win_module_size(const struct WinMod *m);
+
+/**
+ * Module base name. Must be freed with `free_cosi_str`.
+ */
+char *cosi_win_module_name(const struct WinMod *m);
+
+/**
+ * Get a process's parameters (cwd/image/cmdline). Free with cosi_win_free_proc_params.
+ */
+struct WinProcParams *cosi_win_get_proc_params(CPUState *cpu, target_ptr_t eprocess);
+
+void cosi_win_free_proc_params(struct WinProcParams *_p);
+
+/**
+ * Current directory. Must be freed with `free_cosi_str`.
+ */
+char *cosi_win_params_cwd(const struct WinProcParams *p);
+
+/**
+ * Full image path. Must be freed with `free_cosi_str`.
+ */
+char *cosi_win_params_image_path(const struct WinProcParams *p);
+
+/**
+ * Command line. Must be freed with `free_cosi_str`.
+ */
+char *cosi_win_params_cmdline(const struct WinProcParams *p);
+
+/**
+ * File position (CurrentByteOffset) of a File handle; -1 if not a file/invalid.
+ */
+int64_t cosi_win_file_handle_pos(CPUState *cpu, target_ptr_t eprocess, uint64_t handle);
+
+/**
+ * Get a process's loaded user-mode modules (DLLs) by _EPROCESS pointer.
+ * Reuses the WinMod accessors (cosi_win_module_*). Free with cosi_win_free_module_list.
+ */
+struct Vec_WinMod *cosi_win_get_dll_list(CPUState *cpu, target_ptr_t eprocess);
+
+/**
+ * Get the open handles of a process (by _EPROCESS pointer), each resolved to
+ * object type + name. Free with `cosi_win_free_handle_list`.
+ */
+struct Vec_WinHandle *cosi_win_get_handle_list(CPUState *cpu, target_ptr_t eprocess);
+
+uintptr_t cosi_win_handle_list_len(const struct Vec_WinHandle *list);
+
+const struct WinHandle *cosi_win_handle_list_get(const struct Vec_WinHandle *list, uintptr_t index);
+
+void cosi_win_free_handle_list(struct Vec_WinHandle *_list);
+
+uint32_t cosi_win_handle_value(const struct WinHandle *h);
+
+target_ptr_t cosi_win_handle_object_header(const struct WinHandle *h);
+
+uint32_t cosi_win_handle_access(const struct WinHandle *h);
+
+/**
+ * Handle's object type name (e.g. "File", "Key"). Free with `free_cosi_str`.
+ */
+char *cosi_win_handle_type(const struct WinHandle *h);
+
+/**
+ * Handle's object name (may be empty). Free with `free_cosi_str`.
+ */
+char *cosi_win_handle_name(const struct WinHandle *h);
 
 // END_PYPANDA_NEEDS_THIS -- do not delete this comment!

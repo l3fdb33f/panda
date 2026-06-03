@@ -26,6 +26,12 @@ fn determine_kaslr_offset(cpu: &mut CPUState) -> target_ptr_t {
         eprintln!("WARNING: attempting to determine KASLR offset too early");
     }
 
+    // Windows uses a completely different kernel-base discovery (no init_task/
+    // "swapper"); dispatch to the Windows path when a Windows ISF is loaded.
+    if crate::win::is_windows() {
+        return crate::win::determine_kaslr_offset(cpu);
+    }
+
     let symbol_table = symbol_table();
 
     //let kaslr_search_time = Instant::now();

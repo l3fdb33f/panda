@@ -146,15 +146,37 @@ pub struct UnixMetadata {
     pub types: Vec<SourceMetadata>,
 }
 
+/// Windows ISF metadata: identifies the ntoskrnl PDB the symbol table was built from.
+#[derive(Serialize, Deserialize, Debug)]
+pub struct WindowsPdb {
+    #[serde(rename = "GUID")]
+    pub guid: String,
+    pub age: i64,
+    pub database: String,
+    #[serde(default)]
+    pub machine_type: Option<i64>,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct WindowsMetadata {
+    pub pdb: WindowsPdb,
+}
+
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Producer {
     pub name: String,
     pub version: String,
 }
 
+/// Top-level ISF metadata. Volatility3 emits exactly one of `linux`/`windows`/`mac`
+/// depending on the OS the table was generated for, so all are optional. Unknown
+/// producer fields (e.g. `datetime`) are ignored by serde.
 #[derive(Serialize, Deserialize, Debug)]
 pub struct VolatilityMetadata {
-    pub linux: UnixMetadata,
+    #[serde(default)]
+    pub linux: Option<UnixMetadata>,
+    #[serde(default)]
+    pub windows: Option<WindowsMetadata>,
     pub producer: Producer,
     pub format: String,
 }
@@ -202,5 +224,52 @@ impl VolatilityJson {
 
     pub fn type_from_name(&self, name: &str) -> Option<&VolatilityStruct> {
         self.user_types.get(name)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    // Regression test for Windows ISF deserialization (panda-plus Win10/11 fork).
+    // Skips gracefully if the symbol store isn't present (e.g. CI elsewhere).
+    #[test]
+    fn load_windows_isf() {
+        // Set WIN_ISF_STORE to a directory of Volatility3 Windows ISF *.json.xz
+        // tables (named <PDB-GUID>-<age>.json.xz) to run this regression test.
+        let store = match std::env::var("WIN_ISF_STORE") {
+            Ok(s) => s,
+            Err(_) => {
+                eprintln!("skip load_windows_isf: set WIN_ISF_STORE to an ISF directory to run");
+                return;
+            }
+        };
+        let tables = [
+            "953A8DE880B0818C32DA2DEC1D79C2D9-1.json.xz", // tiny11 / 26100
+            "40B8DB4FCF8B9D0352BFF2EF2903CB89-1.json.xz", // tiny10 / 19044
+        ];
+        for t in tables {
+            let p = format!("{store}/{t}");
+            if !Path::new(&p).exists() {
+                eprintln!("skip (missing): {p}");
+                continue;
+            }
+            let j = VolatilityJson::from_compressed_file(&p);
+            let win = j.metadata.windows.as_ref().expect("windows metadata parsed");
+            let ep = j.type_from_name("_EPROCESS").expect("_EPROCESS present");
+            println!(
+                "{t}: pdb={} guid={} age={} types={} symbols={} _EPROCESS.size={} ImageFileName@{} ActiveProcessLinks@{}",
+                win.pdb.database,
+                win.pdb.guid,
+                win.pdb.age,
+                j.user_types.len(),
+                j.symbols.len(),
+                ep.size,
+                ep.fields["ImageFileName"].offset,
+                ep.fields["ActiveProcessLinks"].offset,
+            );
+            assert!(j.symbol_from_name("PsActiveProcessHead").is_some());
+            assert!(j.symbol_from_name("PsLoadedModuleList").is_some());
+        }
     }
 }
