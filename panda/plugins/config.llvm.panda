@@ -1,7 +1,7 @@
 file_taint
 ida_taint2
-pri_taint
-pri_trace
+#pri_taint  # disabled: includes dwarf2/dwarf2_ext.h, but dwarf2 is disabled (libdwarf 0.11 incompat)
+#pri_trace  # disabled: proto references SrcInfoPri from disabled pri_taint; part of DWARF source-introspection family
 serial_taint
 taint2
 tainted_branch
