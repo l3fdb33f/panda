@@ -24,6 +24,7 @@ enum ProfileType {
     PROFILE_WINDOWS_10_X64,
     PROFILE_LINUX_X64,
     PROFILE_FREEBSD_X64,
+    PROFILE_WINDOWS_11_X64,
     PROFILE_LAST
 };
 
@@ -73,6 +74,7 @@ void syscall_enter_switch_windows_2000_x86(CPUState *cpu, int profile, target_pt
 void syscall_enter_switch_windows_7_x64(CPUState *cpu, int profile, target_ptr_t pc, int static_callno);
 void syscall_enter_switch_windows_7_x86(CPUState *cpu, int profile, target_ptr_t pc, int static_callno);
 void syscall_enter_switch_windows_10_x64(CPUState *cpu, int profile, target_ptr_t pc, int static_callno);
+void syscall_enter_switch_windows_11_x64(CPUState *cpu, int profile, target_ptr_t pc, int static_callno);
 void syscall_enter_switch_windows_xpsp2_x86(CPUState *cpu, int profile, target_ptr_t pc, int static_callno);
 void syscall_enter_switch_windows_xpsp3_x86(CPUState *cpu, int profile, target_ptr_t pc, int static_callno);
 void syscall_return_switch_freebsd_x64(CPUState *cpu, target_ptr_t pc, const syscall_ctx_t *ctx);
@@ -87,5 +89,6 @@ void syscall_return_switch_windows_2000_x86(CPUState *cpu, target_ptr_t pc, cons
 void syscall_return_switch_windows_7_x64(CPUState *cpu, target_ptr_t pc, const syscall_ctx_t *ctx);
 void syscall_return_switch_windows_7_x86(CPUState *cpu, target_ptr_t pc, const syscall_ctx_t *ctx);
 void syscall_return_switch_windows_10_x64(CPUState *cpu, target_ptr_t pc, const syscall_ctx_t *ctx);
+void syscall_return_switch_windows_11_x64(CPUState *cpu, target_ptr_t pc, const syscall_ctx_t *ctx);
 void syscall_return_switch_windows_xpsp2_x86(CPUState *cpu, target_ptr_t pc, const syscall_ctx_t *ctx);
 void syscall_return_switch_windows_xpsp3_x86(CPUState *cpu, target_ptr_t pc, const syscall_ctx_t *ctx);

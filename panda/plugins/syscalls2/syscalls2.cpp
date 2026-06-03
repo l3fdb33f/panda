@@ -357,6 +357,27 @@ Profile profiles[PROFILE_LAST] = {
         .windows_return_addr_register = -1,
         .windows_arg_offset = -1,
         .syscall_interrupt_number = 0x80,
+    },
+    {   /* PROFILE_WINDOWS_11_X64 */
+        .enter_switch = syscall_enter_switch_windows_11_x64,
+        .return_switch = syscall_return_switch_windows_11_x64,
+        .get_return_val = get_return_val_x64,
+        .calc_retaddr = calc_retaddr_windows_x64,
+        .get_32 = get_32_windows_x64,
+        .get_s32 = get_s32_generic,
+        .get_64 = get_64_windows_x64,
+        .get_s64 = get_s64_generic,
+        .get_return_32 = get_return_32_windows_x64,
+        .get_return_s32 = get_return_s32_generic,
+        .get_return_64 = get_return_64_windows_x64,
+        .get_return_s64 = get_return_s64_generic,
+#if defined(TARGET_X86_64)
+        .windows_return_addr_register = R_ECX,
+#else
+        .windows_return_addr_register = -1,
+#endif
+        .windows_arg_offset = -1,
+        .syscall_interrupt_number = 0x80,
     }
 };
 
@@ -898,6 +919,7 @@ void sysinfo_load(int profile){
 // x86_64 logic
 #if defined(TARGET_X86_64)
     if (profile == PROFILE_WINDOWS_7_X64 || profile == PROFILE_WINDOWS_10_X64
+        || profile == PROFILE_WINDOWS_11_X64
         || profile == PROFILE_LINUX_X64   || profile == PROFILE_FREEBSD_X64) {
         arch = "x64";
     } else if (profile == PROFILE_LINUX_X86 || profile == PROFILE_WINDOWS_2000_X86
@@ -932,7 +954,14 @@ void sysinfo_load(int profile){
     // will fail on dlopen because dso file won't exist
     arch = "unknown";
 #endif
-    load_syscall_info(arch, (syscall_info_t**)&profiles[profile].syscall_info, (syscall_meta_t**)&profiles[profile].syscall_meta);
+    // panda-plus: Win10/11 x64 profiles are selected via load-os while
+    // panda_os_variant stays "7sp1"; tell load_syscall_info which info dso to use.
+    const gchar *win_variant_override = NULL;
+#if defined(TARGET_X86_64)
+    if (profile == PROFILE_WINDOWS_10_X64) win_variant_override = "10";
+    else if (profile == PROFILE_WINDOWS_11_X64) win_variant_override = "11";
+#endif
+    load_syscall_info(arch, win_variant_override, (syscall_info_t**)&profiles[profile].syscall_info, (syscall_meta_t**)&profiles[profile].syscall_meta);
 }
 
 void sysinfo_load_profile(int profile, syscall_info_t **syscall_info, syscall_meta_t **syscall_meta){
@@ -1387,6 +1416,15 @@ bool init_plugin(void *self) {
             (load_os != NULL && 0 == strncmp(load_os, "windows_64_10", 13))) {
             std::cerr << PANDA_MSG "using profile for windows 10 x64 64-bit" << std::endl;
             default_profile = PROFILE_WINDOWS_10_X64;
+        }
+        // Win11 26100 SSDT (net-new, panda-plus). Selected from the os variant
+        // (now that common.c's regex accepts windows-64-11); load-os kept as a
+        // fallback. Checked after win10 so the more specific match wins.
+        if (0 == strncmp(panda_os_variant, "11", 2) ||
+            (load_os != NULL && 0 == strncmp(load_os, "windows-64-11", 13)) ||
+            (load_os != NULL && 0 == strncmp(load_os, "windows_64_11", 13))) {
+            std::cerr << PANDA_MSG "using profile for windows 11 x64 64-bit" << std::endl;
+            default_profile = PROFILE_WINDOWS_11_X64;
         }
 #endif
 #endif

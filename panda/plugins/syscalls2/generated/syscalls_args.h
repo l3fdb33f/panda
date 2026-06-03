@@ -81357,4 +81357,8048 @@
 #endif
 
 
+/* ### windows_11:x64 ################################################### */
+// NTSTATUS NtAccessCheck [['PSECURITY_DESCRIPTOR SecurityDescriptor', 'HANDLE ClientToken', 'ACCESS_MASK DesiredAccess', 'PGENERIC_MAPPING GenericMapping', 'PPRIVILEGE_SET PrivilegeSet', 'PULONG PrivilegeSetLength', 'PACCESS_MASK GrantedAccess', 'PNTSTATUS AccessStatus']]
+#define locals_WINDOWS_11__X64_NtAccessCheck(ctx, pref) \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##GenericMapping) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##PrivilegeSet) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##PrivilegeSetLength) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##GrantedAccess) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##AccessStatus) = *(uint64_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAccessCheck(ctx, pref) \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##PrivilegeSet) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##PrivilegeSetLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtAccessCheck(ctx, pref) \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##PrivilegeSet) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##PrivilegeSetLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtWorkerFactoryWorkerReady [['HANDLE WorkerFactoryHandle']]
+#define locals_WINDOWS_11__X64_NtWorkerFactoryWorkerReady(ctx, pref) \
+	uint64_t UNUSED(pref##WorkerFactoryHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWorkerFactoryWorkerReady(ctx, pref) \
+	uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtWorkerFactoryWorkerReady(ctx, pref) \
+	const uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtAcceptConnectPort [['PHANDLE PortHandle', 'PVOID PortContext', 'PPORT_MESSAGE ConnectionRequest', 'BOOLEAN AcceptConnection', 'PPORT_VIEW ServerView', 'PREMOTE_PORT_VIEW ClientView']]
+#define locals_WINDOWS_11__X64_NtAcceptConnectPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortContext) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ConnectionRequest) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##AcceptConnection) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ServerView) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ClientView) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAcceptConnectPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ConnectionRequest) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##AcceptConnection) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ServerView) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ClientView) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAcceptConnectPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ConnectionRequest) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##AcceptConnection) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ServerView) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ClientView) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtMapUserPhysicalPagesScatter [['PVOID *VirtualAddresses', 'ULONG_PTR NumberOfPages', 'PULONG_PTR UserPfnArray']]
+#define locals_WINDOWS_11__X64_NtMapUserPhysicalPagesScatter(ctx, pref) \
+	uint64_t UNUSED(pref##VirtualAddresses) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##NumberOfPages) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##UserPfnArray) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtMapUserPhysicalPagesScatter(ctx, pref) \
+	uint64_t &UNUSED(pref##VirtualAddresses) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtMapUserPhysicalPagesScatter(ctx, pref) \
+	const uint64_t &UNUSED(pref##VirtualAddresses) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtWaitForSingleObject [['HANDLE Handle', 'BOOLEAN Alertable', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtWaitForSingleObject(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitForSingleObject(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtWaitForSingleObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCallbackReturn [['PVOID OutputBuffer', 'ULONG OutputLength', 'NTSTATUS Status']]
+#define locals_WINDOWS_11__X64_NtCallbackReturn(ctx, pref) \
+	uint64_t UNUSED(pref##OutputBuffer) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##OutputLength) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Status) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCallbackReturn(ctx, pref) \
+	uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##OutputLength) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Status) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCallbackReturn(ctx, pref) \
+	const uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##OutputLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Status) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtReadFile [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID Buffer', 'ULONG Length', 'PLARGE_INTEGER ByteOffset', 'PULONG Key']]
+#define locals_WINDOWS_11__X64_NtReadFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ByteOffset) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Key) = *(uint64_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReadFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Key) = *reinterpret_cast<uint64_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtReadFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Key) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtDeviceIoControlFile [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'ULONG IoControlCode', 'PVOID InputBuffer', 'ULONG InputBufferLength', 'PVOID OutputBuffer', 'ULONG OutputBufferLength']]
+#define locals_WINDOWS_11__X64_NtDeviceIoControlFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##IoControlCode) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##InputBuffer) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##InputBufferLength) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##OutputBuffer) = *(uint64_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##OutputBufferLength) = *(uint32_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeviceIoControlFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##IoControlCode) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtDeviceIoControlFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##IoControlCode) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtWriteFile [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID Buffer', 'ULONG Length', 'PLARGE_INTEGER ByteOffset', 'PULONG Key']]
+#define locals_WINDOWS_11__X64_NtWriteFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ByteOffset) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Key) = *(uint64_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWriteFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Key) = *reinterpret_cast<uint64_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtWriteFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Key) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtRemoveIoCompletion [['HANDLE IoCompletionHandle', 'PVOID *KeyContext', 'PVOID *ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtRemoveIoCompletion(ctx, pref) \
+	uint64_t UNUSED(pref##IoCompletionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##KeyContext) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRemoveIoCompletion(ctx, pref) \
+	uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##KeyContext) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtRemoveIoCompletion(ctx, pref) \
+	const uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##KeyContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtReleaseSemaphore [['HANDLE SemaphoreHandle', 'LONG ReleaseCount', 'PLONG PreviousCount']]
+#define locals_WINDOWS_11__X64_NtReleaseSemaphore(ctx, pref) \
+	uint64_t UNUSED(pref##SemaphoreHandle) = *(uint64_t *)((ctx)->args[0]); \
+	int32_t UNUSED(pref##ReleaseCount) = *(int32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##PreviousCount) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReleaseSemaphore(ctx, pref) \
+	uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	int32_t &UNUSED(pref##ReleaseCount) = *reinterpret_cast<int32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##PreviousCount) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtReleaseSemaphore(ctx, pref) \
+	const uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const int32_t &UNUSED(pref##ReleaseCount) = *reinterpret_cast<const int32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##PreviousCount) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtReplyWaitReceivePort [['HANDLE PortHandle', 'PVOID *PortContext', 'PPORT_MESSAGE ReplyMessage', 'PPORT_MESSAGE ReceiveMessage']]
+#define locals_WINDOWS_11__X64_NtReplyWaitReceivePort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortContext) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ReplyMessage) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ReceiveMessage) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReplyWaitReceivePort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ReceiveMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtReplyWaitReceivePort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ReceiveMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtReplyPort [['HANDLE PortHandle', 'PPORT_MESSAGE ReplyMessage']]
+#define locals_WINDOWS_11__X64_NtReplyPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ReplyMessage) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReplyPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtReplyPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetInformationThread [['HANDLE ThreadHandle', 'THREADINFOCLASS ThreadInformationClass', 'PVOID ThreadInformation', 'ULONG ThreadInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ThreadInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ThreadInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ThreadInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ThreadInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ThreadInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ThreadInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ThreadInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ThreadInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ThreadInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetEvent [['HANDLE EventHandle', 'PLONG PreviousState']]
+#define locals_WINDOWS_11__X64_NtSetEvent(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousState) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtClose [['HANDLE Handle']]
+#define locals_WINDOWS_11__X64_NtClose(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtClose(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtClose(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtQueryObject [['HANDLE Handle', 'OBJECT_INFORMATION_CLASS ObjectInformationClass', 'PVOID ObjectInformation', 'ULONG ObjectInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryObject(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ObjectInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ObjectInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryObject(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ObjectInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ObjectInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ObjectInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ObjectInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID FileInformation', 'ULONG Length', 'FILE_INFORMATION_CLASS FileInformationClass']]
+#define locals_WINDOWS_11__X64_NtQueryInformationFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##FileInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##FileInformationClass) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##FileInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##FileInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenKey [['PHANDLE KeyHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtEnumerateValueKey [['HANDLE KeyHandle', 'ULONG Index', 'KEY_VALUE_INFORMATION_CLASS KeyValueInformationClass', 'PVOID KeyValueInformation', 'ULONG Length', 'PULONG ResultLength']]
+#define locals_WINDOWS_11__X64_NtEnumerateValueKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Index) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##KeyValueInformationClass) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##KeyValueInformation) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ResultLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtEnumerateValueKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Index) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##KeyValueInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##KeyValueInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtEnumerateValueKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Index) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##KeyValueInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##KeyValueInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtFindAtom [['PWSTR AtomName', 'ULONG Length', 'PRTL_ATOM Atom']]
+#define locals_WINDOWS_11__X64_NtFindAtom(ctx, pref) \
+	uint64_t UNUSED(pref##AtomName) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Atom) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFindAtom(ctx, pref) \
+	uint64_t &UNUSED(pref##AtomName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Atom) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtFindAtom(ctx, pref) \
+	const uint64_t &UNUSED(pref##AtomName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Atom) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtQueryDefaultLocale [['BOOLEAN UserProfile', 'PLCID DefaultLocaleId']]
+#define locals_WINDOWS_11__X64_NtQueryDefaultLocale(ctx, pref) \
+	uint32_t UNUSED(pref##UserProfile) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##DefaultLocaleId) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryDefaultLocale(ctx, pref) \
+	uint32_t &UNUSED(pref##UserProfile) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##DefaultLocaleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryDefaultLocale(ctx, pref) \
+	const uint32_t &UNUSED(pref##UserProfile) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##DefaultLocaleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryKey [['HANDLE KeyHandle', 'KEY_INFORMATION_CLASS KeyInformationClass', 'PVOID KeyInformation', 'ULONG Length', 'PULONG ResultLength']]
+#define locals_WINDOWS_11__X64_NtQueryKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##KeyInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##KeyInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ResultLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##KeyInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##KeyInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##KeyInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##KeyInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryValueKey [['HANDLE KeyHandle', 'PUNICODE_STRING ValueName', 'KEY_VALUE_INFORMATION_CLASS KeyValueInformationClass', 'PVOID KeyValueInformation', 'ULONG Length', 'PULONG ResultLength']]
+#define locals_WINDOWS_11__X64_NtQueryValueKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ValueName) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##KeyValueInformationClass) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##KeyValueInformation) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ResultLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryValueKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ValueName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##KeyValueInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##KeyValueInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtQueryValueKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ValueName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##KeyValueInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##KeyValueInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtAllocateVirtualMemory [['HANDLE ProcessHandle', 'PVOID *BaseAddress', 'ULONG_PTR ZeroBits', 'PSIZE_T RegionSize', 'ULONG AllocationType', 'ULONG Protect']]
+#define locals_WINDOWS_11__X64_NtAllocateVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ZeroBits) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##AllocationType) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##Protect) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAllocateVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ZeroBits) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##AllocationType) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##Protect) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAllocateVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ZeroBits) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##AllocationType) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##Protect) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtQueryInformationProcess [['HANDLE ProcessHandle', 'PROCESSINFOCLASS ProcessInformationClass', 'PVOID ProcessInformation', 'ULONG ProcessInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ProcessInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ProcessInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ProcessInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ProcessInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ProcessInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ProcessInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ProcessInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ProcessInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ProcessInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtWaitForMultipleObjects32 [['ULONG Count', 'LONG Handles[]', 'WAIT_TYPE WaitType', 'BOOLEAN Alertable', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtWaitForMultipleObjects32(ctx, pref) \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Handles) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##WaitType) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitForMultipleObjects32(ctx, pref) \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Handles) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##WaitType) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtWaitForMultipleObjects32(ctx, pref) \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Handles) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##WaitType) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtWriteFileGather [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PFILE_SEGMENT_ELEMENT SegmentArray', 'ULONG Length', 'PLARGE_INTEGER ByteOffset', 'PULONG Key']]
+#define locals_WINDOWS_11__X64_NtWriteFileGather(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##SegmentArray) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ByteOffset) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Key) = *(uint64_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWriteFileGather(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##SegmentArray) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Key) = *reinterpret_cast<uint64_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtWriteFileGather(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##SegmentArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Key) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtSetInformationProcess [['HANDLE ProcessHandle', 'PROCESSINFOCLASS ProcessInformationClass', 'PVOID ProcessInformation', 'ULONG ProcessInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ProcessInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ProcessInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ProcessInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ProcessInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ProcessInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ProcessInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ProcessInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ProcessInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ProcessInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateKey [['PHANDLE KeyHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG TitleIndex', 'PUNICODE_STRING Class', 'ULONG CreateOptions', 'PULONG Disposition']]
+#define locals_WINDOWS_11__X64_NtCreateKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TitleIndex) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Class) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##Disposition) = *(uint64_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TitleIndex) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Class) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##Disposition) = *reinterpret_cast<uint64_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtCreateKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TitleIndex) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Class) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##Disposition) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtFreeVirtualMemory [['HANDLE ProcessHandle', 'PVOID *BaseAddress', 'PSIZE_T RegionSize', 'ULONG FreeType']]
+#define locals_WINDOWS_11__X64_NtFreeVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##FreeType) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFreeVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##FreeType) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtFreeVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##FreeType) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtImpersonateClientOfPort [['HANDLE PortHandle', 'PPORT_MESSAGE Message']]
+#define locals_WINDOWS_11__X64_NtImpersonateClientOfPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Message) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtImpersonateClientOfPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Message) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtImpersonateClientOfPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Message) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtReleaseMutant [['HANDLE MutantHandle', 'PLONG PreviousCount']]
+#define locals_WINDOWS_11__X64_NtReleaseMutant(ctx, pref) \
+	uint64_t UNUSED(pref##MutantHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousCount) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReleaseMutant(ctx, pref) \
+	uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousCount) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtReleaseMutant(ctx, pref) \
+	const uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousCount) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryInformationToken [['HANDLE TokenHandle', 'TOKEN_INFORMATION_CLASS TokenInformationClass', 'PVOID TokenInformation', 'ULONG TokenInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationToken(ctx, pref) \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TokenInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TokenInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TokenInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationToken(ctx, pref) \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TokenInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TokenInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TokenInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TokenInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TokenInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TokenInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtRequestWaitReplyPort [['HANDLE PortHandle', 'PPORT_MESSAGE RequestMessage', 'PPORT_MESSAGE ReplyMessage']]
+#define locals_WINDOWS_11__X64_NtRequestWaitReplyPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##RequestMessage) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ReplyMessage) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRequestWaitReplyPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##RequestMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtRequestWaitReplyPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##RequestMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtQueryVirtualMemory [['HANDLE ProcessHandle', 'PVOID BaseAddress', 'MEMORY_INFORMATION_CLASS MemoryInformationClass', 'PVOID MemoryInformation', 'SIZE_T MemoryInformationLength', 'PSIZE_T ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##MemoryInformationClass) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##MemoryInformation) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##MemoryInformationLength) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##MemoryInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##MemoryInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##MemoryInformationLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtQueryVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##MemoryInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##MemoryInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##MemoryInformationLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtOpenThreadToken [['HANDLE ThreadHandle', 'ACCESS_MASK DesiredAccess', 'BOOLEAN OpenAsSelf', 'PHANDLE TokenHandle']]
+#define locals_WINDOWS_11__X64_NtOpenThreadToken(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##OpenAsSelf) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenThreadToken(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##OpenAsSelf) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtOpenThreadToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##OpenAsSelf) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtQueryInformationThread [['HANDLE ThreadHandle', 'THREADINFOCLASS ThreadInformationClass', 'PVOID ThreadInformation', 'ULONG ThreadInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ThreadInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ThreadInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ThreadInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ThreadInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ThreadInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ThreadInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ThreadInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ThreadInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ThreadInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenProcess [['PHANDLE ProcessHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PCLIENT_ID ClientId']]
+#define locals_WINDOWS_11__X64_NtOpenProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ClientId) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtOpenProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID FileInformation', 'ULONG Length', 'FILE_INFORMATION_CLASS FileInformationClass']]
+#define locals_WINDOWS_11__X64_NtSetInformationFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##FileInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##FileInformationClass) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##FileInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtSetInformationFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##FileInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtMapViewOfSection [['HANDLE SectionHandle', 'HANDLE ProcessHandle', 'PVOID *BaseAddress', 'ULONG_PTR ZeroBits', 'SIZE_T CommitSize', 'PLARGE_INTEGER SectionOffset', 'PSIZE_T ViewSize', 'SECTION_INHERIT InheritDisposition', 'ULONG AllocationType', 'WIN32_PROTECTION_MASK Win32Protect']]
+#define locals_WINDOWS_11__X64_NtMapViewOfSection(ctx, pref) \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ZeroBits) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##CommitSize) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##SectionOffset) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##ViewSize) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##InheritDisposition) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##AllocationType) = *(uint32_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##Win32Protect) = *(uint32_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtMapViewOfSection(ctx, pref) \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ZeroBits) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##CommitSize) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##SectionOffset) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##ViewSize) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##InheritDisposition) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##AllocationType) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##Win32Protect) = *reinterpret_cast<uint32_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtMapViewOfSection(ctx, pref) \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ZeroBits) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##CommitSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##SectionOffset) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##ViewSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##InheritDisposition) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##AllocationType) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##Win32Protect) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtAccessCheckAndAuditAlarm [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'PUNICODE_STRING ObjectTypeName', 'PUNICODE_STRING ObjectName', 'PSECURITY_DESCRIPTOR SecurityDescriptor', 'ACCESS_MASK DesiredAccess', 'PGENERIC_MAPPING GenericMapping', 'BOOLEAN ObjectCreation', 'PACCESS_MASK GrantedAccess', 'PNTSTATUS AccessStatus', 'PBOOLEAN GenerateOnClose']]
+#define locals_WINDOWS_11__X64_NtAccessCheckAndAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectTypeName) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ObjectName) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##GenericMapping) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##ObjectCreation) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##GrantedAccess) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##AccessStatus) = *(uint64_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##GenerateOnClose) = *(uint64_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAccessCheckAndAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<uint64_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtAccessCheckAndAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtUnmapViewOfSection [['HANDLE ProcessHandle', 'PVOID BaseAddress']]
+#define locals_WINDOWS_11__X64_NtUnmapViewOfSection(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUnmapViewOfSection(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtUnmapViewOfSection(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtReplyWaitReceivePortEx [['HANDLE PortHandle', 'PVOID *PortContext', 'PPORT_MESSAGE ReplyMessage', 'PPORT_MESSAGE ReceiveMessage', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtReplyWaitReceivePortEx(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortContext) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ReplyMessage) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ReceiveMessage) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReplyWaitReceivePortEx(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ReceiveMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtReplyWaitReceivePortEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ReceiveMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtTerminateProcess [['HANDLE ProcessHandle', 'NTSTATUS ExitStatus']]
+#define locals_WINDOWS_11__X64_NtTerminateProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ExitStatus) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtTerminateProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ExitStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtTerminateProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ExitStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetEventBoostPriority [['HANDLE EventHandle']]
+#define locals_WINDOWS_11__X64_NtSetEventBoostPriority(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetEventBoostPriority(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetEventBoostPriority(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtReadFileScatter [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PFILE_SEGMENT_ELEMENT SegmentArray', 'ULONG Length', 'PLARGE_INTEGER ByteOffset', 'PULONG Key']]
+#define locals_WINDOWS_11__X64_NtReadFileScatter(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##SegmentArray) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ByteOffset) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Key) = *(uint64_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReadFileScatter(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##SegmentArray) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Key) = *reinterpret_cast<uint64_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtReadFileScatter(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##SegmentArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Key) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtOpenThreadTokenEx [['HANDLE ThreadHandle', 'ACCESS_MASK DesiredAccess', 'BOOLEAN OpenAsSelf', 'ULONG HandleAttributes', 'PHANDLE TokenHandle']]
+#define locals_WINDOWS_11__X64_NtOpenThreadTokenEx(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##OpenAsSelf) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##HandleAttributes) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenThreadTokenEx(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##OpenAsSelf) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtOpenThreadTokenEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##OpenAsSelf) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenProcessTokenEx [['HANDLE ProcessHandle', 'ACCESS_MASK DesiredAccess', 'ULONG HandleAttributes', 'PHANDLE TokenHandle']]
+#define locals_WINDOWS_11__X64_NtOpenProcessTokenEx(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##HandleAttributes) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenProcessTokenEx(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtOpenProcessTokenEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtQueryPerformanceCounter [['PLARGE_INTEGER PerformanceCounter', 'PLARGE_INTEGER PerformanceFrequency']]
+#define locals_WINDOWS_11__X64_NtQueryPerformanceCounter(ctx, pref) \
+	uint64_t UNUSED(pref##PerformanceCounter) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PerformanceFrequency) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryPerformanceCounter(ctx, pref) \
+	uint64_t &UNUSED(pref##PerformanceCounter) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PerformanceFrequency) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryPerformanceCounter(ctx, pref) \
+	const uint64_t &UNUSED(pref##PerformanceCounter) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PerformanceFrequency) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtEnumerateKey [['HANDLE KeyHandle', 'ULONG Index', 'KEY_INFORMATION_CLASS KeyInformationClass', 'PVOID KeyInformation', 'ULONG Length', 'PULONG ResultLength']]
+#define locals_WINDOWS_11__X64_NtEnumerateKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Index) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##KeyInformationClass) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##KeyInformation) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ResultLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtEnumerateKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Index) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##KeyInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##KeyInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtEnumerateKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Index) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##KeyInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##KeyInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ResultLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtOpenFile [['PHANDLE FileHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PIO_STATUS_BLOCK IoStatusBlock', 'ULONG ShareAccess', 'ULONG OpenOptions']]
+#define locals_WINDOWS_11__X64_NtOpenFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##ShareAccess) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##OpenOptions) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##ShareAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtOpenFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##ShareAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtDelayExecution [['BOOLEAN Alertable', 'PLARGE_INTEGER DelayInterval']]
+#define locals_WINDOWS_11__X64_NtDelayExecution(ctx, pref) \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##DelayInterval) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDelayExecution(ctx, pref) \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##DelayInterval) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtDelayExecution(ctx, pref) \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##DelayInterval) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryDirectoryFile [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID FileInformation', 'ULONG Length', 'FILE_INFORMATION_CLASS FileInformationClass', 'BOOLEAN ReturnSingleEntry', 'PUNICODE_STRING FileName', 'BOOLEAN RestartScan']]
+#define locals_WINDOWS_11__X64_NtQueryDirectoryFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##FileInformation) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##FileInformationClass) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##ReturnSingleEntry) = *(uint32_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##FileName) = *(uint64_t *)((ctx)->args[9]); \
+	uint32_t UNUSED(pref##RestartScan) = *(uint32_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryDirectoryFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##FileInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##FileName) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<uint32_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtQueryDirectoryFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##FileInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##FileName) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<const uint32_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtQuerySystemInformation [['SYSTEM_INFORMATION_CLASS SystemInformationClass', 'PVOID SystemInformation', 'ULONG SystemInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQuerySystemInformation(ctx, pref) \
+	uint32_t UNUSED(pref##SystemInformationClass) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SystemInformation) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##SystemInformationLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySystemInformation(ctx, pref) \
+	uint32_t &UNUSED(pref##SystemInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SystemInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##SystemInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtQuerySystemInformation(ctx, pref) \
+	const uint32_t &UNUSED(pref##SystemInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SystemInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##SystemInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtOpenSection [['PHANDLE SectionHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenSection(ctx, pref) \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenSection(ctx, pref) \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenSection(ctx, pref) \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtQueryTimer [['HANDLE TimerHandle', 'TIMER_INFORMATION_CLASS TimerInformationClass', 'PVOID TimerInformation', 'ULONG TimerInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryTimer(ctx, pref) \
+	uint64_t UNUSED(pref##TimerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TimerInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TimerInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TimerInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryTimer(ctx, pref) \
+	uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TimerInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TimerInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TimerInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryTimer(ctx, pref) \
+	const uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TimerInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TimerInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TimerInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtFsControlFile [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'ULONG IoControlCode', 'PVOID InputBuffer', 'ULONG InputBufferLength', 'PVOID OutputBuffer', 'ULONG OutputBufferLength']]
+#define locals_WINDOWS_11__X64_NtFsControlFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##IoControlCode) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##InputBuffer) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##InputBufferLength) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##OutputBuffer) = *(uint64_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##OutputBufferLength) = *(uint32_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFsControlFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##IoControlCode) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtFsControlFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##IoControlCode) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtWriteVirtualMemory [['HANDLE ProcessHandle', 'PVOID BaseAddress', 'PVOID Buffer', 'SIZE_T BufferSize', 'PSIZE_T NumberOfBytesWritten']]
+#define locals_WINDOWS_11__X64_NtWriteVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##BufferSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##NumberOfBytesWritten) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWriteVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##NumberOfBytesWritten) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtWriteVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##NumberOfBytesWritten) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtCloseObjectAuditAlarm [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'BOOLEAN GenerateOnClose']]
+#define locals_WINDOWS_11__X64_NtCloseObjectAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##GenerateOnClose) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCloseObjectAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCloseObjectAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtDuplicateObject [['HANDLE SourceProcessHandle', 'HANDLE SourceHandle', 'HANDLE TargetProcessHandle', 'PHANDLE TargetHandle', 'ACCESS_MASK DesiredAccess', 'ULONG HandleAttributes', 'ULONG Options']]
+#define locals_WINDOWS_11__X64_NtDuplicateObject(ctx, pref) \
+	uint64_t UNUSED(pref##SourceProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SourceHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TargetProcessHandle) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##TargetHandle) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##HandleAttributes) = *(uint32_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##Options) = *(uint32_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDuplicateObject(ctx, pref) \
+	uint64_t &UNUSED(pref##SourceProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SourceHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TargetProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##TargetHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##Options) = *reinterpret_cast<uint32_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtDuplicateObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##SourceProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SourceHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TargetProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##TargetHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##Options) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtQueryAttributesFile [['POBJECT_ATTRIBUTES ObjectAttributes', 'PFILE_BASIC_INFORMATION FileInformation']]
+#define locals_WINDOWS_11__X64_NtQueryAttributesFile(ctx, pref) \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##FileInformation) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryAttributesFile(ctx, pref) \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryAttributesFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtClearEvent [['HANDLE EventHandle']]
+#define locals_WINDOWS_11__X64_NtClearEvent(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtClearEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtClearEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtReadVirtualMemory [['HANDLE ProcessHandle', 'PVOID BaseAddress', 'PVOID Buffer', 'SIZE_T BufferSize', 'PSIZE_T NumberOfBytesRead']]
+#define locals_WINDOWS_11__X64_NtReadVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##BufferSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##NumberOfBytesRead) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReadVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##NumberOfBytesRead) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtReadVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##NumberOfBytesRead) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenEvent [['PHANDLE EventHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenEvent(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAdjustPrivilegesToken [['HANDLE TokenHandle', 'BOOLEAN DisableAllPrivileges', 'PTOKEN_PRIVILEGES NewState', 'ULONG BufferLength', 'PTOKEN_PRIVILEGES PreviousState', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtAdjustPrivilegesToken(ctx, pref) \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DisableAllPrivileges) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##NewState) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##BufferLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##PreviousState) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAdjustPrivilegesToken(ctx, pref) \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DisableAllPrivileges) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##NewState) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAdjustPrivilegesToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DisableAllPrivileges) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##NewState) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtDuplicateToken [['HANDLE ExistingTokenHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'BOOLEAN EffectiveOnly', 'TOKEN_TYPE TokenType', 'PHANDLE NewTokenHandle']]
+#define locals_WINDOWS_11__X64_NtDuplicateToken(ctx, pref) \
+	uint64_t UNUSED(pref##ExistingTokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##EffectiveOnly) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##TokenType) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##NewTokenHandle) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDuplicateToken(ctx, pref) \
+	uint64_t &UNUSED(pref##ExistingTokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##EffectiveOnly) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##TokenType) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##NewTokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtDuplicateToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##ExistingTokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##EffectiveOnly) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##TokenType) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##NewTokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtContinue [['PCONTEXT ContextRecord', 'BOOLEAN TestAlert']]
+#define locals_WINDOWS_11__X64_NtContinue(ctx, pref) \
+	uint64_t UNUSED(pref##ContextRecord) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TestAlert) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtContinue(ctx, pref) \
+	uint64_t &UNUSED(pref##ContextRecord) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TestAlert) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtContinue(ctx, pref) \
+	const uint64_t &UNUSED(pref##ContextRecord) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TestAlert) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryDefaultUILanguage [['LANGID *DefaultUILanguageId']]
+#define locals_WINDOWS_11__X64_NtQueryDefaultUILanguage(ctx, pref) \
+	uint64_t UNUSED(pref##DefaultUILanguageId) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryDefaultUILanguage(ctx, pref) \
+	uint64_t &UNUSED(pref##DefaultUILanguageId) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtQueryDefaultUILanguage(ctx, pref) \
+	const uint64_t &UNUSED(pref##DefaultUILanguageId) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtQueueApcThread [['HANDLE ThreadHandle', 'PPS_APC_ROUTINE ApcRoutine', 'PVOID ApcArgument1', 'PVOID ApcArgument2', 'PVOID ApcArgument3']]
+#define locals_WINDOWS_11__X64_NtQueueApcThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcArgument1) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcArgument2) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ApcArgument3) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueueApcThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcArgument1) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcArgument2) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ApcArgument3) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueueApcThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcArgument1) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcArgument2) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ApcArgument3) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtYieldExecution [['']]
+#undef locals_WINDOWS_11__X64_NtYieldExecution
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtYieldExecution
+#endif
+
+// NTSTATUS NtAddAtom [['PWSTR AtomName', 'ULONG Length', 'PRTL_ATOM Atom']]
+#define locals_WINDOWS_11__X64_NtAddAtom(ctx, pref) \
+	uint64_t UNUSED(pref##AtomName) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Atom) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAddAtom(ctx, pref) \
+	uint64_t &UNUSED(pref##AtomName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Atom) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAddAtom(ctx, pref) \
+	const uint64_t &UNUSED(pref##AtomName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Atom) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCreateEvent [['PHANDLE EventHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'EVENT_TYPE EventType', 'BOOLEAN InitialState']]
+#define locals_WINDOWS_11__X64_NtCreateEvent(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##EventType) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##InitialState) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##EventType) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##InitialState) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtCreateEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##EventType) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##InitialState) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryVolumeInformationFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID FsInformation', 'ULONG Length', 'FS_INFORMATION_CLASS FsInformationClass']]
+#define locals_WINDOWS_11__X64_NtQueryVolumeInformationFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##FsInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##FsInformationClass) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryVolumeInformationFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##FsInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##FsInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryVolumeInformationFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##FsInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##FsInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtCreateSection [['PHANDLE SectionHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PLARGE_INTEGER MaximumSize', 'ULONG SectionPageProtection', 'ULONG AllocationAttributes', 'HANDLE FileHandle']]
+#define locals_WINDOWS_11__X64_NtCreateSection(ctx, pref) \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##MaximumSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##SectionPageProtection) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##AllocationAttributes) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateSection(ctx, pref) \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##MaximumSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##SectionPageProtection) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##AllocationAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtCreateSection(ctx, pref) \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##MaximumSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##SectionPageProtection) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##AllocationAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtFlushBuffersFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock']]
+#define locals_WINDOWS_11__X64_NtFlushBuffersFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFlushBuffersFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtFlushBuffersFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtApphelpCacheControl [['APPHELPCOMMAND type', 'PVOID buf']]
+#define locals_WINDOWS_11__X64_NtApphelpCacheControl(ctx, pref) \
+	uint32_t UNUSED(pref##type) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##buf) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtApphelpCacheControl(ctx, pref) \
+	uint32_t &UNUSED(pref##type) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##buf) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtApphelpCacheControl(ctx, pref) \
+	const uint32_t &UNUSED(pref##type) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##buf) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtCreateProcessEx [['PHANDLE ProcessHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'HANDLE ParentProcess', 'ULONG Flags', 'HANDLE SectionHandle', 'HANDLE DebugPort', 'HANDLE ExceptionPort', 'ULONG JobMemberLevel']]
+#define locals_WINDOWS_11__X64_NtCreateProcessEx(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ParentProcess) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##DebugPort) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ExceptionPort) = *(uint64_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##JobMemberLevel) = *(uint32_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateProcessEx(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ParentProcess) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##DebugPort) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ExceptionPort) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##JobMemberLevel) = *reinterpret_cast<uint32_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtCreateProcessEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ParentProcess) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##DebugPort) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ExceptionPort) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##JobMemberLevel) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtCreateThread [['PHANDLE ThreadHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'HANDLE ProcessHandle', 'PCLIENT_ID ClientId', 'PCONTEXT ThreadContext', 'PINITIAL_TEB InitialTeb', 'BOOLEAN CreateSuspended']]
+#define locals_WINDOWS_11__X64_NtCreateThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ClientId) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ThreadContext) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##InitialTeb) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##CreateSuspended) = *(uint32_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ThreadContext) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##InitialTeb) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##CreateSuspended) = *reinterpret_cast<uint32_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtCreateThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ThreadContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##InitialTeb) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##CreateSuspended) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtIsProcessInJob [['HANDLE ProcessHandle', 'HANDLE JobHandle']]
+#define locals_WINDOWS_11__X64_NtIsProcessInJob(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##JobHandle) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtIsProcessInJob(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtIsProcessInJob(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtProtectVirtualMemory [['HANDLE ProcessHandle', 'PVOID *BaseAddress', 'PSIZE_T RegionSize', 'WIN32_PROTECTION_MASK NewProtectWin32', 'PULONG OldProtect']]
+#define locals_WINDOWS_11__X64_NtProtectVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##NewProtectWin32) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##OldProtect) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtProtectVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##NewProtectWin32) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##OldProtect) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtProtectVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##NewProtectWin32) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##OldProtect) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQuerySection [['HANDLE SectionHandle', 'SECTION_INFORMATION_CLASS SectionInformationClass', 'PVOID SectionInformation', 'SIZE_T SectionInformationLength', 'PSIZE_T ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQuerySection(ctx, pref) \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##SectionInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SectionInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##SectionInformationLength) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySection(ctx, pref) \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##SectionInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SectionInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##SectionInformationLength) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQuerySection(ctx, pref) \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##SectionInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SectionInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##SectionInformationLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtResumeThread [['HANDLE ThreadHandle', 'PULONG PreviousSuspendCount']]
+#define locals_WINDOWS_11__X64_NtResumeThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousSuspendCount) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtResumeThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousSuspendCount) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtResumeThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousSuspendCount) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtTerminateThread [['HANDLE ThreadHandle', 'NTSTATUS ExitStatus']]
+#define locals_WINDOWS_11__X64_NtTerminateThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ExitStatus) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtTerminateThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ExitStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtTerminateThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ExitStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtReadRequestData [['HANDLE PortHandle', 'PPORT_MESSAGE Message', 'ULONG DataEntryIndex', 'PVOID Buffer', 'SIZE_T BufferSize', 'PSIZE_T NumberOfBytesRead']]
+#define locals_WINDOWS_11__X64_NtReadRequestData(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Message) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##DataEntryIndex) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##BufferSize) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##NumberOfBytesRead) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReadRequestData(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Message) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##DataEntryIndex) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##NumberOfBytesRead) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtReadRequestData(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Message) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##DataEntryIndex) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##NumberOfBytesRead) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtCreateFile [['PHANDLE FileHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PIO_STATUS_BLOCK IoStatusBlock', 'PLARGE_INTEGER AllocationSize', 'ULONG FileAttributes', 'ULONG ShareAccess', 'ULONG CreateDisposition', 'ULONG CreateOptions', 'PVOID EaBuffer', 'ULONG EaLength']]
+#define locals_WINDOWS_11__X64_NtCreateFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##AllocationSize) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##FileAttributes) = *(uint32_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##ShareAccess) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##CreateDisposition) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##EaBuffer) = *(uint64_t *)((ctx)->args[9]); \
+	uint32_t UNUSED(pref##EaLength) = *(uint32_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##AllocationSize) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##FileAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##ShareAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##CreateDisposition) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##EaBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint32_t &UNUSED(pref##EaLength) = *reinterpret_cast<uint32_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtCreateFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##AllocationSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##FileAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##ShareAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##CreateDisposition) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##EaBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint32_t &UNUSED(pref##EaLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtQueryEvent [['HANDLE EventHandle', 'EVENT_INFORMATION_CLASS EventInformationClass', 'PVOID EventInformation', 'ULONG EventInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryEvent(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##EventInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##EventInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##EventInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##EventInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##EventInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##EventInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##EventInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##EventInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##EventInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtWriteRequestData [['HANDLE PortHandle', 'PPORT_MESSAGE Message', 'ULONG DataEntryIndex', 'PVOID Buffer', 'SIZE_T BufferSize', 'PSIZE_T NumberOfBytesWritten']]
+#define locals_WINDOWS_11__X64_NtWriteRequestData(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Message) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##DataEntryIndex) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##BufferSize) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##NumberOfBytesWritten) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWriteRequestData(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Message) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##DataEntryIndex) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##NumberOfBytesWritten) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtWriteRequestData(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Message) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##DataEntryIndex) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##NumberOfBytesWritten) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtOpenDirectoryObject [['PHANDLE DirectoryHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenDirectoryObject(ctx, pref) \
+	uint64_t UNUSED(pref##DirectoryHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenDirectoryObject(ctx, pref) \
+	uint64_t &UNUSED(pref##DirectoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenDirectoryObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##DirectoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAccessCheckByTypeAndAuditAlarm [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'PUNICODE_STRING ObjectTypeName', 'PUNICODE_STRING ObjectName', 'PSECURITY_DESCRIPTOR SecurityDescriptor', 'PSID PrincipalSelfSid', 'ACCESS_MASK DesiredAccess', 'AUDIT_EVENT_TYPE AuditType', 'ULONG Flags', 'POBJECT_TYPE_LIST ObjectTypeList', 'ULONG ObjectTypeListLength', 'PGENERIC_MAPPING GenericMapping', 'BOOLEAN ObjectCreation', 'PACCESS_MASK GrantedAccess', 'PNTSTATUS AccessStatus', 'PBOOLEAN GenerateOnClose']]
+#define locals_WINDOWS_11__X64_NtAccessCheckByTypeAndAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectTypeName) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ObjectName) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##PrincipalSelfSid) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##AuditType) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##ObjectTypeList) = *(uint64_t *)((ctx)->args[9]); \
+	uint32_t UNUSED(pref##ObjectTypeListLength) = *(uint32_t *)((ctx)->args[10]); \
+	uint64_t UNUSED(pref##GenericMapping) = *(uint64_t *)((ctx)->args[11]); \
+	uint32_t UNUSED(pref##ObjectCreation) = *(uint32_t *)((ctx)->args[12]); \
+	uint64_t UNUSED(pref##GrantedAccess) = *(uint64_t *)((ctx)->args[13]); \
+	uint64_t UNUSED(pref##AccessStatus) = *(uint64_t *)((ctx)->args[14]); \
+	uint64_t UNUSED(pref##GenerateOnClose) = *(uint64_t *)((ctx)->args[15]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAccessCheckByTypeAndAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##AuditType) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<uint32_t *>((ctx)->args[10]); \
+	uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<uint64_t *>((ctx)->args[11]); \
+	uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<uint32_t *>((ctx)->args[12]); \
+	uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint64_t *>((ctx)->args[13]); \
+	uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[14]); \
+	uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<uint64_t *>((ctx)->args[15]);
+#define creferences_WINDOWS_11__X64_NtAccessCheckByTypeAndAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##AuditType) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[10]); \
+	const uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<const uint64_t *>((ctx)->args[11]); \
+	const uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<const uint32_t *>((ctx)->args[12]); \
+	const uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint64_t *>((ctx)->args[13]); \
+	const uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[14]); \
+	const uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<const uint64_t *>((ctx)->args[15]);
+#endif
+
+// NTSTATUS NtWaitForMultipleObjects [['ULONG Count', 'HANDLE Handles[]', 'WAIT_TYPE WaitType', 'BOOLEAN Alertable', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtWaitForMultipleObjects(ctx, pref) \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Handles) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##WaitType) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitForMultipleObjects(ctx, pref) \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Handles) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##WaitType) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtWaitForMultipleObjects(ctx, pref) \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Handles) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##WaitType) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtSetInformationObject [['HANDLE Handle', 'OBJECT_INFORMATION_CLASS ObjectInformationClass', 'PVOID ObjectInformation', 'ULONG ObjectInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationObject(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ObjectInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ObjectInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationObject(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ObjectInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ObjectInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ObjectInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ObjectInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCancelIoFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock']]
+#define locals_WINDOWS_11__X64_NtCancelIoFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCancelIoFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtCancelIoFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtTraceEvent [['HANDLE TraceHandle', 'ULONG Flags', 'ULONG FieldSize', 'PVOID Fields']]
+#define locals_WINDOWS_11__X64_NtTraceEvent(ctx, pref) \
+	uint64_t UNUSED(pref##TraceHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##FieldSize) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Fields) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtTraceEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##TraceHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##FieldSize) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Fields) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtTraceEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##TraceHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##FieldSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Fields) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtPowerInformation [['POWER_INFORMATION_LEVEL InformationLevel', 'PVOID InputBuffer', 'ULONG InputBufferLength', 'PVOID OutputBuffer', 'ULONG OutputBufferLength']]
+#define locals_WINDOWS_11__X64_NtPowerInformation(ctx, pref) \
+	uint32_t UNUSED(pref##InformationLevel) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##InputBuffer) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##InputBufferLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##OutputBuffer) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##OutputBufferLength) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPowerInformation(ctx, pref) \
+	uint32_t &UNUSED(pref##InformationLevel) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtPowerInformation(ctx, pref) \
+	const uint32_t &UNUSED(pref##InformationLevel) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtSetValueKey [['HANDLE KeyHandle', 'PUNICODE_STRING ValueName', 'ULONG TitleIndex', 'ULONG Type', 'PVOID Data', 'ULONG DataSize']]
+#define locals_WINDOWS_11__X64_NtSetValueKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ValueName) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##TitleIndex) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Type) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Data) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##DataSize) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetValueKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ValueName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##TitleIndex) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Type) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Data) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##DataSize) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtSetValueKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ValueName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##TitleIndex) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Type) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Data) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##DataSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtCancelTimer [['HANDLE TimerHandle', 'PBOOLEAN CurrentState']]
+#define locals_WINDOWS_11__X64_NtCancelTimer(ctx, pref) \
+	uint64_t UNUSED(pref##TimerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##CurrentState) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCancelTimer(ctx, pref) \
+	uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##CurrentState) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtCancelTimer(ctx, pref) \
+	const uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##CurrentState) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetTimer [['HANDLE TimerHandle', 'PLARGE_INTEGER DueTime', 'PTIMER_APC_ROUTINE TimerApcRoutine', 'PVOID TimerContext', 'BOOLEAN WakeTimer', 'LONG Period', 'PBOOLEAN PreviousState']]
+#define locals_WINDOWS_11__X64_NtSetTimer(ctx, pref) \
+	uint64_t UNUSED(pref##TimerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##DueTime) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TimerApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##TimerContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##WakeTimer) = *(uint32_t *)((ctx)->args[4]); \
+	int32_t UNUSED(pref##Period) = *(int32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##PreviousState) = *(uint64_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetTimer(ctx, pref) \
+	uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##DueTime) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TimerApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##TimerContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##WakeTimer) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	int32_t &UNUSED(pref##Period) = *reinterpret_cast<int32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<uint64_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtSetTimer(ctx, pref) \
+	const uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##DueTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TimerApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##TimerContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##WakeTimer) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const int32_t &UNUSED(pref##Period) = *reinterpret_cast<const int32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtAccessCheckByType [['PSECURITY_DESCRIPTOR SecurityDescriptor', 'PSID PrincipalSelfSid', 'HANDLE ClientToken', 'ACCESS_MASK DesiredAccess', 'POBJECT_TYPE_LIST ObjectTypeList', 'ULONG ObjectTypeListLength', 'PGENERIC_MAPPING GenericMapping', 'PPRIVILEGE_SET PrivilegeSet', 'PULONG PrivilegeSetLength', 'PACCESS_MASK GrantedAccess', 'PNTSTATUS AccessStatus']]
+#define locals_WINDOWS_11__X64_NtAccessCheckByType(ctx, pref) \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PrincipalSelfSid) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ObjectTypeList) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##ObjectTypeListLength) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##GenericMapping) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##PrivilegeSet) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##PrivilegeSetLength) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##GrantedAccess) = *(uint64_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##AccessStatus) = *(uint64_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAccessCheckByType(ctx, pref) \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##PrivilegeSet) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##PrivilegeSetLength) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtAccessCheckByType(ctx, pref) \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##PrivilegeSet) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##PrivilegeSetLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtAccessCheckByTypeResultList [['PSECURITY_DESCRIPTOR SecurityDescriptor', 'PSID PrincipalSelfSid', 'HANDLE ClientToken', 'ACCESS_MASK DesiredAccess', 'POBJECT_TYPE_LIST ObjectTypeList', 'ULONG ObjectTypeListLength', 'PGENERIC_MAPPING GenericMapping', 'PPRIVILEGE_SET PrivilegeSet', 'PULONG PrivilegeSetLength', 'PACCESS_MASK GrantedAccess', 'PNTSTATUS AccessStatus']]
+#define locals_WINDOWS_11__X64_NtAccessCheckByTypeResultList(ctx, pref) \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PrincipalSelfSid) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ObjectTypeList) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##ObjectTypeListLength) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##GenericMapping) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##PrivilegeSet) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##PrivilegeSetLength) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##GrantedAccess) = *(uint64_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##AccessStatus) = *(uint64_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAccessCheckByTypeResultList(ctx, pref) \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##PrivilegeSet) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##PrivilegeSetLength) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtAccessCheckByTypeResultList(ctx, pref) \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##PrivilegeSet) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##PrivilegeSetLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtAccessCheckByTypeResultListAndAuditAlarm [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'PUNICODE_STRING ObjectTypeName', 'PUNICODE_STRING ObjectName', 'PSECURITY_DESCRIPTOR SecurityDescriptor', 'PSID PrincipalSelfSid', 'ACCESS_MASK DesiredAccess', 'AUDIT_EVENT_TYPE AuditType', 'ULONG Flags', 'POBJECT_TYPE_LIST ObjectTypeList', 'ULONG ObjectTypeListLength', 'PGENERIC_MAPPING GenericMapping', 'BOOLEAN ObjectCreation', 'PACCESS_MASK GrantedAccess', 'PNTSTATUS AccessStatus', 'PBOOLEAN GenerateOnClose']]
+#define locals_WINDOWS_11__X64_NtAccessCheckByTypeResultListAndAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectTypeName) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ObjectName) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##PrincipalSelfSid) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##AuditType) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##ObjectTypeList) = *(uint64_t *)((ctx)->args[9]); \
+	uint32_t UNUSED(pref##ObjectTypeListLength) = *(uint32_t *)((ctx)->args[10]); \
+	uint64_t UNUSED(pref##GenericMapping) = *(uint64_t *)((ctx)->args[11]); \
+	uint32_t UNUSED(pref##ObjectCreation) = *(uint32_t *)((ctx)->args[12]); \
+	uint64_t UNUSED(pref##GrantedAccess) = *(uint64_t *)((ctx)->args[13]); \
+	uint64_t UNUSED(pref##AccessStatus) = *(uint64_t *)((ctx)->args[14]); \
+	uint64_t UNUSED(pref##GenerateOnClose) = *(uint64_t *)((ctx)->args[15]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAccessCheckByTypeResultListAndAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##AuditType) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<uint32_t *>((ctx)->args[10]); \
+	uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<uint64_t *>((ctx)->args[11]); \
+	uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<uint32_t *>((ctx)->args[12]); \
+	uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint64_t *>((ctx)->args[13]); \
+	uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[14]); \
+	uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<uint64_t *>((ctx)->args[15]);
+#define creferences_WINDOWS_11__X64_NtAccessCheckByTypeResultListAndAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##AuditType) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[10]); \
+	const uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<const uint64_t *>((ctx)->args[11]); \
+	const uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<const uint32_t *>((ctx)->args[12]); \
+	const uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint64_t *>((ctx)->args[13]); \
+	const uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[14]); \
+	const uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<const uint64_t *>((ctx)->args[15]);
+#endif
+
+// NTSTATUS NtAccessCheckByTypeResultListAndAuditAlarmByHandle [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'HANDLE ClientToken', 'PUNICODE_STRING ObjectTypeName', 'PUNICODE_STRING ObjectName', 'PSECURITY_DESCRIPTOR SecurityDescriptor', 'PSID PrincipalSelfSid', 'ACCESS_MASK DesiredAccess', 'AUDIT_EVENT_TYPE AuditType', 'ULONG Flags', 'POBJECT_TYPE_LIST ObjectTypeList', 'ULONG ObjectTypeListLength', 'PGENERIC_MAPPING GenericMapping', 'BOOLEAN ObjectCreation', 'PACCESS_MASK GrantedAccess', 'PNTSTATUS AccessStatus', 'PBOOLEAN GenerateOnClose']]
+#define locals_WINDOWS_11__X64_NtAccessCheckByTypeResultListAndAuditAlarmByHandle(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ObjectTypeName) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ObjectName) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##PrincipalSelfSid) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##AuditType) = *(uint32_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##ObjectTypeList) = *(uint64_t *)((ctx)->args[10]); \
+	uint32_t UNUSED(pref##ObjectTypeListLength) = *(uint32_t *)((ctx)->args[11]); \
+	uint64_t UNUSED(pref##GenericMapping) = *(uint64_t *)((ctx)->args[12]); \
+	uint32_t UNUSED(pref##ObjectCreation) = *(uint32_t *)((ctx)->args[13]); \
+	uint64_t UNUSED(pref##GrantedAccess) = *(uint64_t *)((ctx)->args[14]); \
+	uint64_t UNUSED(pref##AccessStatus) = *(uint64_t *)((ctx)->args[15]); \
+	uint64_t UNUSED(pref##GenerateOnClose) = *(uint64_t *)((ctx)->args[16]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAccessCheckByTypeResultListAndAuditAlarmByHandle(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##AuditType) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<uint64_t *>((ctx)->args[10]); \
+	uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<uint32_t *>((ctx)->args[11]); \
+	uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<uint64_t *>((ctx)->args[12]); \
+	uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<uint32_t *>((ctx)->args[13]); \
+	uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint64_t *>((ctx)->args[14]); \
+	uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[15]); \
+	uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<uint64_t *>((ctx)->args[16]);
+#define creferences_WINDOWS_11__X64_NtAccessCheckByTypeResultListAndAuditAlarmByHandle(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##PrincipalSelfSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##AuditType) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##ObjectTypeList) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]); \
+	const uint32_t &UNUSED(pref##ObjectTypeListLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[11]); \
+	const uint64_t &UNUSED(pref##GenericMapping) = *reinterpret_cast<const uint64_t *>((ctx)->args[12]); \
+	const uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<const uint32_t *>((ctx)->args[13]); \
+	const uint64_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint64_t *>((ctx)->args[14]); \
+	const uint64_t &UNUSED(pref##AccessStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[15]); \
+	const uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<const uint64_t *>((ctx)->args[16]);
+#endif
+
+// NTSTATUS NtAcquireCrossVmMutant [['void']]
+#undef locals_WINDOWS_11__X64_NtAcquireCrossVmMutant
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAcquireCrossVmMutant
+#endif
+
+// NTSTATUS NtAcquireProcessActivityReference [['void']]
+#undef locals_WINDOWS_11__X64_NtAcquireProcessActivityReference
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAcquireProcessActivityReference
+#endif
+
+// NTSTATUS NtAddAtomEx [['void']]
+#undef locals_WINDOWS_11__X64_NtAddAtomEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAddAtomEx
+#endif
+
+// NTSTATUS NtAddBootEntry [['PBOOT_ENTRY BootEntry', 'PULONG Id']]
+#define locals_WINDOWS_11__X64_NtAddBootEntry(ctx, pref) \
+	uint64_t UNUSED(pref##BootEntry) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Id) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAddBootEntry(ctx, pref) \
+	uint64_t &UNUSED(pref##BootEntry) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Id) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtAddBootEntry(ctx, pref) \
+	const uint64_t &UNUSED(pref##BootEntry) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Id) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtAddDriverEntry [['PEFI_DRIVER_ENTRY DriverEntry', 'PULONG Id']]
+#define locals_WINDOWS_11__X64_NtAddDriverEntry(ctx, pref) \
+	uint64_t UNUSED(pref##DriverEntry) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Id) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAddDriverEntry(ctx, pref) \
+	uint64_t &UNUSED(pref##DriverEntry) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Id) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtAddDriverEntry(ctx, pref) \
+	const uint64_t &UNUSED(pref##DriverEntry) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Id) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtAdjustGroupsToken [['HANDLE TokenHandle', 'BOOLEAN ResetToDefault', 'PTOKEN_GROUPS NewState', 'ULONG BufferLength', 'PTOKEN_GROUPS PreviousState', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtAdjustGroupsToken(ctx, pref) \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ResetToDefault) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##NewState) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##BufferLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##PreviousState) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAdjustGroupsToken(ctx, pref) \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ResetToDefault) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##NewState) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAdjustGroupsToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ResetToDefault) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##NewState) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtAdjustTokenClaimsAndDeviceGroups [['void']]
+#undef locals_WINDOWS_11__X64_NtAdjustTokenClaimsAndDeviceGroups
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAdjustTokenClaimsAndDeviceGroups
+#endif
+
+// NTSTATUS NtAlertMultipleThreadByThreadId [['void']]
+#undef locals_WINDOWS_11__X64_NtAlertMultipleThreadByThreadId
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAlertMultipleThreadByThreadId
+#endif
+
+// NTSTATUS NtAlertResumeThread [['HANDLE ThreadHandle', 'PULONG PreviousSuspendCount']]
+#define locals_WINDOWS_11__X64_NtAlertResumeThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousSuspendCount) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlertResumeThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousSuspendCount) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtAlertResumeThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousSuspendCount) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtAlertThread [['HANDLE ThreadHandle']]
+#define locals_WINDOWS_11__X64_NtAlertThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlertThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtAlertThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtAlertThreadByThreadId [['void']]
+#undef locals_WINDOWS_11__X64_NtAlertThreadByThreadId
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAlertThreadByThreadId
+#endif
+
+// NTSTATUS NtAlertThreadByThreadIdEx [['void']]
+#undef locals_WINDOWS_11__X64_NtAlertThreadByThreadIdEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAlertThreadByThreadIdEx
+#endif
+
+// NTSTATUS NtAllocateLocallyUniqueId [['PLUID Luid']]
+#define locals_WINDOWS_11__X64_NtAllocateLocallyUniqueId(ctx, pref) \
+	uint64_t UNUSED(pref##Luid) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAllocateLocallyUniqueId(ctx, pref) \
+	uint64_t &UNUSED(pref##Luid) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtAllocateLocallyUniqueId(ctx, pref) \
+	const uint64_t &UNUSED(pref##Luid) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtAllocateReserveObject [['PHANDLE MemoryReserveHandle', 'POBJECT_ATTRIBUTES ObjectAttributes', 'MEMORY_RESERVE_TYPE Type']]
+#define locals_WINDOWS_11__X64_NtAllocateReserveObject(ctx, pref) \
+	uint64_t UNUSED(pref##MemoryReserveHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Type) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAllocateReserveObject(ctx, pref) \
+	uint64_t &UNUSED(pref##MemoryReserveHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Type) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAllocateReserveObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##MemoryReserveHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Type) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAllocateUserPhysicalPages [['HANDLE ProcessHandle', 'PULONG_PTR NumberOfPages', 'PULONG_PTR UserPfnArray']]
+#define locals_WINDOWS_11__X64_NtAllocateUserPhysicalPages(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##NumberOfPages) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##UserPfnArray) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAllocateUserPhysicalPages(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAllocateUserPhysicalPages(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAllocateUserPhysicalPagesEx [['void']]
+#undef locals_WINDOWS_11__X64_NtAllocateUserPhysicalPagesEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAllocateUserPhysicalPagesEx
+#endif
+
+// NTSTATUS NtAllocateUuids [['PULARGE_INTEGER Time', 'PULONG Range', 'PULONG Sequence', 'PCHAR Seed']]
+#define locals_WINDOWS_11__X64_NtAllocateUuids(ctx, pref) \
+	uint64_t UNUSED(pref##Time) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Range) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Sequence) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Seed) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAllocateUuids(ctx, pref) \
+	uint64_t &UNUSED(pref##Time) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Range) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Sequence) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Seed) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtAllocateUuids(ctx, pref) \
+	const uint64_t &UNUSED(pref##Time) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Range) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Sequence) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Seed) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtAllocateVirtualMemoryEx [['void']]
+#undef locals_WINDOWS_11__X64_NtAllocateVirtualMemoryEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAllocateVirtualMemoryEx
+#endif
+
+// NTSTATUS NtAlpcAcceptConnectPort [['PHANDLE PortHandle', 'HANDLE ConnectionPortHandle', 'ULONG Flags', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PALPC_PORT_ATTRIBUTES PortAttributes', 'PVOID PortContext', 'PPORT_MESSAGE ConnectionRequest', 'PALPC_MESSAGE_ATTRIBUTES ConnectionMessageAttributes', 'BOOLEAN AcceptConnection']]
+#define locals_WINDOWS_11__X64_NtAlpcAcceptConnectPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ConnectionPortHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##PortAttributes) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##PortContext) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##ConnectionRequest) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ConnectionMessageAttributes) = *(uint64_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##AcceptConnection) = *(uint32_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcAcceptConnectPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ConnectionPortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##PortAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##ConnectionRequest) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ConnectionMessageAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##AcceptConnection) = *reinterpret_cast<uint32_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtAlpcAcceptConnectPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ConnectionPortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##PortAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##PortContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##ConnectionRequest) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ConnectionMessageAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##AcceptConnection) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtAlpcCancelMessage [['HANDLE PortHandle', 'ULONG Flags', 'PALPC_CONTEXT_ATTR MessageContext']]
+#define locals_WINDOWS_11__X64_NtAlpcCancelMessage(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##MessageContext) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcCancelMessage(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##MessageContext) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcCancelMessage(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##MessageContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcConnectPort [['PHANDLE PortHandle', 'PUNICODE_STRING PortName', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PALPC_PORT_ATTRIBUTES PortAttributes', 'ULONG Flags', 'PSID RequiredServerSid', 'PPORT_MESSAGE ConnectionMessage', 'PULONG BufferLength', 'PALPC_MESSAGE_ATTRIBUTES OutMessageAttributes', 'PALPC_MESSAGE_ATTRIBUTES InMessageAttributes', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtAlpcConnectPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortName) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##PortAttributes) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##RequiredServerSid) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##ConnectionMessage) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##BufferLength) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##OutMessageAttributes) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##InMessageAttributes) = *(uint64_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcConnectPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##PortAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##RequiredServerSid) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##ConnectionMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##OutMessageAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##InMessageAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtAlpcConnectPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##PortAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##RequiredServerSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##ConnectionMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##OutMessageAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##InMessageAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtAlpcConnectPortEx [['void']]
+#undef locals_WINDOWS_11__X64_NtAlpcConnectPortEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAlpcConnectPortEx
+#endif
+
+// NTSTATUS NtAlpcCreatePort [['PHANDLE PortHandle', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PALPC_PORT_ATTRIBUTES PortAttributes']]
+#define locals_WINDOWS_11__X64_NtAlpcCreatePort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##PortAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcCreatePort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##PortAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcCreatePort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##PortAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcCreatePortSection [['HANDLE PortHandle', 'ULONG Flags', 'HANDLE SectionHandle', 'SIZE_T SectionSize', 'PALPC_HANDLE AlpcSectionHandle', 'PSIZE_T ActualSectionSize']]
+#define locals_WINDOWS_11__X64_NtAlpcCreatePortSection(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##SectionSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##AlpcSectionHandle) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ActualSectionSize) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcCreatePortSection(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##SectionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##AlpcSectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ActualSectionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAlpcCreatePortSection(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##SectionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##AlpcSectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ActualSectionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtAlpcCreateResourceReserve [['HANDLE PortHandle', 'ULONG Flags', 'SIZE_T MessageSize', 'PALPC_HANDLE ResourceId']]
+#define locals_WINDOWS_11__X64_NtAlpcCreateResourceReserve(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##MessageSize) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ResourceId) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcCreateResourceReserve(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##MessageSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ResourceId) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtAlpcCreateResourceReserve(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##MessageSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ResourceId) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtAlpcCreateSectionView [['HANDLE PortHandle', 'ULONG Flags', 'PALPC_DATA_VIEW_ATTR ViewAttributes']]
+#define locals_WINDOWS_11__X64_NtAlpcCreateSectionView(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ViewAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcCreateSectionView(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ViewAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcCreateSectionView(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ViewAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcCreateSecurityContext [['HANDLE PortHandle', 'ULONG Flags', 'PALPC_SECURITY_ATTR SecurityAttribute']]
+#define locals_WINDOWS_11__X64_NtAlpcCreateSecurityContext(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SecurityAttribute) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcCreateSecurityContext(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SecurityAttribute) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcCreateSecurityContext(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SecurityAttribute) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcDeletePortSection [['HANDLE PortHandle', 'ULONG Flags', 'ALPC_HANDLE SectionHandle']]
+#define locals_WINDOWS_11__X64_NtAlpcDeletePortSection(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcDeletePortSection(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcDeletePortSection(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcDeleteResourceReserve [['HANDLE PortHandle', 'ULONG Flags', 'ALPC_HANDLE ResourceId']]
+#define locals_WINDOWS_11__X64_NtAlpcDeleteResourceReserve(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ResourceId) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcDeleteResourceReserve(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ResourceId) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcDeleteResourceReserve(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ResourceId) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcDeleteSectionView [['HANDLE PortHandle', 'ULONG Flags', 'PVOID ViewBase']]
+#define locals_WINDOWS_11__X64_NtAlpcDeleteSectionView(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ViewBase) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcDeleteSectionView(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ViewBase) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcDeleteSectionView(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ViewBase) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcDeleteSecurityContext [['HANDLE PortHandle', 'ULONG Flags', 'ALPC_HANDLE ContextHandle']]
+#define locals_WINDOWS_11__X64_NtAlpcDeleteSecurityContext(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ContextHandle) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcDeleteSecurityContext(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ContextHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcDeleteSecurityContext(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ContextHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcDisconnectPort [['HANDLE PortHandle', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtAlpcDisconnectPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcDisconnectPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtAlpcDisconnectPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtAlpcImpersonateClientContainerOfPort [['void']]
+#undef locals_WINDOWS_11__X64_NtAlpcImpersonateClientContainerOfPort
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAlpcImpersonateClientContainerOfPort
+#endif
+
+// NTSTATUS NtAlpcImpersonateClientOfPort [['HANDLE PortHandle', 'PPORT_MESSAGE PortMessage', 'PVOID Reserved']]
+#define locals_WINDOWS_11__X64_NtAlpcImpersonateClientOfPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortMessage) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Reserved) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcImpersonateClientOfPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Reserved) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcImpersonateClientOfPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Reserved) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcOpenSenderProcess [['PHANDLE ProcessHandle', 'HANDLE PortHandle', 'PPORT_MESSAGE PortMessage', 'ULONG Flags', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtAlpcOpenSenderProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##PortMessage) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcOpenSenderProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAlpcOpenSenderProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtAlpcOpenSenderThread [['PHANDLE ThreadHandle', 'HANDLE PortHandle', 'PPORT_MESSAGE PortMessage', 'ULONG Flags', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtAlpcOpenSenderThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##PortMessage) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcOpenSenderThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAlpcOpenSenderThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtAlpcQueryInformation [['HANDLE PortHandle', 'ALPC_PORT_INFORMATION_CLASS PortInformationClass', 'PVOID PortInformation', 'ULONG Length', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtAlpcQueryInformation(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##PortInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##PortInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcQueryInformation(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##PortInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##PortInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtAlpcQueryInformation(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##PortInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##PortInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtAlpcQueryInformationMessage [['HANDLE PortHandle', 'PPORT_MESSAGE PortMessage', 'ALPC_MESSAGE_INFORMATION_CLASS MessageInformationClass', 'PVOID MessageInformation', 'ULONG Length', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtAlpcQueryInformationMessage(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortMessage) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##MessageInformationClass) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##MessageInformation) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcQueryInformationMessage(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##MessageInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##MessageInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtAlpcQueryInformationMessage(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##MessageInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##MessageInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtAlpcRevokeSecurityContext [['HANDLE PortHandle', 'ULONG Flags', 'ALPC_HANDLE ContextHandle']]
+#define locals_WINDOWS_11__X64_NtAlpcRevokeSecurityContext(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ContextHandle) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcRevokeSecurityContext(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ContextHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtAlpcRevokeSecurityContext(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ContextHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtAlpcSendWaitReceivePort [['HANDLE PortHandle', 'ULONG Flags', 'PPORT_MESSAGE SendMessage', 'PALPC_MESSAGE_ATTRIBUTES SendMessageAttributes', 'PPORT_MESSAGE ReceiveMessage', 'PULONG BufferLength', 'PALPC_MESSAGE_ATTRIBUTES ReceiveMessageAttributes', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtAlpcSendWaitReceivePort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SendMessage) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##SendMessageAttributes) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReceiveMessage) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##BufferLength) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##ReceiveMessageAttributes) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcSendWaitReceivePort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SendMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##SendMessageAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReceiveMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##ReceiveMessageAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtAlpcSendWaitReceivePort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SendMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##SendMessageAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReceiveMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##ReceiveMessageAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtAlpcSetInformation [['HANDLE PortHandle', 'ALPC_PORT_INFORMATION_CLASS PortInformationClass', 'PVOID PortInformation', 'ULONG Length']]
+#define locals_WINDOWS_11__X64_NtAlpcSetInformation(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##PortInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##PortInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAlpcSetInformation(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##PortInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##PortInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtAlpcSetInformation(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##PortInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##PortInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtAreMappedFilesTheSame [['PVOID File1MappedAsAnImage', 'PVOID File2MappedAsFile']]
+#define locals_WINDOWS_11__X64_NtAreMappedFilesTheSame(ctx, pref) \
+	uint64_t UNUSED(pref##File1MappedAsAnImage) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##File2MappedAsFile) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAreMappedFilesTheSame(ctx, pref) \
+	uint64_t &UNUSED(pref##File1MappedAsAnImage) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##File2MappedAsFile) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtAreMappedFilesTheSame(ctx, pref) \
+	const uint64_t &UNUSED(pref##File1MappedAsAnImage) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##File2MappedAsFile) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtAssignProcessToJobObject [['HANDLE JobHandle', 'HANDLE ProcessHandle']]
+#define locals_WINDOWS_11__X64_NtAssignProcessToJobObject(ctx, pref) \
+	uint64_t UNUSED(pref##JobHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtAssignProcessToJobObject(ctx, pref) \
+	uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtAssignProcessToJobObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtAssociateWaitCompletionPacket [['void']]
+#undef locals_WINDOWS_11__X64_NtAssociateWaitCompletionPacket
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtAssociateWaitCompletionPacket
+#endif
+
+// NTSTATUS NtCallEnclave [['void']]
+#undef locals_WINDOWS_11__X64_NtCallEnclave
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCallEnclave
+#endif
+
+// NTSTATUS NtCancelIoFileEx [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoRequestToCancel', 'PIO_STATUS_BLOCK IoStatusBlock']]
+#define locals_WINDOWS_11__X64_NtCancelIoFileEx(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoRequestToCancel) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCancelIoFileEx(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoRequestToCancel) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCancelIoFileEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoRequestToCancel) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCancelSynchronousIoFile [['HANDLE ThreadHandle', 'PIO_STATUS_BLOCK IoRequestToCancel', 'PIO_STATUS_BLOCK IoStatusBlock']]
+#define locals_WINDOWS_11__X64_NtCancelSynchronousIoFile(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoRequestToCancel) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCancelSynchronousIoFile(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoRequestToCancel) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCancelSynchronousIoFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoRequestToCancel) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCancelTimer2 [['void']]
+#undef locals_WINDOWS_11__X64_NtCancelTimer2
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCancelTimer2
+#endif
+
+// NTSTATUS NtCancelWaitCompletionPacket [['void']]
+#undef locals_WINDOWS_11__X64_NtCancelWaitCompletionPacket
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCancelWaitCompletionPacket
+#endif
+
+// NTSTATUS NtChangeProcessState [['void']]
+#undef locals_WINDOWS_11__X64_NtChangeProcessState
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtChangeProcessState
+#endif
+
+// NTSTATUS NtChangeThreadState [['void']]
+#undef locals_WINDOWS_11__X64_NtChangeThreadState
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtChangeThreadState
+#endif
+
+// NTSTATUS NtCommitComplete [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtCommitComplete(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCommitComplete(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtCommitComplete(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtCommitEnlistment [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtCommitEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCommitEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtCommitEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtCommitRegistryTransaction [['void']]
+#undef locals_WINDOWS_11__X64_NtCommitRegistryTransaction
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCommitRegistryTransaction
+#endif
+
+// NTSTATUS NtCommitTransaction [['HANDLE TransactionHandle', 'BOOLEAN Wait']]
+#define locals_WINDOWS_11__X64_NtCommitTransaction(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Wait) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCommitTransaction(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Wait) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtCommitTransaction(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Wait) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtCompactKeys [['ULONG Count', 'HANDLE KeyArray[]']]
+#define locals_WINDOWS_11__X64_NtCompactKeys(ctx, pref) \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##KeyArray) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCompactKeys(ctx, pref) \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##KeyArray) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtCompactKeys(ctx, pref) \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##KeyArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtCompareObjects [['void']]
+#undef locals_WINDOWS_11__X64_NtCompareObjects
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCompareObjects
+#endif
+
+// NTSTATUS NtCompareSigningLevels [['void']]
+#undef locals_WINDOWS_11__X64_NtCompareSigningLevels
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCompareSigningLevels
+#endif
+
+// NTSTATUS NtCompareTokens [['HANDLE FirstTokenHandle', 'HANDLE SecondTokenHandle', 'PBOOLEAN Equal']]
+#define locals_WINDOWS_11__X64_NtCompareTokens(ctx, pref) \
+	uint64_t UNUSED(pref##FirstTokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SecondTokenHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Equal) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCompareTokens(ctx, pref) \
+	uint64_t &UNUSED(pref##FirstTokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SecondTokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Equal) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCompareTokens(ctx, pref) \
+	const uint64_t &UNUSED(pref##FirstTokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SecondTokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Equal) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCompleteConnectPort [['HANDLE PortHandle']]
+#define locals_WINDOWS_11__X64_NtCompleteConnectPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCompleteConnectPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtCompleteConnectPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtCompressKey [['HANDLE Key']]
+#define locals_WINDOWS_11__X64_NtCompressKey(ctx, pref) \
+	uint64_t UNUSED(pref##Key) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCompressKey(ctx, pref) \
+	uint64_t &UNUSED(pref##Key) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtCompressKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##Key) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtConnectPort [['PHANDLE PortHandle', 'PUNICODE_STRING PortName', 'PSECURITY_QUALITY_OF_SERVICE SecurityQos', 'PPORT_VIEW ClientView', 'PREMOTE_PORT_VIEW ServerView', 'PULONG MaxMessageLength', 'PVOID ConnectionInformation', 'PULONG ConnectionInformationLength']]
+#define locals_WINDOWS_11__X64_NtConnectPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortName) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SecurityQos) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ClientView) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ServerView) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##MaxMessageLength) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##ConnectionInformation) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ConnectionInformationLength) = *(uint64_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtConnectPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SecurityQos) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ClientView) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ServerView) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##ConnectionInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ConnectionInformationLength) = *reinterpret_cast<uint64_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtConnectPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SecurityQos) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ClientView) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ServerView) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##ConnectionInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ConnectionInformationLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtContinueEx [['void']]
+#undef locals_WINDOWS_11__X64_NtContinueEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtContinueEx
+#endif
+
+// NTSTATUS NtConvertBetweenAuxiliaryCounterAndPerformanceCounter [['void']]
+#undef locals_WINDOWS_11__X64_NtConvertBetweenAuxiliaryCounterAndPerformanceCounter
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtConvertBetweenAuxiliaryCounterAndPerformanceCounter
+#endif
+
+// NTSTATUS NtCopyFileChunk [['void']]
+#undef locals_WINDOWS_11__X64_NtCopyFileChunk
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCopyFileChunk
+#endif
+
+// NTSTATUS NtCreateCpuPartition [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateCpuPartition
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateCpuPartition
+#endif
+
+// NTSTATUS NtCreateCrossVmEvent [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateCrossVmEvent
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateCrossVmEvent
+#endif
+
+// NTSTATUS NtCreateCrossVmMutant [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateCrossVmMutant
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateCrossVmMutant
+#endif
+
+// NTSTATUS NtCreateDebugObject [['PHANDLE DebugObjectHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtCreateDebugObject(ctx, pref) \
+	uint64_t UNUSED(pref##DebugObjectHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateDebugObject(ctx, pref) \
+	uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreateDebugObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateDirectoryObject [['PHANDLE DirectoryHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtCreateDirectoryObject(ctx, pref) \
+	uint64_t UNUSED(pref##DirectoryHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateDirectoryObject(ctx, pref) \
+	uint64_t &UNUSED(pref##DirectoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCreateDirectoryObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##DirectoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCreateDirectoryObjectEx [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateDirectoryObjectEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateDirectoryObjectEx
+#endif
+
+// NTSTATUS NtCreateEnclave [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateEnclave
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateEnclave
+#endif
+
+// NTSTATUS NtCreateEnlistment [['PHANDLE EnlistmentHandle', 'ACCESS_MASK DesiredAccess', 'HANDLE ResourceManagerHandle', 'HANDLE TransactionHandle', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG CreateOptions', 'NOTIFICATION_MASK NotificationMask', 'PVOID EnlistmentKey']]
+#define locals_WINDOWS_11__X64_NtCreateEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##NotificationMask) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##EnlistmentKey) = *(uint64_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##NotificationMask) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##EnlistmentKey) = *reinterpret_cast<uint64_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtCreateEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##NotificationMask) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##EnlistmentKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtCreateEventPair [['PHANDLE EventPairHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtCreateEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCreateEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCreateIRTimer [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateIRTimer
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateIRTimer
+#endif
+
+// NTSTATUS NtCreateIoCompletion [['PHANDLE IoCompletionHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG Count']]
+#define locals_WINDOWS_11__X64_NtCreateIoCompletion(ctx, pref) \
+	uint64_t UNUSED(pref##IoCompletionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateIoCompletion(ctx, pref) \
+	uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreateIoCompletion(ctx, pref) \
+	const uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateIoRing [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateIoRing
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateIoRing
+#endif
+
+// NTSTATUS NtCreateJobObject [['PHANDLE JobHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtCreateJobObject(ctx, pref) \
+	uint64_t UNUSED(pref##JobHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateJobObject(ctx, pref) \
+	uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCreateJobObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCreateJobSet [['ULONG NumJob', 'PJOB_SET_ARRAY UserJobSet', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtCreateJobSet(ctx, pref) \
+	uint32_t UNUSED(pref##NumJob) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##UserJobSet) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateJobSet(ctx, pref) \
+	uint32_t &UNUSED(pref##NumJob) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##UserJobSet) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtCreateJobSet(ctx, pref) \
+	const uint32_t &UNUSED(pref##NumJob) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##UserJobSet) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtCreateKeyTransacted [['PHANDLE KeyHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG TitleIndex', 'PUNICODE_STRING Class', 'ULONG CreateOptions', 'HANDLE TransactionHandle', 'PULONG Disposition']]
+#define locals_WINDOWS_11__X64_NtCreateKeyTransacted(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TitleIndex) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Class) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##Disposition) = *(uint64_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateKeyTransacted(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TitleIndex) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Class) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##Disposition) = *reinterpret_cast<uint64_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtCreateKeyTransacted(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TitleIndex) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Class) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##Disposition) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtCreateKeyedEvent [['PHANDLE KeyedEventHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtCreateKeyedEvent(ctx, pref) \
+	uint64_t UNUSED(pref##KeyedEventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateKeyedEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreateKeyedEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateLowBoxToken [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateLowBoxToken
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateLowBoxToken
+#endif
+
+// NTSTATUS NtCreateMailslotFile [['PHANDLE FileHandle', 'ULONG DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PIO_STATUS_BLOCK IoStatusBlock', 'ULONG CreateOptions', 'ULONG MailslotQuota', 'ULONG MaximumMessageSize', 'PLARGE_INTEGER ReadTimeout']]
+#define locals_WINDOWS_11__X64_NtCreateMailslotFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##MailslotQuota) = *(uint32_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##MaximumMessageSize) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ReadTimeout) = *(uint64_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateMailslotFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##MailslotQuota) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##MaximumMessageSize) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ReadTimeout) = *reinterpret_cast<uint64_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtCreateMailslotFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##MailslotQuota) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##MaximumMessageSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ReadTimeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtCreateMutant [['PHANDLE MutantHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'BOOLEAN InitialOwner']]
+#define locals_WINDOWS_11__X64_NtCreateMutant(ctx, pref) \
+	uint64_t UNUSED(pref##MutantHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##InitialOwner) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateMutant(ctx, pref) \
+	uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##InitialOwner) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreateMutant(ctx, pref) \
+	const uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##InitialOwner) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateNamedPipeFile [['PHANDLE FileHandle', 'ULONG DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PIO_STATUS_BLOCK IoStatusBlock', 'ULONG ShareAccess', 'ULONG CreateDisposition', 'ULONG CreateOptions', 'ULONG NamedPipeType', 'ULONG ReadMode', 'ULONG CompletionMode', 'ULONG MaximumInstances', 'ULONG InboundQuota', 'ULONG OutboundQuota', 'PLARGE_INTEGER DefaultTimeout']]
+#define locals_WINDOWS_11__X64_NtCreateNamedPipeFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##ShareAccess) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CreateDisposition) = *(uint32_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##NamedPipeType) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##ReadMode) = *(uint32_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##CompletionMode) = *(uint32_t *)((ctx)->args[9]); \
+	uint32_t UNUSED(pref##MaximumInstances) = *(uint32_t *)((ctx)->args[10]); \
+	uint32_t UNUSED(pref##InboundQuota) = *(uint32_t *)((ctx)->args[11]); \
+	uint32_t UNUSED(pref##OutboundQuota) = *(uint32_t *)((ctx)->args[12]); \
+	uint64_t UNUSED(pref##DefaultTimeout) = *(uint64_t *)((ctx)->args[13]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateNamedPipeFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##ShareAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CreateDisposition) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##NamedPipeType) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##ReadMode) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##CompletionMode) = *reinterpret_cast<uint32_t *>((ctx)->args[9]); \
+	uint32_t &UNUSED(pref##MaximumInstances) = *reinterpret_cast<uint32_t *>((ctx)->args[10]); \
+	uint32_t &UNUSED(pref##InboundQuota) = *reinterpret_cast<uint32_t *>((ctx)->args[11]); \
+	uint32_t &UNUSED(pref##OutboundQuota) = *reinterpret_cast<uint32_t *>((ctx)->args[12]); \
+	uint64_t &UNUSED(pref##DefaultTimeout) = *reinterpret_cast<uint64_t *>((ctx)->args[13]);
+#define creferences_WINDOWS_11__X64_NtCreateNamedPipeFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##ShareAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CreateDisposition) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##NamedPipeType) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##ReadMode) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##CompletionMode) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]); \
+	const uint32_t &UNUSED(pref##MaximumInstances) = *reinterpret_cast<const uint32_t *>((ctx)->args[10]); \
+	const uint32_t &UNUSED(pref##InboundQuota) = *reinterpret_cast<const uint32_t *>((ctx)->args[11]); \
+	const uint32_t &UNUSED(pref##OutboundQuota) = *reinterpret_cast<const uint32_t *>((ctx)->args[12]); \
+	const uint64_t &UNUSED(pref##DefaultTimeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[13]);
+#endif
+
+// NTSTATUS NtCreatePagingFile [['PUNICODE_STRING PageFileName', 'PLARGE_INTEGER MinimumSize', 'PLARGE_INTEGER MaximumSize', 'ULONG Priority']]
+#define locals_WINDOWS_11__X64_NtCreatePagingFile(ctx, pref) \
+	uint64_t UNUSED(pref##PageFileName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##MinimumSize) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##MaximumSize) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Priority) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreatePagingFile(ctx, pref) \
+	uint64_t &UNUSED(pref##PageFileName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##MinimumSize) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##MaximumSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Priority) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreatePagingFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##PageFileName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##MinimumSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##MaximumSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Priority) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreatePartition [['void']]
+#undef locals_WINDOWS_11__X64_NtCreatePartition
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreatePartition
+#endif
+
+// NTSTATUS NtCreatePort [['PHANDLE PortHandle', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG MaxConnectionInfoLength', 'ULONG MaxMessageLength', 'ULONG MaxPoolUsage']]
+#define locals_WINDOWS_11__X64_NtCreatePort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##MaxConnectionInfoLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##MaxMessageLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##MaxPoolUsage) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreatePort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##MaxConnectionInfoLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##MaxPoolUsage) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtCreatePort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##MaxConnectionInfoLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##MaxPoolUsage) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtCreatePrivateNamespace [['PHANDLE NamespaceHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PVOID BoundaryDescriptor']]
+#define locals_WINDOWS_11__X64_NtCreatePrivateNamespace(ctx, pref) \
+	uint64_t UNUSED(pref##NamespaceHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##BoundaryDescriptor) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreatePrivateNamespace(ctx, pref) \
+	uint64_t &UNUSED(pref##NamespaceHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##BoundaryDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreatePrivateNamespace(ctx, pref) \
+	const uint64_t &UNUSED(pref##NamespaceHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##BoundaryDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateProcess [['PHANDLE ProcessHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'HANDLE ParentProcess', 'BOOLEAN InheritObjectTable', 'HANDLE SectionHandle', 'HANDLE DebugPort', 'HANDLE ExceptionPort']]
+#define locals_WINDOWS_11__X64_NtCreateProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ParentProcess) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##InheritObjectTable) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##DebugPort) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ExceptionPort) = *(uint64_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ParentProcess) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##InheritObjectTable) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##DebugPort) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ExceptionPort) = *reinterpret_cast<uint64_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtCreateProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ParentProcess) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##InheritObjectTable) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##DebugPort) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ExceptionPort) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtCreateProcessStateChange [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateProcessStateChange
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateProcessStateChange
+#endif
+
+// NTSTATUS NtCreateProfile [['PHANDLE ProfileHandle', 'HANDLE Process', 'PVOID RangeBase', 'SIZE_T RangeSize', 'ULONG BucketSize', 'PULONG Buffer', 'ULONG BufferSize', 'KPROFILE_SOURCE ProfileSource', 'KAFFINITY Affinity']]
+#define locals_WINDOWS_11__X64_NtCreateProfile(ctx, pref) \
+	uint64_t UNUSED(pref##ProfileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Process) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##RangeBase) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##RangeSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##BucketSize) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##BufferSize) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##ProfileSource) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Affinity) = *(uint64_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateProfile(ctx, pref) \
+	uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Process) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##RangeBase) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##RangeSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##BucketSize) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##ProfileSource) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Affinity) = *reinterpret_cast<uint64_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtCreateProfile(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Process) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##RangeBase) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##RangeSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##BucketSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##ProfileSource) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Affinity) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtCreateProfileEx [['PHANDLE ProfileHandle', 'HANDLE Process', 'PVOID ProfileBase', 'SIZE_T ProfileSize', 'ULONG BucketSize', 'PULONG Buffer', 'ULONG BufferSize', 'KPROFILE_SOURCE ProfileSource', 'ULONG GroupAffinityCount', 'PGROUP_AFFINITY GroupAffinity']]
+#define locals_WINDOWS_11__X64_NtCreateProfileEx(ctx, pref) \
+	uint64_t UNUSED(pref##ProfileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Process) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ProfileBase) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ProfileSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##BucketSize) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##BufferSize) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##ProfileSource) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##GroupAffinityCount) = *(uint32_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##GroupAffinity) = *(uint64_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateProfileEx(ctx, pref) \
+	uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Process) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ProfileBase) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ProfileSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##BucketSize) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##ProfileSource) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##GroupAffinityCount) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##GroupAffinity) = *reinterpret_cast<uint64_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtCreateProfileEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Process) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ProfileBase) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ProfileSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##BucketSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##ProfileSource) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##GroupAffinityCount) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##GroupAffinity) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtCreateRegistryTransaction [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateRegistryTransaction
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateRegistryTransaction
+#endif
+
+// NTSTATUS NtCreateResourceManager [['PHANDLE ResourceManagerHandle', 'ACCESS_MASK DesiredAccess', 'HANDLE TmHandle', 'LPGUID RmGuid', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG CreateOptions', 'PUNICODE_STRING Description']]
+#define locals_WINDOWS_11__X64_NtCreateResourceManager(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TmHandle) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##RmGuid) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##Description) = *(uint64_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateResourceManager(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##RmGuid) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##Description) = *reinterpret_cast<uint64_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtCreateResourceManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##RmGuid) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##Description) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtCreateSectionEx [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateSectionEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateSectionEx
+#endif
+
+// NTSTATUS NtCreateSemaphore [['PHANDLE SemaphoreHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'LONG InitialCount', 'LONG MaximumCount']]
+#define locals_WINDOWS_11__X64_NtCreateSemaphore(ctx, pref) \
+	uint64_t UNUSED(pref##SemaphoreHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	int32_t UNUSED(pref##InitialCount) = *(int32_t *)((ctx)->args[3]); \
+	int32_t UNUSED(pref##MaximumCount) = *(int32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateSemaphore(ctx, pref) \
+	uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	int32_t &UNUSED(pref##InitialCount) = *reinterpret_cast<int32_t *>((ctx)->args[3]); \
+	int32_t &UNUSED(pref##MaximumCount) = *reinterpret_cast<int32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtCreateSemaphore(ctx, pref) \
+	const uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const int32_t &UNUSED(pref##InitialCount) = *reinterpret_cast<const int32_t *>((ctx)->args[3]); \
+	const int32_t &UNUSED(pref##MaximumCount) = *reinterpret_cast<const int32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtCreateSymbolicLinkObject [['PHANDLE LinkHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PUNICODE_STRING LinkTarget']]
+#define locals_WINDOWS_11__X64_NtCreateSymbolicLinkObject(ctx, pref) \
+	uint64_t UNUSED(pref##LinkHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##LinkTarget) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateSymbolicLinkObject(ctx, pref) \
+	uint64_t &UNUSED(pref##LinkHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##LinkTarget) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreateSymbolicLinkObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##LinkHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##LinkTarget) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateThreadEx [['PHANDLE ThreadHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'HANDLE ProcessHandle', 'PVOID StartRoutine', 'PVOID Argument', 'ULONG CreateFlags', 'ULONG_PTR ZeroBits', 'SIZE_T StackSize', 'SIZE_T MaximumStackSize', 'PPS_ATTRIBUTE_LIST AttributeList']]
+#define locals_WINDOWS_11__X64_NtCreateThreadEx(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##StartRoutine) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Argument) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##CreateFlags) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ZeroBits) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##StackSize) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##MaximumStackSize) = *(uint64_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##AttributeList) = *(uint64_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateThreadEx(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##StartRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Argument) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##CreateFlags) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ZeroBits) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##StackSize) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##MaximumStackSize) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##AttributeList) = *reinterpret_cast<uint64_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtCreateThreadEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##StartRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Argument) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##CreateFlags) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ZeroBits) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##StackSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##MaximumStackSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##AttributeList) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtCreateThreadStateChange [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateThreadStateChange
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateThreadStateChange
+#endif
+
+// NTSTATUS NtCreateTimer [['PHANDLE TimerHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'TIMER_TYPE TimerType']]
+#define locals_WINDOWS_11__X64_NtCreateTimer(ctx, pref) \
+	uint64_t UNUSED(pref##TimerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TimerType) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateTimer(ctx, pref) \
+	uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TimerType) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtCreateTimer(ctx, pref) \
+	const uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TimerType) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtCreateTimer2 [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateTimer2
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateTimer2
+#endif
+
+// NTSTATUS NtCreateToken [['PHANDLE TokenHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'TOKEN_TYPE TokenType', 'PLUID AuthenticationId', 'PLARGE_INTEGER ExpirationTime', 'PTOKEN_USER User', 'PTOKEN_GROUPS Groups', 'PTOKEN_PRIVILEGES Privileges', 'PTOKEN_OWNER Owner', 'PTOKEN_PRIMARY_GROUP PrimaryGroup', 'PTOKEN_DEFAULT_DACL DefaultDacl', 'PTOKEN_SOURCE TokenSource']]
+#define locals_WINDOWS_11__X64_NtCreateToken(ctx, pref) \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TokenType) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##AuthenticationId) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ExpirationTime) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##User) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##Groups) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Privileges) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##Owner) = *(uint64_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##PrimaryGroup) = *(uint64_t *)((ctx)->args[10]); \
+	uint64_t UNUSED(pref##DefaultDacl) = *(uint64_t *)((ctx)->args[11]); \
+	uint64_t UNUSED(pref##TokenSource) = *(uint64_t *)((ctx)->args[12]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateToken(ctx, pref) \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TokenType) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##AuthenticationId) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ExpirationTime) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##User) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##Groups) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##Owner) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##PrimaryGroup) = *reinterpret_cast<uint64_t *>((ctx)->args[10]); \
+	uint64_t &UNUSED(pref##DefaultDacl) = *reinterpret_cast<uint64_t *>((ctx)->args[11]); \
+	uint64_t &UNUSED(pref##TokenSource) = *reinterpret_cast<uint64_t *>((ctx)->args[12]);
+#define creferences_WINDOWS_11__X64_NtCreateToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TokenType) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##AuthenticationId) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ExpirationTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##User) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##Groups) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##Owner) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##PrimaryGroup) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]); \
+	const uint64_t &UNUSED(pref##DefaultDacl) = *reinterpret_cast<const uint64_t *>((ctx)->args[11]); \
+	const uint64_t &UNUSED(pref##TokenSource) = *reinterpret_cast<const uint64_t *>((ctx)->args[12]);
+#endif
+
+// NTSTATUS NtCreateTokenEx [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateTokenEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateTokenEx
+#endif
+
+// NTSTATUS NtCreateTransaction [['PHANDLE TransactionHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'LPGUID Uow', 'HANDLE TmHandle', 'ULONG CreateOptions', 'ULONG IsolationLevel', 'ULONG IsolationFlags', 'PLARGE_INTEGER Timeout', 'PUNICODE_STRING Description']]
+#define locals_WINDOWS_11__X64_NtCreateTransaction(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Uow) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##TmHandle) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##IsolationLevel) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##IsolationFlags) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##Description) = *(uint64_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateTransaction(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Uow) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##IsolationLevel) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##IsolationFlags) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##Description) = *reinterpret_cast<uint64_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtCreateTransaction(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Uow) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##IsolationLevel) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##IsolationFlags) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##Description) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtCreateTransactionManager [['PHANDLE TmHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PUNICODE_STRING LogFileName', 'ULONG CreateOptions', 'ULONG CommitStrength']]
+#define locals_WINDOWS_11__X64_NtCreateTransactionManager(ctx, pref) \
+	uint64_t UNUSED(pref##TmHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##LogFileName) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CommitStrength) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateTransactionManager(ctx, pref) \
+	uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##LogFileName) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CommitStrength) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtCreateTransactionManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##LogFileName) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CommitStrength) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtCreateUserProcess [['PHANDLE ProcessHandle', 'PHANDLE ThreadHandle', 'ACCESS_MASK ProcessDesiredAccess', 'ACCESS_MASK ThreadDesiredAccess', 'POBJECT_ATTRIBUTES ProcessObjectAttributes', 'POBJECT_ATTRIBUTES ThreadObjectAttributes', 'ULONG ProcessFlags', 'ULONG ThreadFlags', 'PRTL_USER_PROCESS_PARAMETERS ProcessParameters', 'PPROCESS_CREATE_INFO CreateInfo', 'PPROCESS_ATTRIBUTE_LIST AttributeList']]
+#define locals_WINDOWS_11__X64_NtCreateUserProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##ProcessDesiredAccess) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ThreadDesiredAccess) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ProcessObjectAttributes) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ThreadObjectAttributes) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##ProcessFlags) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##ThreadFlags) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##ProcessParameters) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##CreateInfo) = *(uint64_t *)((ctx)->args[9]); \
+	uint64_t UNUSED(pref##AttributeList) = *(uint64_t *)((ctx)->args[10]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateUserProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##ProcessDesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ThreadDesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ProcessObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ThreadObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##ProcessFlags) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##ThreadFlags) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##ProcessParameters) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##CreateInfo) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint64_t &UNUSED(pref##AttributeList) = *reinterpret_cast<uint64_t *>((ctx)->args[10]);
+#define creferences_WINDOWS_11__X64_NtCreateUserProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##ProcessDesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ThreadDesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ProcessObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ThreadObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##ProcessFlags) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##ThreadFlags) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##ProcessParameters) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##CreateInfo) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint64_t &UNUSED(pref##AttributeList) = *reinterpret_cast<const uint64_t *>((ctx)->args[10]);
+#endif
+
+// NTSTATUS NtCreateWaitCompletionPacket [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateWaitCompletionPacket
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateWaitCompletionPacket
+#endif
+
+// NTSTATUS NtCreateWaitablePort [['PHANDLE PortHandle', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG MaxConnectionInfoLength', 'ULONG MaxMessageLength', 'ULONG MaxPoolUsage']]
+#define locals_WINDOWS_11__X64_NtCreateWaitablePort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##MaxConnectionInfoLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##MaxMessageLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##MaxPoolUsage) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateWaitablePort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##MaxConnectionInfoLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##MaxPoolUsage) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtCreateWaitablePort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##MaxConnectionInfoLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##MaxPoolUsage) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtCreateWnfStateName [['void']]
+#undef locals_WINDOWS_11__X64_NtCreateWnfStateName
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtCreateWnfStateName
+#endif
+
+// NTSTATUS NtCreateWorkerFactory [['PHANDLE WorkerFactoryHandleReturn', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'HANDLE CompletionPortHandle', 'HANDLE WorkerProcessHandle', 'PVOID StartRoutine', 'PVOID StartParameter', 'ULONG MaxThreadCount', 'SIZE_T StackReserve', 'SIZE_T StackCommit']]
+#define locals_WINDOWS_11__X64_NtCreateWorkerFactory(ctx, pref) \
+	uint64_t UNUSED(pref##WorkerFactoryHandleReturn) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##CompletionPortHandle) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##WorkerProcessHandle) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##StartRoutine) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##StartParameter) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##MaxThreadCount) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##StackReserve) = *(uint64_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##StackCommit) = *(uint64_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtCreateWorkerFactory(ctx, pref) \
+	uint64_t &UNUSED(pref##WorkerFactoryHandleReturn) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##CompletionPortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##WorkerProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##StartRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##StartParameter) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##MaxThreadCount) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##StackReserve) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##StackCommit) = *reinterpret_cast<uint64_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtCreateWorkerFactory(ctx, pref) \
+	const uint64_t &UNUSED(pref##WorkerFactoryHandleReturn) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##CompletionPortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##WorkerProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##StartRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##StartParameter) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##MaxThreadCount) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##StackReserve) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##StackCommit) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtDebugActiveProcess [['HANDLE ProcessHandle', 'HANDLE DebugObjectHandle']]
+#define locals_WINDOWS_11__X64_NtDebugActiveProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##DebugObjectHandle) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDebugActiveProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtDebugActiveProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtDebugContinue [['HANDLE DebugObjectHandle', 'PCLIENT_ID ClientId', 'NTSTATUS ContinueStatus']]
+#define locals_WINDOWS_11__X64_NtDebugContinue(ctx, pref) \
+	uint64_t UNUSED(pref##DebugObjectHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ClientId) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##ContinueStatus) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDebugContinue(ctx, pref) \
+	uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##ContinueStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtDebugContinue(ctx, pref) \
+	const uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##ContinueStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtDeleteAtom [['RTL_ATOM Atom']]
+#define locals_WINDOWS_11__X64_NtDeleteAtom(ctx, pref) \
+	uint32_t UNUSED(pref##Atom) = *(uint32_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeleteAtom(ctx, pref) \
+	uint32_t &UNUSED(pref##Atom) = *reinterpret_cast<uint32_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDeleteAtom(ctx, pref) \
+	const uint32_t &UNUSED(pref##Atom) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtDeleteBootEntry [['ULONG Id']]
+#define locals_WINDOWS_11__X64_NtDeleteBootEntry(ctx, pref) \
+	uint32_t UNUSED(pref##Id) = *(uint32_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeleteBootEntry(ctx, pref) \
+	uint32_t &UNUSED(pref##Id) = *reinterpret_cast<uint32_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDeleteBootEntry(ctx, pref) \
+	const uint32_t &UNUSED(pref##Id) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtDeleteDriverEntry [['ULONG Id']]
+#define locals_WINDOWS_11__X64_NtDeleteDriverEntry(ctx, pref) \
+	uint32_t UNUSED(pref##Id) = *(uint32_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeleteDriverEntry(ctx, pref) \
+	uint32_t &UNUSED(pref##Id) = *reinterpret_cast<uint32_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDeleteDriverEntry(ctx, pref) \
+	const uint32_t &UNUSED(pref##Id) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtDeleteFile [['POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtDeleteFile(ctx, pref) \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeleteFile(ctx, pref) \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDeleteFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtDeleteKey [['HANDLE KeyHandle']]
+#define locals_WINDOWS_11__X64_NtDeleteKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeleteKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDeleteKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtDeleteObjectAuditAlarm [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'BOOLEAN GenerateOnClose']]
+#define locals_WINDOWS_11__X64_NtDeleteObjectAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##GenerateOnClose) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeleteObjectAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtDeleteObjectAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtDeletePrivateNamespace [['HANDLE NamespaceHandle']]
+#define locals_WINDOWS_11__X64_NtDeletePrivateNamespace(ctx, pref) \
+	uint64_t UNUSED(pref##NamespaceHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeletePrivateNamespace(ctx, pref) \
+	uint64_t &UNUSED(pref##NamespaceHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDeletePrivateNamespace(ctx, pref) \
+	const uint64_t &UNUSED(pref##NamespaceHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtDeleteValueKey [['HANDLE KeyHandle', 'PUNICODE_STRING ValueName']]
+#define locals_WINDOWS_11__X64_NtDeleteValueKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ValueName) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDeleteValueKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ValueName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtDeleteValueKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ValueName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtDeleteWnfStateData [['void']]
+#undef locals_WINDOWS_11__X64_NtDeleteWnfStateData
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtDeleteWnfStateData
+#endif
+
+// NTSTATUS NtDeleteWnfStateName [['void']]
+#undef locals_WINDOWS_11__X64_NtDeleteWnfStateName
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtDeleteWnfStateName
+#endif
+
+// NTSTATUS NtDirectGraphicsCall [['void']]
+#undef locals_WINDOWS_11__X64_NtDirectGraphicsCall
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtDirectGraphicsCall
+#endif
+
+// NTSTATUS NtDisableLastKnownGood [['']]
+#undef locals_WINDOWS_11__X64_NtDisableLastKnownGood
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtDisableLastKnownGood
+#endif
+
+// NTSTATUS NtDisplayString [['PUNICODE_STRING String']]
+#define locals_WINDOWS_11__X64_NtDisplayString(ctx, pref) \
+	uint64_t UNUSED(pref##String) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDisplayString(ctx, pref) \
+	uint64_t &UNUSED(pref##String) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDisplayString(ctx, pref) \
+	const uint64_t &UNUSED(pref##String) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtDrawText [['PUNICODE_STRING Text']]
+#define locals_WINDOWS_11__X64_NtDrawText(ctx, pref) \
+	uint64_t UNUSED(pref##Text) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtDrawText(ctx, pref) \
+	uint64_t &UNUSED(pref##Text) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtDrawText(ctx, pref) \
+	const uint64_t &UNUSED(pref##Text) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtEnableLastKnownGood [['']]
+#undef locals_WINDOWS_11__X64_NtEnableLastKnownGood
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtEnableLastKnownGood
+#endif
+
+// NTSTATUS NtEnumerateBootEntries [['PVOID Buffer', 'PULONG BufferLength']]
+#define locals_WINDOWS_11__X64_NtEnumerateBootEntries(ctx, pref) \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BufferLength) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtEnumerateBootEntries(ctx, pref) \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtEnumerateBootEntries(ctx, pref) \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtEnumerateDriverEntries [['PVOID Buffer', 'PULONG BufferLength']]
+#define locals_WINDOWS_11__X64_NtEnumerateDriverEntries(ctx, pref) \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BufferLength) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtEnumerateDriverEntries(ctx, pref) \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtEnumerateDriverEntries(ctx, pref) \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtEnumerateSystemEnvironmentValuesEx [['ULONG InformationClass', 'PVOID Buffer', 'PULONG BufferLength']]
+#define locals_WINDOWS_11__X64_NtEnumerateSystemEnvironmentValuesEx(ctx, pref) \
+	uint32_t UNUSED(pref##InformationClass) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##BufferLength) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtEnumerateSystemEnvironmentValuesEx(ctx, pref) \
+	uint32_t &UNUSED(pref##InformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtEnumerateSystemEnvironmentValuesEx(ctx, pref) \
+	const uint32_t &UNUSED(pref##InformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtEnumerateTransactionObject [['HANDLE RootObjectHandle', 'KTMOBJECT_TYPE QueryType', 'PKTMOBJECT_CURSOR ObjectCursor', 'ULONG ObjectCursorLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtEnumerateTransactionObject(ctx, pref) \
+	uint64_t UNUSED(pref##RootObjectHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##QueryType) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectCursor) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ObjectCursorLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtEnumerateTransactionObject(ctx, pref) \
+	uint64_t &UNUSED(pref##RootObjectHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##QueryType) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectCursor) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ObjectCursorLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtEnumerateTransactionObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##RootObjectHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##QueryType) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectCursor) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ObjectCursorLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtExtendSection [['HANDLE SectionHandle', 'PLARGE_INTEGER NewSectionSize']]
+#define locals_WINDOWS_11__X64_NtExtendSection(ctx, pref) \
+	uint64_t UNUSED(pref##SectionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##NewSectionSize) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtExtendSection(ctx, pref) \
+	uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##NewSectionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtExtendSection(ctx, pref) \
+	const uint64_t &UNUSED(pref##SectionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##NewSectionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtFilterBootOption [['void']]
+#undef locals_WINDOWS_11__X64_NtFilterBootOption
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtFilterBootOption
+#endif
+
+// NTSTATUS NtFilterToken [['HANDLE ExistingTokenHandle', 'ULONG Flags', 'PTOKEN_GROUPS SidsToDisable', 'PTOKEN_PRIVILEGES PrivilegesToDelete', 'PTOKEN_GROUPS RestrictedSids', 'PHANDLE NewTokenHandle']]
+#define locals_WINDOWS_11__X64_NtFilterToken(ctx, pref) \
+	uint64_t UNUSED(pref##ExistingTokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SidsToDisable) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##PrivilegesToDelete) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##RestrictedSids) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##NewTokenHandle) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFilterToken(ctx, pref) \
+	uint64_t &UNUSED(pref##ExistingTokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SidsToDisable) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##PrivilegesToDelete) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##RestrictedSids) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##NewTokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtFilterToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##ExistingTokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SidsToDisable) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##PrivilegesToDelete) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##RestrictedSids) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##NewTokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtFilterTokenEx [['void']]
+#undef locals_WINDOWS_11__X64_NtFilterTokenEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtFilterTokenEx
+#endif
+
+// NTSTATUS NtFlushBuffersFileEx [['void']]
+#undef locals_WINDOWS_11__X64_NtFlushBuffersFileEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtFlushBuffersFileEx
+#endif
+
+// NTSTATUS NtFlushInstallUILanguage [['LANGID InstallUILanguage', 'ULONG SetComittedFlag']]
+#define locals_WINDOWS_11__X64_NtFlushInstallUILanguage(ctx, pref) \
+	uint32_t UNUSED(pref##InstallUILanguage) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##SetComittedFlag) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFlushInstallUILanguage(ctx, pref) \
+	uint32_t &UNUSED(pref##InstallUILanguage) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##SetComittedFlag) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtFlushInstallUILanguage(ctx, pref) \
+	const uint32_t &UNUSED(pref##InstallUILanguage) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##SetComittedFlag) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtFlushInstructionCache [['HANDLE ProcessHandle', 'PVOID BaseAddress', 'SIZE_T Length']]
+#define locals_WINDOWS_11__X64_NtFlushInstructionCache(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Length) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFlushInstructionCache(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Length) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtFlushInstructionCache(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Length) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtFlushKey [['HANDLE KeyHandle']]
+#define locals_WINDOWS_11__X64_NtFlushKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFlushKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtFlushKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// VOID NtFlushProcessWriteBuffers [['']]
+#undef locals_WINDOWS_11__X64_NtFlushProcessWriteBuffers
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtFlushProcessWriteBuffers
+#endif
+
+// NTSTATUS NtFlushVirtualMemory [['HANDLE ProcessHandle', 'PVOID *BaseAddress', 'PSIZE_T RegionSize', 'PIO_STATUS_BLOCK IoStatus']]
+#define locals_WINDOWS_11__X64_NtFlushVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##IoStatus) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFlushVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##IoStatus) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtFlushVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##IoStatus) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtFlushWriteBuffer [['']]
+#undef locals_WINDOWS_11__X64_NtFlushWriteBuffer
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtFlushWriteBuffer
+#endif
+
+// NTSTATUS NtFreeUserPhysicalPages [['HANDLE ProcessHandle', 'PULONG_PTR NumberOfPages', 'PULONG_PTR UserPfnArray']]
+#define locals_WINDOWS_11__X64_NtFreeUserPhysicalPages(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##NumberOfPages) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##UserPfnArray) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFreeUserPhysicalPages(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtFreeUserPhysicalPages(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtFreezeRegistry [['ULONG TimeOutInSeconds']]
+#define locals_WINDOWS_11__X64_NtFreezeRegistry(ctx, pref) \
+	uint32_t UNUSED(pref##TimeOutInSeconds) = *(uint32_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFreezeRegistry(ctx, pref) \
+	uint32_t &UNUSED(pref##TimeOutInSeconds) = *reinterpret_cast<uint32_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtFreezeRegistry(ctx, pref) \
+	const uint32_t &UNUSED(pref##TimeOutInSeconds) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtFreezeTransactions [['PLARGE_INTEGER FreezeTimeout', 'PLARGE_INTEGER ThawTimeout']]
+#define locals_WINDOWS_11__X64_NtFreezeTransactions(ctx, pref) \
+	uint64_t UNUSED(pref##FreezeTimeout) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ThawTimeout) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtFreezeTransactions(ctx, pref) \
+	uint64_t &UNUSED(pref##FreezeTimeout) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ThawTimeout) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtFreezeTransactions(ctx, pref) \
+	const uint64_t &UNUSED(pref##FreezeTimeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ThawTimeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtGetCachedSigningLevel [['void']]
+#undef locals_WINDOWS_11__X64_NtGetCachedSigningLevel
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtGetCachedSigningLevel
+#endif
+
+// NTSTATUS NtGetCompleteWnfStateSubscription [['void']]
+#undef locals_WINDOWS_11__X64_NtGetCompleteWnfStateSubscription
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtGetCompleteWnfStateSubscription
+#endif
+
+// NTSTATUS NtGetContextThread [['HANDLE ThreadHandle', 'PCONTEXT ThreadContext']]
+#define locals_WINDOWS_11__X64_NtGetContextThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ThreadContext) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetContextThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ThreadContext) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtGetContextThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ThreadContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// ULONG NtGetCurrentProcessorNumber [['']]
+#undef locals_WINDOWS_11__X64_NtGetCurrentProcessorNumber
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtGetCurrentProcessorNumber
+#endif
+
+// NTSTATUS NtGetCurrentProcessorNumberEx [['void']]
+#undef locals_WINDOWS_11__X64_NtGetCurrentProcessorNumberEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtGetCurrentProcessorNumberEx
+#endif
+
+// NTSTATUS NtGetDevicePowerState [['HANDLE Device', 'DEVICE_POWER_STATE *State']]
+#define locals_WINDOWS_11__X64_NtGetDevicePowerState(ctx, pref) \
+	uint64_t UNUSED(pref##Device) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##State) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetDevicePowerState(ctx, pref) \
+	uint64_t &UNUSED(pref##Device) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##State) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtGetDevicePowerState(ctx, pref) \
+	const uint64_t &UNUSED(pref##Device) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##State) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtGetMUIRegistryInfo [['ULONG Flags', 'PULONG DataSize', 'PVOID Data']]
+#define locals_WINDOWS_11__X64_NtGetMUIRegistryInfo(ctx, pref) \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##DataSize) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Data) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetMUIRegistryInfo(ctx, pref) \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##DataSize) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Data) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtGetMUIRegistryInfo(ctx, pref) \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##DataSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Data) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtGetNextProcess [['HANDLE ProcessHandle', 'ACCESS_MASK DesiredAccess', 'ULONG HandleAttributes', 'ULONG Flags', 'PHANDLE NewProcessHandle']]
+#define locals_WINDOWS_11__X64_NtGetNextProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##HandleAttributes) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##NewProcessHandle) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetNextProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##NewProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtGetNextProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##NewProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtGetNextThread [['HANDLE ProcessHandle', 'HANDLE ThreadHandle', 'ACCESS_MASK DesiredAccess', 'ULONG HandleAttributes', 'ULONG Flags', 'PHANDLE NewThreadHandle']]
+#define locals_WINDOWS_11__X64_NtGetNextThread(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##HandleAttributes) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##NewThreadHandle) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetNextThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##NewThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtGetNextThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##HandleAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##NewThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtGetNlsSectionPtr [['ULONG SectionType', 'ULONG SectionData', 'PVOID ContextData', 'PVOID *SectionPointer', 'PULONG SectionSize']]
+#define locals_WINDOWS_11__X64_NtGetNlsSectionPtr(ctx, pref) \
+	uint32_t UNUSED(pref##SectionType) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##SectionData) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ContextData) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##SectionPointer) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##SectionSize) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetNlsSectionPtr(ctx, pref) \
+	uint32_t &UNUSED(pref##SectionType) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##SectionData) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ContextData) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##SectionPointer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##SectionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtGetNlsSectionPtr(ctx, pref) \
+	const uint32_t &UNUSED(pref##SectionType) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##SectionData) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ContextData) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##SectionPointer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##SectionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtGetNotificationResourceManager [['HANDLE ResourceManagerHandle', 'PTRANSACTION_NOTIFICATION TransactionNotification', 'ULONG NotificationLength', 'PLARGE_INTEGER Timeout', 'PULONG ReturnLength', 'ULONG Asynchronous', 'ULONG_PTR AsynchronousContext']]
+#define locals_WINDOWS_11__X64_NtGetNotificationResourceManager(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TransactionNotification) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##NotificationLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##Asynchronous) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##AsynchronousContext) = *(uint64_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetNotificationResourceManager(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TransactionNotification) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##NotificationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##AsynchronousContext) = *reinterpret_cast<uint64_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtGetNotificationResourceManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TransactionNotification) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##NotificationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##AsynchronousContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtGetWriteWatch [['HANDLE ProcessHandle', 'ULONG Flags', 'PVOID BaseAddress', 'SIZE_T RegionSize', 'PVOID *UserAddressArray', 'PULONG_PTR EntriesInUserAddressArray', 'PULONG Granularity']]
+#define locals_WINDOWS_11__X64_NtGetWriteWatch(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##UserAddressArray) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##EntriesInUserAddressArray) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##Granularity) = *(uint64_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtGetWriteWatch(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##UserAddressArray) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##EntriesInUserAddressArray) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##Granularity) = *reinterpret_cast<uint64_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtGetWriteWatch(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##UserAddressArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##EntriesInUserAddressArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##Granularity) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtImpersonateAnonymousToken [['HANDLE ThreadHandle']]
+#define locals_WINDOWS_11__X64_NtImpersonateAnonymousToken(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtImpersonateAnonymousToken(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtImpersonateAnonymousToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtImpersonateThread [['HANDLE ServerThreadHandle', 'HANDLE ClientThreadHandle', 'PSECURITY_QUALITY_OF_SERVICE SecurityQos']]
+#define locals_WINDOWS_11__X64_NtImpersonateThread(ctx, pref) \
+	uint64_t UNUSED(pref##ServerThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ClientThreadHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SecurityQos) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtImpersonateThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ServerThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ClientThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SecurityQos) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtImpersonateThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ServerThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ClientThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SecurityQos) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtInitializeEnclave [['void']]
+#undef locals_WINDOWS_11__X64_NtInitializeEnclave
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtInitializeEnclave
+#endif
+
+// NTSTATUS NtInitializeNlsFiles [['PVOID *BaseAddress', 'PLCID DefaultLocaleId', 'PLARGE_INTEGER DefaultCasingTableSize']]
+#define locals_WINDOWS_11__X64_NtInitializeNlsFiles(ctx, pref) \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##DefaultLocaleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##DefaultCasingTableSize) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtInitializeNlsFiles(ctx, pref) \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##DefaultLocaleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##DefaultCasingTableSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtInitializeNlsFiles(ctx, pref) \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##DefaultLocaleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##DefaultCasingTableSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtInitializeRegistry [['USHORT BootCondition']]
+#define locals_WINDOWS_11__X64_NtInitializeRegistry(ctx, pref) \
+	uint32_t UNUSED(pref##BootCondition) = *(uint32_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtInitializeRegistry(ctx, pref) \
+	uint32_t &UNUSED(pref##BootCondition) = *reinterpret_cast<uint32_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtInitializeRegistry(ctx, pref) \
+	const uint32_t &UNUSED(pref##BootCondition) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtInitiatePowerAction [['POWER_ACTION SystemAction', 'SYSTEM_POWER_STATE MinSystemState', 'ULONG Flags', 'BOOLEAN Asynchronous']]
+#define locals_WINDOWS_11__X64_NtInitiatePowerAction(ctx, pref) \
+	uint32_t UNUSED(pref##SystemAction) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##MinSystemState) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Asynchronous) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtInitiatePowerAction(ctx, pref) \
+	uint32_t &UNUSED(pref##SystemAction) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##MinSystemState) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtInitiatePowerAction(ctx, pref) \
+	const uint32_t &UNUSED(pref##SystemAction) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##MinSystemState) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// BOOLEAN NtIsSystemResumeAutomatic [['']]
+#undef locals_WINDOWS_11__X64_NtIsSystemResumeAutomatic
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtIsSystemResumeAutomatic
+#endif
+
+// NTSTATUS NtIsUILanguageComitted [['']]
+#undef locals_WINDOWS_11__X64_NtIsUILanguageComitted
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtIsUILanguageComitted
+#endif
+
+// NTSTATUS NtListenPort [['HANDLE PortHandle', 'PPORT_MESSAGE ConnectionRequest']]
+#define locals_WINDOWS_11__X64_NtListenPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ConnectionRequest) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtListenPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ConnectionRequest) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtListenPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ConnectionRequest) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtLoadDriver [['PUNICODE_STRING DriverServiceName']]
+#define locals_WINDOWS_11__X64_NtLoadDriver(ctx, pref) \
+	uint64_t UNUSED(pref##DriverServiceName) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLoadDriver(ctx, pref) \
+	uint64_t &UNUSED(pref##DriverServiceName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtLoadDriver(ctx, pref) \
+	const uint64_t &UNUSED(pref##DriverServiceName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtLoadEnclaveData [['void']]
+#undef locals_WINDOWS_11__X64_NtLoadEnclaveData
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtLoadEnclaveData
+#endif
+
+// NTSTATUS NtLoadKey [['POBJECT_ATTRIBUTES TargetKey', 'POBJECT_ATTRIBUTES SourceFile']]
+#define locals_WINDOWS_11__X64_NtLoadKey(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SourceFile) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLoadKey(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SourceFile) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtLoadKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SourceFile) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtLoadKey2 [['POBJECT_ATTRIBUTES TargetKey', 'POBJECT_ATTRIBUTES SourceFile', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtLoadKey2(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SourceFile) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLoadKey2(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SourceFile) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtLoadKey2(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SourceFile) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtLoadKey3 [['void']]
+#undef locals_WINDOWS_11__X64_NtLoadKey3
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtLoadKey3
+#endif
+
+// NTSTATUS NtLoadKeyEx [['POBJECT_ATTRIBUTES TargetKey', 'POBJECT_ATTRIBUTES SourceFile', 'ULONG Flags', 'HANDLE TrustClassKey']]
+#define locals_WINDOWS_11__X64_NtLoadKeyEx(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SourceFile) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##TrustClassKey) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLoadKeyEx(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SourceFile) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##TrustClassKey) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtLoadKeyEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SourceFile) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##TrustClassKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtLockFile [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PLARGE_INTEGER ByteOffset', 'PLARGE_INTEGER Length', 'ULONG Key', 'BOOLEAN FailImmediately', 'BOOLEAN ExclusiveLock']]
+#define locals_WINDOWS_11__X64_NtLockFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ByteOffset) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##Length) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##Key) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##FailImmediately) = *(uint32_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##ExclusiveLock) = *(uint32_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLockFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##Length) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##Key) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##FailImmediately) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##ExclusiveLock) = *reinterpret_cast<uint32_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtLockFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##Length) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##Key) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##FailImmediately) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##ExclusiveLock) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtLockProductActivationKeys [['ULONG *pPrivateVer', 'ULONG *pSafeMode']]
+#define locals_WINDOWS_11__X64_NtLockProductActivationKeys(ctx, pref) \
+	uint64_t UNUSED(pref##pPrivateVer) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##pSafeMode) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLockProductActivationKeys(ctx, pref) \
+	uint64_t &UNUSED(pref##pPrivateVer) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##pSafeMode) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtLockProductActivationKeys(ctx, pref) \
+	const uint64_t &UNUSED(pref##pPrivateVer) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##pSafeMode) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtLockRegistryKey [['HANDLE KeyHandle']]
+#define locals_WINDOWS_11__X64_NtLockRegistryKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLockRegistryKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtLockRegistryKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtLockVirtualMemory [['HANDLE ProcessHandle', 'PVOID *BaseAddress', 'PSIZE_T RegionSize', 'ULONG MapType']]
+#define locals_WINDOWS_11__X64_NtLockVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##MapType) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtLockVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##MapType) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtLockVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##MapType) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtMakePermanentObject [['HANDLE Handle']]
+#define locals_WINDOWS_11__X64_NtMakePermanentObject(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtMakePermanentObject(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtMakePermanentObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtMakeTemporaryObject [['HANDLE Handle']]
+#define locals_WINDOWS_11__X64_NtMakeTemporaryObject(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtMakeTemporaryObject(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtMakeTemporaryObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtManageHotPatch [['void']]
+#undef locals_WINDOWS_11__X64_NtManageHotPatch
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtManageHotPatch
+#endif
+
+// NTSTATUS NtManagePartition [['void']]
+#undef locals_WINDOWS_11__X64_NtManagePartition
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtManagePartition
+#endif
+
+// NTSTATUS NtMapCMFModule [['ULONG What', 'ULONG Index', 'PULONG CacheIndexOut', 'PULONG CacheFlagsOut', 'PULONG ViewSizeOut', 'PVOID *BaseAddress']]
+#define locals_WINDOWS_11__X64_NtMapCMFModule(ctx, pref) \
+	uint32_t UNUSED(pref##What) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Index) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##CacheIndexOut) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##CacheFlagsOut) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ViewSizeOut) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtMapCMFModule(ctx, pref) \
+	uint32_t &UNUSED(pref##What) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Index) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##CacheIndexOut) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##CacheFlagsOut) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ViewSizeOut) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtMapCMFModule(ctx, pref) \
+	const uint32_t &UNUSED(pref##What) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Index) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##CacheIndexOut) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##CacheFlagsOut) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ViewSizeOut) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtMapUserPhysicalPages [['PVOID VirtualAddress', 'ULONG_PTR NumberOfPages', 'PULONG_PTR UserPfnArray']]
+#define locals_WINDOWS_11__X64_NtMapUserPhysicalPages(ctx, pref) \
+	uint64_t UNUSED(pref##VirtualAddress) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##NumberOfPages) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##UserPfnArray) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtMapUserPhysicalPages(ctx, pref) \
+	uint64_t &UNUSED(pref##VirtualAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtMapUserPhysicalPages(ctx, pref) \
+	const uint64_t &UNUSED(pref##VirtualAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##NumberOfPages) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##UserPfnArray) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtMapViewOfSectionEx [['void']]
+#undef locals_WINDOWS_11__X64_NtMapViewOfSectionEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtMapViewOfSectionEx
+#endif
+
+// NTSTATUS NtModifyBootEntry [['PBOOT_ENTRY BootEntry']]
+#define locals_WINDOWS_11__X64_NtModifyBootEntry(ctx, pref) \
+	uint64_t UNUSED(pref##BootEntry) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtModifyBootEntry(ctx, pref) \
+	uint64_t &UNUSED(pref##BootEntry) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtModifyBootEntry(ctx, pref) \
+	const uint64_t &UNUSED(pref##BootEntry) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtModifyDriverEntry [['PEFI_DRIVER_ENTRY DriverEntry']]
+#define locals_WINDOWS_11__X64_NtModifyDriverEntry(ctx, pref) \
+	uint64_t UNUSED(pref##DriverEntry) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtModifyDriverEntry(ctx, pref) \
+	uint64_t &UNUSED(pref##DriverEntry) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtModifyDriverEntry(ctx, pref) \
+	const uint64_t &UNUSED(pref##DriverEntry) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtNotifyChangeDirectoryFile [['HANDLE FileHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID Buffer', 'ULONG Length', 'ULONG CompletionFilter', 'BOOLEAN WatchTree']]
+#define locals_WINDOWS_11__X64_NtNotifyChangeDirectoryFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##CompletionFilter) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##WatchTree) = *(uint32_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtNotifyChangeDirectoryFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##CompletionFilter) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##WatchTree) = *reinterpret_cast<uint32_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtNotifyChangeDirectoryFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##CompletionFilter) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##WatchTree) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtNotifyChangeDirectoryFileEx [['void']]
+#undef locals_WINDOWS_11__X64_NtNotifyChangeDirectoryFileEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtNotifyChangeDirectoryFileEx
+#endif
+
+// NTSTATUS NtNotifyChangeKey [['HANDLE KeyHandle', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'ULONG CompletionFilter', 'BOOLEAN WatchTree', 'PVOID Buffer', 'ULONG BufferSize', 'BOOLEAN Asynchronous']]
+#define locals_WINDOWS_11__X64_NtNotifyChangeKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##CompletionFilter) = *(uint32_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##WatchTree) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##BufferSize) = *(uint32_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##Asynchronous) = *(uint32_t *)((ctx)->args[9]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtNotifyChangeKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##CompletionFilter) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##WatchTree) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<uint32_t *>((ctx)->args[9]);
+#define creferences_WINDOWS_11__X64_NtNotifyChangeKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##CompletionFilter) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##WatchTree) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]);
+#endif
+
+// NTSTATUS NtNotifyChangeMultipleKeys [['HANDLE MasterKeyHandle', 'ULONG Count', 'OBJECT_ATTRIBUTES SlaveObjects[]', 'HANDLE Event', 'PIO_APC_ROUTINE ApcRoutine', 'PVOID ApcContext', 'PIO_STATUS_BLOCK IoStatusBlock', 'ULONG CompletionFilter', 'BOOLEAN WatchTree', 'PVOID Buffer', 'ULONG BufferSize', 'BOOLEAN Asynchronous']]
+#define locals_WINDOWS_11__X64_NtNotifyChangeMultipleKeys(ctx, pref) \
+	uint64_t UNUSED(pref##MasterKeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SlaveObjects) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##CompletionFilter) = *(uint32_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##WatchTree) = *(uint32_t *)((ctx)->args[8]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[9]); \
+	uint32_t UNUSED(pref##BufferSize) = *(uint32_t *)((ctx)->args[10]); \
+	uint32_t UNUSED(pref##Asynchronous) = *(uint32_t *)((ctx)->args[11]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtNotifyChangeMultipleKeys(ctx, pref) \
+	uint64_t &UNUSED(pref##MasterKeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SlaveObjects) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##CompletionFilter) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##WatchTree) = *reinterpret_cast<uint32_t *>((ctx)->args[8]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[9]); \
+	uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint32_t *>((ctx)->args[10]); \
+	uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<uint32_t *>((ctx)->args[11]);
+#define creferences_WINDOWS_11__X64_NtNotifyChangeMultipleKeys(ctx, pref) \
+	const uint64_t &UNUSED(pref##MasterKeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SlaveObjects) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##CompletionFilter) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##WatchTree) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[9]); \
+	const uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[10]); \
+	const uint32_t &UNUSED(pref##Asynchronous) = *reinterpret_cast<const uint32_t *>((ctx)->args[11]);
+#endif
+
+// NTSTATUS NtNotifyChangeSession [['HANDLE Session', 'ULONG IoStateSequence', 'PVOID Reserved', 'ULONG Action', 'IO_SESSION_STATE IoState', 'IO_SESSION_STATE IoState2', 'PVOID Buffer', 'ULONG BufferSize']]
+#define locals_WINDOWS_11__X64_NtNotifyChangeSession(ctx, pref) \
+	uint64_t UNUSED(pref##Session) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##IoStateSequence) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Reserved) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Action) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##IoState) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##IoState2) = *(uint32_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##BufferSize) = *(uint32_t *)((ctx)->args[7]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtNotifyChangeSession(ctx, pref) \
+	uint64_t &UNUSED(pref##Session) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##IoStateSequence) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Reserved) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Action) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##IoState) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##IoState2) = *reinterpret_cast<uint32_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<uint32_t *>((ctx)->args[7]);
+#define creferences_WINDOWS_11__X64_NtNotifyChangeSession(ctx, pref) \
+	const uint64_t &UNUSED(pref##Session) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##IoStateSequence) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Reserved) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Action) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##IoState) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##IoState2) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##BufferSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]);
+#endif
+
+// NTSTATUS NtOpenCpuPartition [['void']]
+#undef locals_WINDOWS_11__X64_NtOpenCpuPartition
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtOpenCpuPartition
+#endif
+
+// NTSTATUS NtOpenEnlistment [['PHANDLE EnlistmentHandle', 'ACCESS_MASK DesiredAccess', 'HANDLE ResourceManagerHandle', 'LPGUID EnlistmentGuid', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##EnlistmentGuid) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##EnlistmentGuid) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtOpenEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##EnlistmentGuid) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenEventPair [['PHANDLE EventPairHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenIoCompletion [['PHANDLE IoCompletionHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenIoCompletion(ctx, pref) \
+	uint64_t UNUSED(pref##IoCompletionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenIoCompletion(ctx, pref) \
+	uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenIoCompletion(ctx, pref) \
+	const uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenJobObject [['PHANDLE JobHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenJobObject(ctx, pref) \
+	uint64_t UNUSED(pref##JobHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenJobObject(ctx, pref) \
+	uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenJobObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenKeyEx [['PHANDLE KeyHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG OpenOptions']]
+#define locals_WINDOWS_11__X64_NtOpenKeyEx(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##OpenOptions) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenKeyEx(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtOpenKeyEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtOpenKeyTransacted [['PHANDLE KeyHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'HANDLE TransactionHandle']]
+#define locals_WINDOWS_11__X64_NtOpenKeyTransacted(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenKeyTransacted(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtOpenKeyTransacted(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtOpenKeyTransactedEx [['PHANDLE KeyHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'ULONG OpenOptions', 'HANDLE TransactionHandle']]
+#define locals_WINDOWS_11__X64_NtOpenKeyTransactedEx(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##OpenOptions) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenKeyTransactedEx(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtOpenKeyTransactedEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenKeyedEvent [['PHANDLE KeyedEventHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenKeyedEvent(ctx, pref) \
+	uint64_t UNUSED(pref##KeyedEventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenKeyedEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenKeyedEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenMutant [['PHANDLE MutantHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenMutant(ctx, pref) \
+	uint64_t UNUSED(pref##MutantHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenMutant(ctx, pref) \
+	uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenMutant(ctx, pref) \
+	const uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenObjectAuditAlarm [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'PUNICODE_STRING ObjectTypeName', 'PUNICODE_STRING ObjectName', 'PSECURITY_DESCRIPTOR SecurityDescriptor', 'HANDLE ClientToken', 'ACCESS_MASK DesiredAccess', 'ACCESS_MASK GrantedAccess', 'PPRIVILEGE_SET Privileges', 'BOOLEAN ObjectCreation', 'BOOLEAN AccessGranted', 'PBOOLEAN GenerateOnClose']]
+#define locals_WINDOWS_11__X64_NtOpenObjectAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectTypeName) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ObjectName) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[6]); \
+	uint32_t UNUSED(pref##GrantedAccess) = *(uint32_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##Privileges) = *(uint64_t *)((ctx)->args[8]); \
+	uint32_t UNUSED(pref##ObjectCreation) = *(uint32_t *)((ctx)->args[9]); \
+	uint32_t UNUSED(pref##AccessGranted) = *(uint32_t *)((ctx)->args[10]); \
+	uint64_t UNUSED(pref##GenerateOnClose) = *(uint64_t *)((ctx)->args[11]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenObjectAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint32_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<uint64_t *>((ctx)->args[8]); \
+	uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<uint32_t *>((ctx)->args[9]); \
+	uint32_t &UNUSED(pref##AccessGranted) = *reinterpret_cast<uint32_t *>((ctx)->args[10]); \
+	uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<uint64_t *>((ctx)->args[11]);
+#define creferences_WINDOWS_11__X64_NtOpenObjectAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectTypeName) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ObjectName) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint32_t &UNUSED(pref##GrantedAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]); \
+	const uint32_t &UNUSED(pref##ObjectCreation) = *reinterpret_cast<const uint32_t *>((ctx)->args[9]); \
+	const uint32_t &UNUSED(pref##AccessGranted) = *reinterpret_cast<const uint32_t *>((ctx)->args[10]); \
+	const uint64_t &UNUSED(pref##GenerateOnClose) = *reinterpret_cast<const uint64_t *>((ctx)->args[11]);
+#endif
+
+// NTSTATUS NtOpenPartition [['void']]
+#undef locals_WINDOWS_11__X64_NtOpenPartition
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtOpenPartition
+#endif
+
+// NTSTATUS NtOpenPrivateNamespace [['PHANDLE NamespaceHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PVOID BoundaryDescriptor']]
+#define locals_WINDOWS_11__X64_NtOpenPrivateNamespace(ctx, pref) \
+	uint64_t UNUSED(pref##NamespaceHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##BoundaryDescriptor) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenPrivateNamespace(ctx, pref) \
+	uint64_t &UNUSED(pref##NamespaceHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##BoundaryDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtOpenPrivateNamespace(ctx, pref) \
+	const uint64_t &UNUSED(pref##NamespaceHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##BoundaryDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtOpenProcessToken [['HANDLE ProcessHandle', 'ACCESS_MASK DesiredAccess', 'PHANDLE TokenHandle']]
+#define locals_WINDOWS_11__X64_NtOpenProcessToken(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenProcessToken(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenProcessToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenRegistryTransaction [['void']]
+#undef locals_WINDOWS_11__X64_NtOpenRegistryTransaction
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtOpenRegistryTransaction
+#endif
+
+// NTSTATUS NtOpenResourceManager [['PHANDLE ResourceManagerHandle', 'ACCESS_MASK DesiredAccess', 'HANDLE TmHandle', 'LPGUID ResourceManagerGuid', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenResourceManager(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TmHandle) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ResourceManagerGuid) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenResourceManager(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ResourceManagerGuid) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtOpenResourceManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ResourceManagerGuid) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenSemaphore [['PHANDLE SemaphoreHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenSemaphore(ctx, pref) \
+	uint64_t UNUSED(pref##SemaphoreHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenSemaphore(ctx, pref) \
+	uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenSemaphore(ctx, pref) \
+	const uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenSession [['PHANDLE SessionHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenSession(ctx, pref) \
+	uint64_t UNUSED(pref##SessionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenSession(ctx, pref) \
+	uint64_t &UNUSED(pref##SessionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenSession(ctx, pref) \
+	const uint64_t &UNUSED(pref##SessionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenSymbolicLinkObject [['PHANDLE LinkHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenSymbolicLinkObject(ctx, pref) \
+	uint64_t UNUSED(pref##LinkHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenSymbolicLinkObject(ctx, pref) \
+	uint64_t &UNUSED(pref##LinkHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenSymbolicLinkObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##LinkHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenThread [['PHANDLE ThreadHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PCLIENT_ID ClientId']]
+#define locals_WINDOWS_11__X64_NtOpenThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ClientId) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtOpenThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ClientId) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtOpenTimer [['PHANDLE TimerHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes']]
+#define locals_WINDOWS_11__X64_NtOpenTimer(ctx, pref) \
+	uint64_t UNUSED(pref##TimerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenTimer(ctx, pref) \
+	uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtOpenTimer(ctx, pref) \
+	const uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtOpenTransaction [['PHANDLE TransactionHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'LPGUID Uow', 'HANDLE TmHandle']]
+#define locals_WINDOWS_11__X64_NtOpenTransaction(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Uow) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##TmHandle) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenTransaction(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Uow) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtOpenTransaction(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Uow) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtOpenTransactionManager [['PHANDLE TmHandle', 'ACCESS_MASK DesiredAccess', 'POBJECT_ATTRIBUTES ObjectAttributes', 'PUNICODE_STRING LogFileName', 'LPGUID TmIdentity', 'ULONG OpenOptions']]
+#define locals_WINDOWS_11__X64_NtOpenTransactionManager(ctx, pref) \
+	uint64_t UNUSED(pref##TmHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##LogFileName) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##TmIdentity) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##OpenOptions) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtOpenTransactionManager(ctx, pref) \
+	uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##LogFileName) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##TmIdentity) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtOpenTransactionManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##LogFileName) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##TmIdentity) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##OpenOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtPlugPlayControl [['PLUGPLAY_CONTROL_CLASS PnPControlClass', 'PVOID PnPControlData', 'ULONG PnPControlDataLength']]
+#define locals_WINDOWS_11__X64_NtPlugPlayControl(ctx, pref) \
+	uint32_t UNUSED(pref##PnPControlClass) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PnPControlData) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##PnPControlDataLength) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPlugPlayControl(ctx, pref) \
+	uint32_t &UNUSED(pref##PnPControlClass) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PnPControlData) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##PnPControlDataLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtPlugPlayControl(ctx, pref) \
+	const uint32_t &UNUSED(pref##PnPControlClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PnPControlData) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##PnPControlDataLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtPrePrepareComplete [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtPrePrepareComplete(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPrePrepareComplete(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtPrePrepareComplete(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtPrePrepareEnlistment [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtPrePrepareEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPrePrepareEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtPrePrepareEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtPrepareComplete [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtPrepareComplete(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPrepareComplete(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtPrepareComplete(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtPrepareEnlistment [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtPrepareEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPrepareEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtPrepareEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtPrivilegeCheck [['HANDLE ClientToken', 'PPRIVILEGE_SET RequiredPrivileges', 'PBOOLEAN Result']]
+#define locals_WINDOWS_11__X64_NtPrivilegeCheck(ctx, pref) \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##RequiredPrivileges) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Result) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPrivilegeCheck(ctx, pref) \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##RequiredPrivileges) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Result) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtPrivilegeCheck(ctx, pref) \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##RequiredPrivileges) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Result) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtPrivilegeObjectAuditAlarm [['PUNICODE_STRING SubsystemName', 'PVOID HandleId', 'HANDLE ClientToken', 'ACCESS_MASK DesiredAccess', 'PPRIVILEGE_SET Privileges', 'BOOLEAN AccessGranted']]
+#define locals_WINDOWS_11__X64_NtPrivilegeObjectAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleId) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##DesiredAccess) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Privileges) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##AccessGranted) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPrivilegeObjectAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##AccessGranted) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtPrivilegeObjectAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##DesiredAccess) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##AccessGranted) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtPrivilegedServiceAuditAlarm [['PUNICODE_STRING SubsystemName', 'PUNICODE_STRING ServiceName', 'HANDLE ClientToken', 'PPRIVILEGE_SET Privileges', 'BOOLEAN AccessGranted']]
+#define locals_WINDOWS_11__X64_NtPrivilegedServiceAuditAlarm(ctx, pref) \
+	uint64_t UNUSED(pref##SubsystemName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ServiceName) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ClientToken) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Privileges) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##AccessGranted) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPrivilegedServiceAuditAlarm(ctx, pref) \
+	uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ServiceName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##AccessGranted) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtPrivilegedServiceAuditAlarm(ctx, pref) \
+	const uint64_t &UNUSED(pref##SubsystemName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ServiceName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ClientToken) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Privileges) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##AccessGranted) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtPropagationComplete [['HANDLE ResourceManagerHandle', 'ULONG RequestCookie', 'ULONG BufferLength', 'PVOID Buffer']]
+#define locals_WINDOWS_11__X64_NtPropagationComplete(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##RequestCookie) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##BufferLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPropagationComplete(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##RequestCookie) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtPropagationComplete(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##RequestCookie) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtPropagationFailed [['HANDLE ResourceManagerHandle', 'ULONG RequestCookie', 'NTSTATUS PropStatus']]
+#define locals_WINDOWS_11__X64_NtPropagationFailed(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##RequestCookie) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##PropStatus) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPropagationFailed(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##RequestCookie) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##PropStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtPropagationFailed(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##RequestCookie) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##PropStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtPssCaptureVaSpaceBulk [['void']]
+#undef locals_WINDOWS_11__X64_NtPssCaptureVaSpaceBulk
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtPssCaptureVaSpaceBulk
+#endif
+
+// NTSTATUS NtPulseEvent [['HANDLE EventHandle', 'PLONG PreviousState']]
+#define locals_WINDOWS_11__X64_NtPulseEvent(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousState) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtPulseEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtPulseEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryAuxiliaryCounterFrequency [['void']]
+#undef locals_WINDOWS_11__X64_NtQueryAuxiliaryCounterFrequency
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryAuxiliaryCounterFrequency
+#endif
+
+// NTSTATUS NtQueryBootEntryOrder [['PULONG Ids', 'PULONG Count']]
+#define locals_WINDOWS_11__X64_NtQueryBootEntryOrder(ctx, pref) \
+	uint64_t UNUSED(pref##Ids) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Count) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryBootEntryOrder(ctx, pref) \
+	uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Count) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryBootEntryOrder(ctx, pref) \
+	const uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Count) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryBootOptions [['PBOOT_OPTIONS BootOptions', 'PULONG BootOptionsLength']]
+#define locals_WINDOWS_11__X64_NtQueryBootOptions(ctx, pref) \
+	uint64_t UNUSED(pref##BootOptions) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BootOptionsLength) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryBootOptions(ctx, pref) \
+	uint64_t &UNUSED(pref##BootOptions) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BootOptionsLength) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryBootOptions(ctx, pref) \
+	const uint64_t &UNUSED(pref##BootOptions) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BootOptionsLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryDebugFilterState [['ULONG ComponentId', 'ULONG Level']]
+#define locals_WINDOWS_11__X64_NtQueryDebugFilterState(ctx, pref) \
+	uint32_t UNUSED(pref##ComponentId) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Level) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryDebugFilterState(ctx, pref) \
+	uint32_t &UNUSED(pref##ComponentId) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Level) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryDebugFilterState(ctx, pref) \
+	const uint32_t &UNUSED(pref##ComponentId) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Level) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryDirectoryFileEx [['void']]
+#undef locals_WINDOWS_11__X64_NtQueryDirectoryFileEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryDirectoryFileEx
+#endif
+
+// NTSTATUS NtQueryDirectoryObject [['HANDLE DirectoryHandle', 'PVOID Buffer', 'ULONG Length', 'BOOLEAN ReturnSingleEntry', 'BOOLEAN RestartScan', 'PULONG Context', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryDirectoryObject(ctx, pref) \
+	uint64_t UNUSED(pref##DirectoryHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ReturnSingleEntry) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##RestartScan) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Context) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[6]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryDirectoryObject(ctx, pref) \
+	uint64_t &UNUSED(pref##DirectoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Context) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[6]);
+#define creferences_WINDOWS_11__X64_NtQueryDirectoryObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##DirectoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Context) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]);
+#endif
+
+// NTSTATUS NtQueryDriverEntryOrder [['PULONG Ids', 'PULONG Count']]
+#define locals_WINDOWS_11__X64_NtQueryDriverEntryOrder(ctx, pref) \
+	uint64_t UNUSED(pref##Ids) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Count) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryDriverEntryOrder(ctx, pref) \
+	uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Count) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryDriverEntryOrder(ctx, pref) \
+	const uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Count) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryEaFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID Buffer', 'ULONG Length', 'BOOLEAN ReturnSingleEntry', 'PVOID EaList', 'ULONG EaListLength', 'PULONG EaIndex', 'BOOLEAN RestartScan']]
+#define locals_WINDOWS_11__X64_NtQueryEaFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##ReturnSingleEntry) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##EaList) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##EaListLength) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##EaIndex) = *(uint64_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##RestartScan) = *(uint32_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryEaFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##EaList) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##EaListLength) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##EaIndex) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<uint32_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtQueryEaFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##EaList) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##EaListLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##EaIndex) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtQueryFullAttributesFile [['POBJECT_ATTRIBUTES ObjectAttributes', 'PFILE_NETWORK_OPEN_INFORMATION FileInformation']]
+#define locals_WINDOWS_11__X64_NtQueryFullAttributesFile(ctx, pref) \
+	uint64_t UNUSED(pref##ObjectAttributes) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##FileInformation) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryFullAttributesFile(ctx, pref) \
+	uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryFullAttributesFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##ObjectAttributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##FileInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryInformationAtom [['RTL_ATOM Atom', 'ATOM_INFORMATION_CLASS InformationClass', 'PVOID AtomInformation', 'ULONG AtomInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationAtom(ctx, pref) \
+	uint32_t UNUSED(pref##Atom) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##InformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##AtomInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##AtomInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationAtom(ctx, pref) \
+	uint32_t &UNUSED(pref##Atom) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##InformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##AtomInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##AtomInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationAtom(ctx, pref) \
+	const uint32_t &UNUSED(pref##Atom) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##InformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##AtomInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##AtomInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationByName [['void']]
+#undef locals_WINDOWS_11__X64_NtQueryInformationByName
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryInformationByName
+#endif
+
+// NTSTATUS NtQueryInformationCpuPartition [['void']]
+#undef locals_WINDOWS_11__X64_NtQueryInformationCpuPartition
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryInformationCpuPartition
+#endif
+
+// NTSTATUS NtQueryInformationEnlistment [['HANDLE EnlistmentHandle', 'ENLISTMENT_INFORMATION_CLASS EnlistmentInformationClass', 'PVOID EnlistmentInformation', 'ULONG EnlistmentInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##EnlistmentInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##EnlistmentInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##EnlistmentInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##EnlistmentInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##EnlistmentInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##EnlistmentInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##EnlistmentInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##EnlistmentInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##EnlistmentInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationJobObject [['HANDLE JobHandle', 'JOBOBJECTINFOCLASS JobObjectInformationClass', 'PVOID JobObjectInformation', 'ULONG JobObjectInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationJobObject(ctx, pref) \
+	uint64_t UNUSED(pref##JobHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##JobObjectInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##JobObjectInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##JobObjectInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationJobObject(ctx, pref) \
+	uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##JobObjectInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##JobObjectInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##JobObjectInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationJobObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##JobObjectInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##JobObjectInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##JobObjectInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationPort [['HANDLE PortHandle', 'PORT_INFORMATION_CLASS PortInformationClass', 'PVOID PortInformation', 'ULONG Length', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##PortInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##PortInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##PortInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##PortInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##PortInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##PortInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationResourceManager [['HANDLE ResourceManagerHandle', 'RESOURCEMANAGER_INFORMATION_CLASS ResourceManagerInformationClass', 'PVOID ResourceManagerInformation', 'ULONG ResourceManagerInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationResourceManager(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ResourceManagerInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ResourceManagerInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ResourceManagerInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationResourceManager(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ResourceManagerInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ResourceManagerInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ResourceManagerInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationResourceManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ResourceManagerInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ResourceManagerInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ResourceManagerInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationTransaction [['HANDLE TransactionHandle', 'TRANSACTION_INFORMATION_CLASS TransactionInformationClass', 'PVOID TransactionInformation', 'ULONG TransactionInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationTransaction(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TransactionInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TransactionInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TransactionInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationTransaction(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TransactionInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TransactionInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TransactionInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationTransaction(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TransactionInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TransactionInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TransactionInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationTransactionManager [['HANDLE TransactionManagerHandle', 'TRANSACTIONMANAGER_INFORMATION_CLASS TransactionManagerInformationClass', 'PVOID TransactionManagerInformation', 'ULONG TransactionManagerInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationTransactionManager(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TransactionManagerInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TransactionManagerInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TransactionManagerInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationTransactionManager(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TransactionManagerInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TransactionManagerInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TransactionManagerInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationTransactionManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TransactionManagerInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TransactionManagerInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TransactionManagerInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInformationWorkerFactory [['HANDLE WorkerFactoryHandle', 'WORKERFACTORYINFOCLASS WorkerFactoryInformationClass', 'PVOID WorkerFactoryInformation', 'ULONG WorkerFactoryInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryInformationWorkerFactory(ctx, pref) \
+	uint64_t UNUSED(pref##WorkerFactoryHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##WorkerFactoryInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##WorkerFactoryInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##WorkerFactoryInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInformationWorkerFactory(ctx, pref) \
+	uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##WorkerFactoryInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##WorkerFactoryInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##WorkerFactoryInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryInformationWorkerFactory(ctx, pref) \
+	const uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##WorkerFactoryInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##WorkerFactoryInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##WorkerFactoryInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryInstallUILanguage [['LANGID *InstallUILanguageId']]
+#define locals_WINDOWS_11__X64_NtQueryInstallUILanguage(ctx, pref) \
+	uint64_t UNUSED(pref##InstallUILanguageId) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryInstallUILanguage(ctx, pref) \
+	uint64_t &UNUSED(pref##InstallUILanguageId) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtQueryInstallUILanguage(ctx, pref) \
+	const uint64_t &UNUSED(pref##InstallUILanguageId) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtQueryIntervalProfile [['KPROFILE_SOURCE ProfileSource', 'PULONG Interval']]
+#define locals_WINDOWS_11__X64_NtQueryIntervalProfile(ctx, pref) \
+	uint32_t UNUSED(pref##ProfileSource) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Interval) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryIntervalProfile(ctx, pref) \
+	uint32_t &UNUSED(pref##ProfileSource) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Interval) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryIntervalProfile(ctx, pref) \
+	const uint32_t &UNUSED(pref##ProfileSource) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Interval) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryIoCompletion [['HANDLE IoCompletionHandle', 'IO_COMPLETION_INFORMATION_CLASS IoCompletionInformationClass', 'PVOID IoCompletionInformation', 'ULONG IoCompletionInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryIoCompletion(ctx, pref) \
+	uint64_t UNUSED(pref##IoCompletionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##IoCompletionInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##IoCompletionInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##IoCompletionInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryIoCompletion(ctx, pref) \
+	uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##IoCompletionInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##IoCompletionInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##IoCompletionInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryIoCompletion(ctx, pref) \
+	const uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##IoCompletionInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##IoCompletionInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##IoCompletionInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryIoRingCapabilities [['void']]
+#undef locals_WINDOWS_11__X64_NtQueryIoRingCapabilities
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryIoRingCapabilities
+#endif
+
+// NTSTATUS NtQueryLicenseValue [['PUNICODE_STRING Name', 'PULONG Type', 'PVOID Buffer', 'ULONG Length', 'PULONG ReturnedLength']]
+#define locals_WINDOWS_11__X64_NtQueryLicenseValue(ctx, pref) \
+	uint64_t UNUSED(pref##Name) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Type) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnedLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryLicenseValue(ctx, pref) \
+	uint64_t &UNUSED(pref##Name) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Type) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnedLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryLicenseValue(ctx, pref) \
+	const uint64_t &UNUSED(pref##Name) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Type) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnedLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryMultipleValueKey [['HANDLE KeyHandle', 'PKEY_VALUE_ENTRY ValueEntries', 'ULONG EntryCount', 'PVOID ValueBuffer', 'PULONG BufferLength', 'PULONG RequiredBufferLength']]
+#define locals_WINDOWS_11__X64_NtQueryMultipleValueKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ValueEntries) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##EntryCount) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ValueBuffer) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##BufferLength) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##RequiredBufferLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryMultipleValueKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ValueEntries) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##EntryCount) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ValueBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##RequiredBufferLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtQueryMultipleValueKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ValueEntries) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##EntryCount) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ValueBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##RequiredBufferLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtQueryMutant [['HANDLE MutantHandle', 'MUTANT_INFORMATION_CLASS MutantInformationClass', 'PVOID MutantInformation', 'ULONG MutantInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQueryMutant(ctx, pref) \
+	uint64_t UNUSED(pref##MutantHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##MutantInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##MutantInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##MutantInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryMutant(ctx, pref) \
+	uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##MutantInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##MutantInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##MutantInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQueryMutant(ctx, pref) \
+	const uint64_t &UNUSED(pref##MutantHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##MutantInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##MutantInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##MutantInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQueryOpenSubKeys [['POBJECT_ATTRIBUTES TargetKey', 'PULONG HandleCount']]
+#define locals_WINDOWS_11__X64_NtQueryOpenSubKeys(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##HandleCount) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryOpenSubKeys(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##HandleCount) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtQueryOpenSubKeys(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##HandleCount) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtQueryOpenSubKeysEx [['POBJECT_ATTRIBUTES TargetKey', 'ULONG BufferLength', 'PVOID Buffer', 'PULONG RequiredSize']]
+#define locals_WINDOWS_11__X64_NtQueryOpenSubKeysEx(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##BufferLength) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##RequiredSize) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryOpenSubKeysEx(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##RequiredSize) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtQueryOpenSubKeysEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##BufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##RequiredSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtQueryPortInformationProcess [['']]
+#undef locals_WINDOWS_11__X64_NtQueryPortInformationProcess
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryPortInformationProcess
+#endif
+
+// NTSTATUS NtQueryQuotaInformationFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID Buffer', 'ULONG Length', 'BOOLEAN ReturnSingleEntry', 'PVOID SidList', 'ULONG SidListLength', 'PULONG StartSid', 'BOOLEAN RestartScan']]
+#define locals_WINDOWS_11__X64_NtQueryQuotaInformationFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##ReturnSingleEntry) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##SidList) = *(uint64_t *)((ctx)->args[5]); \
+	uint32_t UNUSED(pref##SidListLength) = *(uint32_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##StartSid) = *(uint64_t *)((ctx)->args[7]); \
+	uint32_t UNUSED(pref##RestartScan) = *(uint32_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryQuotaInformationFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##SidList) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint32_t &UNUSED(pref##SidListLength) = *reinterpret_cast<uint32_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##StartSid) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<uint32_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtQueryQuotaInformationFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##ReturnSingleEntry) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##SidList) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint32_t &UNUSED(pref##SidListLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##StartSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint32_t &UNUSED(pref##RestartScan) = *reinterpret_cast<const uint32_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtQuerySecurityAttributesToken [['HANDLE TokenHandle', 'PUNICODE_STRING Attributes', 'ULONG NumberOfAttributes', 'PVOID Buffer', 'ULONG Length', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQuerySecurityAttributesToken(ctx, pref) \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Attributes) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##NumberOfAttributes) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySecurityAttributesToken(ctx, pref) \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Attributes) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##NumberOfAttributes) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtQuerySecurityAttributesToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Attributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##NumberOfAttributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtQuerySecurityObject [['HANDLE Handle', 'SECURITY_INFORMATION SecurityInformation', 'PSECURITY_DESCRIPTOR SecurityDescriptor', 'ULONG Length', 'PULONG LengthNeeded']]
+#define locals_WINDOWS_11__X64_NtQuerySecurityObject(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##SecurityInformation) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##LengthNeeded) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySecurityObject(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##SecurityInformation) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##LengthNeeded) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQuerySecurityObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##SecurityInformation) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##LengthNeeded) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQuerySecurityPolicy [['void']]
+#undef locals_WINDOWS_11__X64_NtQuerySecurityPolicy
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQuerySecurityPolicy
+#endif
+
+// NTSTATUS NtQuerySemaphore [['HANDLE SemaphoreHandle', 'SEMAPHORE_INFORMATION_CLASS SemaphoreInformationClass', 'PVOID SemaphoreInformation', 'ULONG SemaphoreInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQuerySemaphore(ctx, pref) \
+	uint64_t UNUSED(pref##SemaphoreHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##SemaphoreInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SemaphoreInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##SemaphoreInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySemaphore(ctx, pref) \
+	uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##SemaphoreInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SemaphoreInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##SemaphoreInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQuerySemaphore(ctx, pref) \
+	const uint64_t &UNUSED(pref##SemaphoreHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##SemaphoreInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SemaphoreInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##SemaphoreInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQuerySymbolicLinkObject [['HANDLE LinkHandle', 'PUNICODE_STRING LinkTarget', 'PULONG ReturnedLength']]
+#define locals_WINDOWS_11__X64_NtQuerySymbolicLinkObject(ctx, pref) \
+	uint64_t UNUSED(pref##LinkHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##LinkTarget) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ReturnedLength) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySymbolicLinkObject(ctx, pref) \
+	uint64_t &UNUSED(pref##LinkHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##LinkTarget) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ReturnedLength) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtQuerySymbolicLinkObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##LinkHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##LinkTarget) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ReturnedLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtQuerySystemEnvironmentValue [['PUNICODE_STRING VariableName', 'PWSTR VariableValue', 'USHORT ValueLength', 'PUSHORT ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQuerySystemEnvironmentValue(ctx, pref) \
+	uint64_t UNUSED(pref##VariableName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##VariableValue) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##ValueLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySystemEnvironmentValue(ctx, pref) \
+	uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##VariableValue) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##ValueLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtQuerySystemEnvironmentValue(ctx, pref) \
+	const uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##VariableValue) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##ValueLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtQuerySystemEnvironmentValueEx [['PUNICODE_STRING VariableName', 'LPGUID VendorGuid', 'PVOID Value', 'PULONG ValueLength', 'PULONG Attributes']]
+#define locals_WINDOWS_11__X64_NtQuerySystemEnvironmentValueEx(ctx, pref) \
+	uint64_t UNUSED(pref##VariableName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##VendorGuid) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Value) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ValueLength) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Attributes) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySystemEnvironmentValueEx(ctx, pref) \
+	uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##VendorGuid) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Value) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ValueLength) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Attributes) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtQuerySystemEnvironmentValueEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##VendorGuid) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Value) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ValueLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Attributes) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtQuerySystemInformationEx [['SYSTEM_INFORMATION_CLASS SystemInformationClass', 'PVOID QueryInformation', 'ULONG QueryInformationLength', 'PVOID SystemInformation', 'ULONG SystemInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtQuerySystemInformationEx(ctx, pref) \
+	uint32_t UNUSED(pref##SystemInformationClass) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##QueryInformation) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##QueryInformationLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##SystemInformation) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##SystemInformationLength) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQuerySystemInformationEx(ctx, pref) \
+	uint32_t &UNUSED(pref##SystemInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##QueryInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##QueryInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##SystemInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##SystemInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtQuerySystemInformationEx(ctx, pref) \
+	const uint32_t &UNUSED(pref##SystemInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##QueryInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##QueryInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##SystemInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##SystemInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtQueryTimerResolution [['PULONG MaximumTime', 'PULONG MinimumTime', 'PULONG CurrentTime']]
+#define locals_WINDOWS_11__X64_NtQueryTimerResolution(ctx, pref) \
+	uint64_t UNUSED(pref##MaximumTime) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##MinimumTime) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##CurrentTime) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueryTimerResolution(ctx, pref) \
+	uint64_t &UNUSED(pref##MaximumTime) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##MinimumTime) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##CurrentTime) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtQueryTimerResolution(ctx, pref) \
+	const uint64_t &UNUSED(pref##MaximumTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##MinimumTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##CurrentTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtQueryWnfStateData [['void']]
+#undef locals_WINDOWS_11__X64_NtQueryWnfStateData
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryWnfStateData
+#endif
+
+// NTSTATUS NtQueryWnfStateNameInformation [['void']]
+#undef locals_WINDOWS_11__X64_NtQueryWnfStateNameInformation
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueryWnfStateNameInformation
+#endif
+
+// NTSTATUS NtQueueApcThreadEx [['HANDLE ThreadHandle', 'HANDLE UserApcReserveHandle', 'PPS_APC_ROUTINE ApcRoutine', 'PVOID ApcArgument1', 'PVOID ApcArgument2', 'PVOID ApcArgument3']]
+#define locals_WINDOWS_11__X64_NtQueueApcThreadEx(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##UserApcReserveHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcRoutine) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcArgument1) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ApcArgument2) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ApcArgument3) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtQueueApcThreadEx(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##UserApcReserveHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcArgument1) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ApcArgument2) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ApcArgument3) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtQueueApcThreadEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##UserApcReserveHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcRoutine) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcArgument1) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ApcArgument2) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ApcArgument3) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtQueueApcThreadEx2 [['void']]
+#undef locals_WINDOWS_11__X64_NtQueueApcThreadEx2
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtQueueApcThreadEx2
+#endif
+
+// NTSTATUS NtRaiseException [['PEXCEPTION_RECORD ExceptionRecord', 'PCONTEXT ContextRecord', 'BOOLEAN FirstChance']]
+#define locals_WINDOWS_11__X64_NtRaiseException(ctx, pref) \
+	uint64_t UNUSED(pref##ExceptionRecord) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ContextRecord) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##FirstChance) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRaiseException(ctx, pref) \
+	uint64_t &UNUSED(pref##ExceptionRecord) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ContextRecord) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##FirstChance) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtRaiseException(ctx, pref) \
+	const uint64_t &UNUSED(pref##ExceptionRecord) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ContextRecord) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##FirstChance) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtRaiseHardError [['NTSTATUS ErrorStatus', 'ULONG NumberOfParameters', 'ULONG UnicodeStringParameterMask', 'PULONG_PTR Parameters', 'ULONG ValidResponseOptions', 'PULONG Response']]
+#define locals_WINDOWS_11__X64_NtRaiseHardError(ctx, pref) \
+	uint32_t UNUSED(pref##ErrorStatus) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##NumberOfParameters) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##UnicodeStringParameterMask) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Parameters) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##ValidResponseOptions) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##Response) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRaiseHardError(ctx, pref) \
+	uint32_t &UNUSED(pref##ErrorStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##NumberOfParameters) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##UnicodeStringParameterMask) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Parameters) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##ValidResponseOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##Response) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtRaiseHardError(ctx, pref) \
+	const uint32_t &UNUSED(pref##ErrorStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##NumberOfParameters) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##UnicodeStringParameterMask) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Parameters) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##ValidResponseOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##Response) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtReadOnlyEnlistment [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtReadOnlyEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReadOnlyEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtReadOnlyEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtReadVirtualMemoryEx [['void']]
+#undef locals_WINDOWS_11__X64_NtReadVirtualMemoryEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtReadVirtualMemoryEx
+#endif
+
+// NTSTATUS NtRecoverEnlistment [['HANDLE EnlistmentHandle', 'PVOID EnlistmentKey']]
+#define locals_WINDOWS_11__X64_NtRecoverEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##EnlistmentKey) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRecoverEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##EnlistmentKey) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRecoverEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##EnlistmentKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtRecoverResourceManager [['HANDLE ResourceManagerHandle']]
+#define locals_WINDOWS_11__X64_NtRecoverResourceManager(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRecoverResourceManager(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtRecoverResourceManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtRecoverTransactionManager [['HANDLE TransactionManagerHandle']]
+#define locals_WINDOWS_11__X64_NtRecoverTransactionManager(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionManagerHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRecoverTransactionManager(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtRecoverTransactionManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtRegisterProtocolAddressInformation [['HANDLE ResourceManager', 'PCRM_PROTOCOL_ID ProtocolId', 'ULONG ProtocolInformationSize', 'PVOID ProtocolInformation', 'ULONG CreateOptions']]
+#define locals_WINDOWS_11__X64_NtRegisterProtocolAddressInformation(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManager) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ProtocolId) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##ProtocolInformationSize) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ProtocolInformation) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##CreateOptions) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRegisterProtocolAddressInformation(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManager) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ProtocolId) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##ProtocolInformationSize) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ProtocolInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtRegisterProtocolAddressInformation(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManager) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ProtocolId) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##ProtocolInformationSize) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ProtocolInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##CreateOptions) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtRegisterThreadTerminatePort [['HANDLE PortHandle']]
+#define locals_WINDOWS_11__X64_NtRegisterThreadTerminatePort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRegisterThreadTerminatePort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtRegisterThreadTerminatePort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtReleaseKeyedEvent [['HANDLE KeyedEventHandle', 'PVOID KeyValue', 'BOOLEAN Alertable', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtReleaseKeyedEvent(ctx, pref) \
+	uint64_t UNUSED(pref##KeyedEventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##KeyValue) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReleaseKeyedEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##KeyValue) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtReleaseKeyedEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##KeyValue) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtReleaseWorkerFactoryWorker [['HANDLE WorkerFactoryHandle']]
+#define locals_WINDOWS_11__X64_NtReleaseWorkerFactoryWorker(ctx, pref) \
+	uint64_t UNUSED(pref##WorkerFactoryHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReleaseWorkerFactoryWorker(ctx, pref) \
+	uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtReleaseWorkerFactoryWorker(ctx, pref) \
+	const uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtRemoveIoCompletionEx [['HANDLE IoCompletionHandle', 'PFILE_IO_COMPLETION_INFORMATION IoCompletionInformation', 'ULONG Count', 'PULONG NumEntriesRemoved', 'PLARGE_INTEGER Timeout', 'BOOLEAN Alertable']]
+#define locals_WINDOWS_11__X64_NtRemoveIoCompletionEx(ctx, pref) \
+	uint64_t UNUSED(pref##IoCompletionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoCompletionInformation) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##NumEntriesRemoved) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRemoveIoCompletionEx(ctx, pref) \
+	uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoCompletionInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##NumEntriesRemoved) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtRemoveIoCompletionEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoCompletionInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##NumEntriesRemoved) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtRemoveProcessDebug [['HANDLE ProcessHandle', 'HANDLE DebugObjectHandle']]
+#define locals_WINDOWS_11__X64_NtRemoveProcessDebug(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##DebugObjectHandle) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRemoveProcessDebug(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRemoveProcessDebug(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtRenameKey [['HANDLE KeyHandle', 'PUNICODE_STRING NewName']]
+#define locals_WINDOWS_11__X64_NtRenameKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##NewName) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRenameKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##NewName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRenameKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##NewName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtRenameTransactionManager [['PUNICODE_STRING LogFileName', 'LPGUID ExistingTransactionManagerGuid']]
+#define locals_WINDOWS_11__X64_NtRenameTransactionManager(ctx, pref) \
+	uint64_t UNUSED(pref##LogFileName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ExistingTransactionManagerGuid) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRenameTransactionManager(ctx, pref) \
+	uint64_t &UNUSED(pref##LogFileName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ExistingTransactionManagerGuid) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRenameTransactionManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##LogFileName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ExistingTransactionManagerGuid) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtReplaceKey [['POBJECT_ATTRIBUTES NewFile', 'HANDLE TargetHandle', 'POBJECT_ATTRIBUTES OldFile']]
+#define locals_WINDOWS_11__X64_NtReplaceKey(ctx, pref) \
+	uint64_t UNUSED(pref##NewFile) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TargetHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##OldFile) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReplaceKey(ctx, pref) \
+	uint64_t &UNUSED(pref##NewFile) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TargetHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##OldFile) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtReplaceKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##NewFile) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TargetHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##OldFile) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtReplacePartitionUnit [['PUNICODE_STRING TargetInstancePath', 'PUNICODE_STRING SpareInstancePath', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtReplacePartitionUnit(ctx, pref) \
+	uint64_t UNUSED(pref##TargetInstancePath) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SpareInstancePath) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReplacePartitionUnit(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetInstancePath) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SpareInstancePath) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtReplacePartitionUnit(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetInstancePath) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SpareInstancePath) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtReplyWaitReplyPort [['HANDLE PortHandle', 'PPORT_MESSAGE ReplyMessage']]
+#define locals_WINDOWS_11__X64_NtReplyWaitReplyPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ReplyMessage) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtReplyWaitReplyPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtReplyWaitReplyPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ReplyMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtRequestPort [['HANDLE PortHandle', 'PPORT_MESSAGE RequestMessage']]
+#define locals_WINDOWS_11__X64_NtRequestPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##RequestMessage) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRequestPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##RequestMessage) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRequestPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##RequestMessage) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtResetEvent [['HANDLE EventHandle', 'PLONG PreviousState']]
+#define locals_WINDOWS_11__X64_NtResetEvent(ctx, pref) \
+	uint64_t UNUSED(pref##EventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousState) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtResetEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtResetEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousState) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtResetWriteWatch [['HANDLE ProcessHandle', 'PVOID BaseAddress', 'SIZE_T RegionSize']]
+#define locals_WINDOWS_11__X64_NtResetWriteWatch(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtResetWriteWatch(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtResetWriteWatch(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtRestoreKey [['HANDLE KeyHandle', 'HANDLE FileHandle', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtRestoreKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRestoreKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtRestoreKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtResumeProcess [['HANDLE ProcessHandle']]
+#define locals_WINDOWS_11__X64_NtResumeProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtResumeProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtResumeProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtRevertContainerImpersonation [['void']]
+#undef locals_WINDOWS_11__X64_NtRevertContainerImpersonation
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtRevertContainerImpersonation
+#endif
+
+// NTSTATUS NtRollbackComplete [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtRollbackComplete(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRollbackComplete(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRollbackComplete(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtRollbackEnlistment [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtRollbackEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRollbackEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRollbackEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtRollbackRegistryTransaction [['void']]
+#undef locals_WINDOWS_11__X64_NtRollbackRegistryTransaction
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtRollbackRegistryTransaction
+#endif
+
+// NTSTATUS NtRollbackTransaction [['HANDLE TransactionHandle', 'BOOLEAN Wait']]
+#define locals_WINDOWS_11__X64_NtRollbackTransaction(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Wait) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRollbackTransaction(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Wait) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRollbackTransaction(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Wait) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtRollforwardTransactionManager [['HANDLE TransactionManagerHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtRollforwardTransactionManager(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtRollforwardTransactionManager(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtRollforwardTransactionManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSaveKey [['HANDLE KeyHandle', 'HANDLE FileHandle']]
+#define locals_WINDOWS_11__X64_NtSaveKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSaveKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSaveKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSaveKeyEx [['HANDLE KeyHandle', 'HANDLE FileHandle', 'ULONG Format']]
+#define locals_WINDOWS_11__X64_NtSaveKeyEx(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Format) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSaveKeyEx(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Format) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtSaveKeyEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Format) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtSaveMergedKeys [['HANDLE HighPrecedenceKeyHandle', 'HANDLE LowPrecedenceKeyHandle', 'HANDLE FileHandle']]
+#define locals_WINDOWS_11__X64_NtSaveMergedKeys(ctx, pref) \
+	uint64_t UNUSED(pref##HighPrecedenceKeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##LowPrecedenceKeyHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSaveMergedKeys(ctx, pref) \
+	uint64_t &UNUSED(pref##HighPrecedenceKeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##LowPrecedenceKeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtSaveMergedKeys(ctx, pref) \
+	const uint64_t &UNUSED(pref##HighPrecedenceKeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##LowPrecedenceKeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtSecureConnectPort [['PHANDLE PortHandle', 'PUNICODE_STRING PortName', 'PSECURITY_QUALITY_OF_SERVICE SecurityQos', 'PPORT_VIEW ClientView', 'PSID RequiredServerSid', 'PREMOTE_PORT_VIEW ServerView', 'PULONG MaxMessageLength', 'PVOID ConnectionInformation', 'PULONG ConnectionInformationLength']]
+#define locals_WINDOWS_11__X64_NtSecureConnectPort(ctx, pref) \
+	uint64_t UNUSED(pref##PortHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PortName) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SecurityQos) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ClientView) = *(uint64_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##RequiredServerSid) = *(uint64_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ServerView) = *(uint64_t *)((ctx)->args[5]); \
+	uint64_t UNUSED(pref##MaxMessageLength) = *(uint64_t *)((ctx)->args[6]); \
+	uint64_t UNUSED(pref##ConnectionInformation) = *(uint64_t *)((ctx)->args[7]); \
+	uint64_t UNUSED(pref##ConnectionInformationLength) = *(uint64_t *)((ctx)->args[8]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSecureConnectPort(ctx, pref) \
+	uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PortName) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SecurityQos) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ClientView) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##RequiredServerSid) = *reinterpret_cast<uint64_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ServerView) = *reinterpret_cast<uint64_t *>((ctx)->args[5]); \
+	uint64_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<uint64_t *>((ctx)->args[6]); \
+	uint64_t &UNUSED(pref##ConnectionInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[7]); \
+	uint64_t &UNUSED(pref##ConnectionInformationLength) = *reinterpret_cast<uint64_t *>((ctx)->args[8]);
+#define creferences_WINDOWS_11__X64_NtSecureConnectPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##PortHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PortName) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SecurityQos) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ClientView) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##RequiredServerSid) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ServerView) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]); \
+	const uint64_t &UNUSED(pref##MaxMessageLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[6]); \
+	const uint64_t &UNUSED(pref##ConnectionInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[7]); \
+	const uint64_t &UNUSED(pref##ConnectionInformationLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[8]);
+#endif
+
+// NTSTATUS NtSerializeBoot [['']]
+#undef locals_WINDOWS_11__X64_NtSerializeBoot
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSerializeBoot
+#endif
+
+// NTSTATUS NtSetBootEntryOrder [['PULONG Ids', 'ULONG Count']]
+#define locals_WINDOWS_11__X64_NtSetBootEntryOrder(ctx, pref) \
+	uint64_t UNUSED(pref##Ids) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetBootEntryOrder(ctx, pref) \
+	uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetBootEntryOrder(ctx, pref) \
+	const uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetBootOptions [['PBOOT_OPTIONS BootOptions', 'ULONG FieldsToChange']]
+#define locals_WINDOWS_11__X64_NtSetBootOptions(ctx, pref) \
+	uint64_t UNUSED(pref##BootOptions) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##FieldsToChange) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetBootOptions(ctx, pref) \
+	uint64_t &UNUSED(pref##BootOptions) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##FieldsToChange) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetBootOptions(ctx, pref) \
+	const uint64_t &UNUSED(pref##BootOptions) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##FieldsToChange) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetCachedSigningLevel [['void']]
+#undef locals_WINDOWS_11__X64_NtSetCachedSigningLevel
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetCachedSigningLevel
+#endif
+
+// NTSTATUS NtSetCachedSigningLevel2 [['void']]
+#undef locals_WINDOWS_11__X64_NtSetCachedSigningLevel2
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetCachedSigningLevel2
+#endif
+
+// NTSTATUS NtSetContextThread [['HANDLE ThreadHandle', 'PCONTEXT ThreadContext']]
+#define locals_WINDOWS_11__X64_NtSetContextThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ThreadContext) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetContextThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ThreadContext) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetContextThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ThreadContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetDebugFilterState [['ULONG ComponentId', 'ULONG Level', 'BOOLEAN State']]
+#define locals_WINDOWS_11__X64_NtSetDebugFilterState(ctx, pref) \
+	uint32_t UNUSED(pref##ComponentId) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Level) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##State) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetDebugFilterState(ctx, pref) \
+	uint32_t &UNUSED(pref##ComponentId) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Level) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##State) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtSetDebugFilterState(ctx, pref) \
+	const uint32_t &UNUSED(pref##ComponentId) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Level) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##State) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtSetDefaultHardErrorPort [['HANDLE DefaultHardErrorPort']]
+#define locals_WINDOWS_11__X64_NtSetDefaultHardErrorPort(ctx, pref) \
+	uint64_t UNUSED(pref##DefaultHardErrorPort) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetDefaultHardErrorPort(ctx, pref) \
+	uint64_t &UNUSED(pref##DefaultHardErrorPort) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetDefaultHardErrorPort(ctx, pref) \
+	const uint64_t &UNUSED(pref##DefaultHardErrorPort) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSetDefaultLocale [['BOOLEAN UserProfile', 'LCID DefaultLocaleId']]
+#define locals_WINDOWS_11__X64_NtSetDefaultLocale(ctx, pref) \
+	uint32_t UNUSED(pref##UserProfile) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DefaultLocaleId) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetDefaultLocale(ctx, pref) \
+	uint32_t &UNUSED(pref##UserProfile) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DefaultLocaleId) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetDefaultLocale(ctx, pref) \
+	const uint32_t &UNUSED(pref##UserProfile) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DefaultLocaleId) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetDefaultUILanguage [['LANGID DefaultUILanguageId']]
+#define locals_WINDOWS_11__X64_NtSetDefaultUILanguage(ctx, pref) \
+	uint32_t UNUSED(pref##DefaultUILanguageId) = *(uint32_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetDefaultUILanguage(ctx, pref) \
+	uint32_t &UNUSED(pref##DefaultUILanguageId) = *reinterpret_cast<uint32_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetDefaultUILanguage(ctx, pref) \
+	const uint32_t &UNUSED(pref##DefaultUILanguageId) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSetDriverEntryOrder [['PULONG Ids', 'ULONG Count']]
+#define locals_WINDOWS_11__X64_NtSetDriverEntryOrder(ctx, pref) \
+	uint64_t UNUSED(pref##Ids) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Count) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetDriverEntryOrder(ctx, pref) \
+	uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Count) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetDriverEntryOrder(ctx, pref) \
+	const uint64_t &UNUSED(pref##Ids) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Count) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetEaFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID Buffer', 'ULONG Length']]
+#define locals_WINDOWS_11__X64_NtSetEaFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetEaFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetEaFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetEventEx [['void']]
+#undef locals_WINDOWS_11__X64_NtSetEventEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetEventEx
+#endif
+
+// NTSTATUS NtSetHighEventPair [['HANDLE EventPairHandle']]
+#define locals_WINDOWS_11__X64_NtSetHighEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetHighEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetHighEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSetHighWaitLowEventPair [['HANDLE EventPairHandle']]
+#define locals_WINDOWS_11__X64_NtSetHighWaitLowEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetHighWaitLowEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetHighWaitLowEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSetIRTimer [['void']]
+#undef locals_WINDOWS_11__X64_NtSetIRTimer
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetIRTimer
+#endif
+
+// NTSTATUS NtSetInformationCpuPartition [['void']]
+#undef locals_WINDOWS_11__X64_NtSetInformationCpuPartition
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetInformationCpuPartition
+#endif
+
+// NTSTATUS NtSetInformationDebugObject [['HANDLE DebugObjectHandle', 'DEBUGOBJECTINFOCLASS DebugObjectInformationClass', 'PVOID DebugInformation', 'ULONG DebugInformationLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationDebugObject(ctx, pref) \
+	uint64_t UNUSED(pref##DebugObjectHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##DebugObjectInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##DebugInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##DebugInformationLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationDebugObject(ctx, pref) \
+	uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##DebugObjectInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##DebugInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##DebugInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtSetInformationDebugObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##DebugObjectInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##DebugInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##DebugInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtSetInformationEnlistment [['HANDLE EnlistmentHandle', 'ENLISTMENT_INFORMATION_CLASS EnlistmentInformationClass', 'PVOID EnlistmentInformation', 'ULONG EnlistmentInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationEnlistment(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##EnlistmentInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##EnlistmentInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##EnlistmentInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationEnlistment(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##EnlistmentInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##EnlistmentInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##EnlistmentInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationEnlistment(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##EnlistmentInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##EnlistmentInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##EnlistmentInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationIoRing [['void']]
+#undef locals_WINDOWS_11__X64_NtSetInformationIoRing
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetInformationIoRing
+#endif
+
+// NTSTATUS NtSetInformationJobObject [['HANDLE JobHandle', 'JOBOBJECTINFOCLASS JobObjectInformationClass', 'PVOID JobObjectInformation', 'ULONG JobObjectInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationJobObject(ctx, pref) \
+	uint64_t UNUSED(pref##JobHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##JobObjectInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##JobObjectInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##JobObjectInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationJobObject(ctx, pref) \
+	uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##JobObjectInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##JobObjectInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##JobObjectInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationJobObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##JobObjectInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##JobObjectInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##JobObjectInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationKey [['HANDLE KeyHandle', 'KEY_SET_INFORMATION_CLASS KeySetInformationClass', 'PVOID KeySetInformation', 'ULONG KeySetInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationKey(ctx, pref) \
+	uint64_t UNUSED(pref##KeyHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##KeySetInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##KeySetInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##KeySetInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationKey(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##KeySetInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##KeySetInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##KeySetInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##KeySetInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##KeySetInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##KeySetInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationResourceManager [['HANDLE ResourceManagerHandle', 'RESOURCEMANAGER_INFORMATION_CLASS ResourceManagerInformationClass', 'PVOID ResourceManagerInformation', 'ULONG ResourceManagerInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationResourceManager(ctx, pref) \
+	uint64_t UNUSED(pref##ResourceManagerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ResourceManagerInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ResourceManagerInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ResourceManagerInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationResourceManager(ctx, pref) \
+	uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ResourceManagerInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ResourceManagerInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ResourceManagerInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationResourceManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##ResourceManagerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ResourceManagerInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ResourceManagerInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ResourceManagerInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationSymbolicLink [['void']]
+#undef locals_WINDOWS_11__X64_NtSetInformationSymbolicLink
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetInformationSymbolicLink
+#endif
+
+// NTSTATUS NtSetInformationToken [['HANDLE TokenHandle', 'TOKEN_INFORMATION_CLASS TokenInformationClass', 'PVOID TokenInformation', 'ULONG TokenInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationToken(ctx, pref) \
+	uint64_t UNUSED(pref##TokenHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TokenInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TokenInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TokenInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationToken(ctx, pref) \
+	uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TokenInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TokenInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TokenInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationToken(ctx, pref) \
+	const uint64_t &UNUSED(pref##TokenHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TokenInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TokenInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TokenInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationTransaction [['HANDLE TransactionHandle', 'TRANSACTION_INFORMATION_CLASS TransactionInformationClass', 'PVOID TransactionInformation', 'ULONG TransactionInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationTransaction(ctx, pref) \
+	uint64_t UNUSED(pref##TransactionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TransactionInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TransactionInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TransactionInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationTransaction(ctx, pref) \
+	uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TransactionInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TransactionInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TransactionInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationTransaction(ctx, pref) \
+	const uint64_t &UNUSED(pref##TransactionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TransactionInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TransactionInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TransactionInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationTransactionManager [['HANDLE TmHandle', 'TRANSACTIONMANAGER_INFORMATION_CLASS TransactionManagerInformationClass', 'PVOID TransactionManagerInformation', 'ULONG TransactionManagerInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationTransactionManager(ctx, pref) \
+	uint64_t UNUSED(pref##TmHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TransactionManagerInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TransactionManagerInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TransactionManagerInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationTransactionManager(ctx, pref) \
+	uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TransactionManagerInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TransactionManagerInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TransactionManagerInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationTransactionManager(ctx, pref) \
+	const uint64_t &UNUSED(pref##TmHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TransactionManagerInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TransactionManagerInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TransactionManagerInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetInformationVirtualMemory [['void']]
+#undef locals_WINDOWS_11__X64_NtSetInformationVirtualMemory
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetInformationVirtualMemory
+#endif
+
+// NTSTATUS NtSetInformationWorkerFactory [['HANDLE WorkerFactoryHandle', 'WORKERFACTORYINFOCLASS WorkerFactoryInformationClass', 'PVOID WorkerFactoryInformation', 'ULONG WorkerFactoryInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetInformationWorkerFactory(ctx, pref) \
+	uint64_t UNUSED(pref##WorkerFactoryHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##WorkerFactoryInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##WorkerFactoryInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##WorkerFactoryInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetInformationWorkerFactory(ctx, pref) \
+	uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##WorkerFactoryInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##WorkerFactoryInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##WorkerFactoryInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetInformationWorkerFactory(ctx, pref) \
+	const uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##WorkerFactoryInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##WorkerFactoryInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##WorkerFactoryInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetIntervalProfile [['ULONG Interval', 'KPROFILE_SOURCE Source']]
+#define locals_WINDOWS_11__X64_NtSetIntervalProfile(ctx, pref) \
+	uint32_t UNUSED(pref##Interval) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Source) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetIntervalProfile(ctx, pref) \
+	uint32_t &UNUSED(pref##Interval) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Source) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetIntervalProfile(ctx, pref) \
+	const uint32_t &UNUSED(pref##Interval) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Source) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetIoCompletion [['HANDLE IoCompletionHandle', 'PVOID KeyContext', 'PVOID ApcContext', 'NTSTATUS IoStatus', 'ULONG_PTR IoStatusInformation']]
+#define locals_WINDOWS_11__X64_NtSetIoCompletion(ctx, pref) \
+	uint64_t UNUSED(pref##IoCompletionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##KeyContext) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##IoStatus) = *(uint32_t *)((ctx)->args[3]); \
+	uint64_t UNUSED(pref##IoStatusInformation) = *(uint64_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetIoCompletion(ctx, pref) \
+	uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##KeyContext) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##IoStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint64_t &UNUSED(pref##IoStatusInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtSetIoCompletion(ctx, pref) \
+	const uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##KeyContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##IoStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint64_t &UNUSED(pref##IoStatusInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtSetIoCompletionEx [['HANDLE IoCompletionHandle', 'HANDLE IoCompletionReserveHandle', 'PVOID KeyContext', 'PVOID ApcContext', 'NTSTATUS IoStatus', 'ULONG_PTR IoStatusInformation']]
+#define locals_WINDOWS_11__X64_NtSetIoCompletionEx(ctx, pref) \
+	uint64_t UNUSED(pref##IoCompletionHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoCompletionReserveHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##KeyContext) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##ApcContext) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##IoStatus) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##IoStatusInformation) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetIoCompletionEx(ctx, pref) \
+	uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoCompletionReserveHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##KeyContext) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##IoStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##IoStatusInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtSetIoCompletionEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##IoCompletionHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoCompletionReserveHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##KeyContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##ApcContext) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##IoStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##IoStatusInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtSetLdtEntries [['ULONG Selector0', 'ULONG Entry0Low', 'ULONG Entry0Hi', 'ULONG Selector1', 'ULONG Entry1Low', 'ULONG Entry1Hi']]
+#define locals_WINDOWS_11__X64_NtSetLdtEntries(ctx, pref) \
+	uint32_t UNUSED(pref##Selector0) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Entry0Low) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Entry0Hi) = *(uint32_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Selector1) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Entry1Low) = *(uint32_t *)((ctx)->args[4]); \
+	uint32_t UNUSED(pref##Entry1Hi) = *(uint32_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetLdtEntries(ctx, pref) \
+	uint32_t &UNUSED(pref##Selector0) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Entry0Low) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Entry0Hi) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Selector1) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Entry1Low) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint32_t &UNUSED(pref##Entry1Hi) = *reinterpret_cast<uint32_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtSetLdtEntries(ctx, pref) \
+	const uint32_t &UNUSED(pref##Selector0) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Entry0Low) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Entry0Hi) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Selector1) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Entry1Low) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint32_t &UNUSED(pref##Entry1Hi) = *reinterpret_cast<const uint32_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtSetLowEventPair [['HANDLE EventPairHandle']]
+#define locals_WINDOWS_11__X64_NtSetLowEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetLowEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetLowEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSetLowWaitHighEventPair [['HANDLE EventPairHandle']]
+#define locals_WINDOWS_11__X64_NtSetLowWaitHighEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetLowWaitHighEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetLowWaitHighEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSetQuotaInformationFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID Buffer', 'ULONG Length']]
+#define locals_WINDOWS_11__X64_NtSetQuotaInformationFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Buffer) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetQuotaInformationFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetQuotaInformationFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Buffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetSecurityObject [['HANDLE Handle', 'SECURITY_INFORMATION SecurityInformation', 'PSECURITY_DESCRIPTOR SecurityDescriptor']]
+#define locals_WINDOWS_11__X64_NtSetSecurityObject(ctx, pref) \
+	uint64_t UNUSED(pref##Handle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##SecurityInformation) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##SecurityDescriptor) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetSecurityObject(ctx, pref) \
+	uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##SecurityInformation) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtSetSecurityObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##Handle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##SecurityInformation) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##SecurityDescriptor) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtSetSystemEnvironmentValue [['PUNICODE_STRING VariableName', 'PUNICODE_STRING VariableValue']]
+#define locals_WINDOWS_11__X64_NtSetSystemEnvironmentValue(ctx, pref) \
+	uint64_t UNUSED(pref##VariableName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##VariableValue) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetSystemEnvironmentValue(ctx, pref) \
+	uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##VariableValue) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetSystemEnvironmentValue(ctx, pref) \
+	const uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##VariableValue) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetSystemEnvironmentValueEx [['PUNICODE_STRING VariableName', 'LPGUID VendorGuid', 'PVOID Value', 'ULONG ValueLength', 'ULONG Attributes']]
+#define locals_WINDOWS_11__X64_NtSetSystemEnvironmentValueEx(ctx, pref) \
+	uint64_t UNUSED(pref##VariableName) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##VendorGuid) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Value) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##ValueLength) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Attributes) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetSystemEnvironmentValueEx(ctx, pref) \
+	uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##VendorGuid) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Value) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##ValueLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Attributes) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtSetSystemEnvironmentValueEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##VariableName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##VendorGuid) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Value) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##ValueLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Attributes) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtSetSystemInformation [['SYSTEM_INFORMATION_CLASS SystemInformationClass', 'PVOID SystemInformation', 'ULONG SystemInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetSystemInformation(ctx, pref) \
+	uint32_t UNUSED(pref##SystemInformationClass) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##SystemInformation) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##SystemInformationLength) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetSystemInformation(ctx, pref) \
+	uint32_t &UNUSED(pref##SystemInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##SystemInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##SystemInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtSetSystemInformation(ctx, pref) \
+	const uint32_t &UNUSED(pref##SystemInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##SystemInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##SystemInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtSetSystemPowerState [['POWER_ACTION SystemAction', 'SYSTEM_POWER_STATE MinSystemState', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtSetSystemPowerState(ctx, pref) \
+	uint32_t UNUSED(pref##SystemAction) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##MinSystemState) = *(uint32_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetSystemPowerState(ctx, pref) \
+	uint32_t &UNUSED(pref##SystemAction) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##MinSystemState) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtSetSystemPowerState(ctx, pref) \
+	const uint32_t &UNUSED(pref##SystemAction) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##MinSystemState) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtSetSystemTime [['PLARGE_INTEGER SystemTime', 'PLARGE_INTEGER PreviousTime']]
+#define locals_WINDOWS_11__X64_NtSetSystemTime(ctx, pref) \
+	uint64_t UNUSED(pref##SystemTime) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousTime) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetSystemTime(ctx, pref) \
+	uint64_t &UNUSED(pref##SystemTime) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousTime) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetSystemTime(ctx, pref) \
+	const uint64_t &UNUSED(pref##SystemTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetThreadExecutionState [['EXECUTION_STATE esFlags', 'PEXECUTION_STATE PreviousFlags']]
+#define locals_WINDOWS_11__X64_NtSetThreadExecutionState(ctx, pref) \
+	uint32_t UNUSED(pref##esFlags) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousFlags) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetThreadExecutionState(ctx, pref) \
+	uint32_t &UNUSED(pref##esFlags) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousFlags) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSetThreadExecutionState(ctx, pref) \
+	const uint32_t &UNUSED(pref##esFlags) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousFlags) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSetTimer2 [['void']]
+#undef locals_WINDOWS_11__X64_NtSetTimer2
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetTimer2
+#endif
+
+// NTSTATUS NtSetTimerEx [['HANDLE TimerHandle', 'TIMER_SET_INFORMATION_CLASS TimerSetInformationClass', 'PVOID TimerSetInformation', 'ULONG TimerSetInformationLength']]
+#define locals_WINDOWS_11__X64_NtSetTimerEx(ctx, pref) \
+	uint64_t UNUSED(pref##TimerHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##TimerSetInformationClass) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##TimerSetInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##TimerSetInformationLength) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetTimerEx(ctx, pref) \
+	uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##TimerSetInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##TimerSetInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##TimerSetInformationLength) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSetTimerEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##TimerHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##TimerSetInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##TimerSetInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##TimerSetInformationLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSetTimerResolution [['ULONG DesiredTime', 'BOOLEAN SetResolution', 'PULONG ActualTime']]
+#define locals_WINDOWS_11__X64_NtSetTimerResolution(ctx, pref) \
+	uint32_t UNUSED(pref##DesiredTime) = *(uint32_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##SetResolution) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ActualTime) = *(uint64_t *)((ctx)->args[2]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetTimerResolution(ctx, pref) \
+	uint32_t &UNUSED(pref##DesiredTime) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##SetResolution) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ActualTime) = *reinterpret_cast<uint64_t *>((ctx)->args[2]);
+#define creferences_WINDOWS_11__X64_NtSetTimerResolution(ctx, pref) \
+	const uint32_t &UNUSED(pref##DesiredTime) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##SetResolution) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ActualTime) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]);
+#endif
+
+// NTSTATUS NtSetUuidSeed [['PCHAR Seed']]
+#define locals_WINDOWS_11__X64_NtSetUuidSeed(ctx, pref) \
+	uint64_t UNUSED(pref##Seed) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetUuidSeed(ctx, pref) \
+	uint64_t &UNUSED(pref##Seed) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSetUuidSeed(ctx, pref) \
+	const uint64_t &UNUSED(pref##Seed) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSetVolumeInformationFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PVOID FsInformation', 'ULONG Length', 'FS_INFORMATION_CLASS FsInformationClass']]
+#define locals_WINDOWS_11__X64_NtSetVolumeInformationFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##FsInformation) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##Length) = *(uint32_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##FsInformationClass) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSetVolumeInformationFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##FsInformation) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##Length) = *reinterpret_cast<uint32_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##FsInformationClass) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtSetVolumeInformationFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##FsInformation) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##Length) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##FsInformationClass) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtSetWnfProcessNotificationEvent [['void']]
+#undef locals_WINDOWS_11__X64_NtSetWnfProcessNotificationEvent
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSetWnfProcessNotificationEvent
+#endif
+
+// NTSTATUS NtShutdownSystem [['SHUTDOWN_ACTION Action']]
+#define locals_WINDOWS_11__X64_NtShutdownSystem(ctx, pref) \
+	uint32_t UNUSED(pref##Action) = *(uint32_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtShutdownSystem(ctx, pref) \
+	uint32_t &UNUSED(pref##Action) = *reinterpret_cast<uint32_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtShutdownSystem(ctx, pref) \
+	const uint32_t &UNUSED(pref##Action) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtShutdownWorkerFactory [['HANDLE WorkerFactoryHandle', 'LONG *PendingWorkerCount']]
+#define locals_WINDOWS_11__X64_NtShutdownWorkerFactory(ctx, pref) \
+	uint64_t UNUSED(pref##WorkerFactoryHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PendingWorkerCount) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtShutdownWorkerFactory(ctx, pref) \
+	uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PendingWorkerCount) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtShutdownWorkerFactory(ctx, pref) \
+	const uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PendingWorkerCount) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSignalAndWaitForSingleObject [['HANDLE SignalHandle', 'HANDLE WaitHandle', 'BOOLEAN Alertable', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtSignalAndWaitForSingleObject(ctx, pref) \
+	uint64_t UNUSED(pref##SignalHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##WaitHandle) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSignalAndWaitForSingleObject(ctx, pref) \
+	uint64_t &UNUSED(pref##SignalHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##WaitHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtSignalAndWaitForSingleObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##SignalHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##WaitHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtSinglePhaseReject [['HANDLE EnlistmentHandle', 'PLARGE_INTEGER TmVirtualClock']]
+#define locals_WINDOWS_11__X64_NtSinglePhaseReject(ctx, pref) \
+	uint64_t UNUSED(pref##EnlistmentHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##TmVirtualClock) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSinglePhaseReject(ctx, pref) \
+	uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSinglePhaseReject(ctx, pref) \
+	const uint64_t &UNUSED(pref##EnlistmentHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##TmVirtualClock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtStartProfile [['HANDLE ProfileHandle']]
+#define locals_WINDOWS_11__X64_NtStartProfile(ctx, pref) \
+	uint64_t UNUSED(pref##ProfileHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtStartProfile(ctx, pref) \
+	uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtStartProfile(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtStopProfile [['HANDLE ProfileHandle']]
+#define locals_WINDOWS_11__X64_NtStopProfile(ctx, pref) \
+	uint64_t UNUSED(pref##ProfileHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtStopProfile(ctx, pref) \
+	uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtStopProfile(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProfileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSubmitIoRing [['void']]
+#undef locals_WINDOWS_11__X64_NtSubmitIoRing
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSubmitIoRing
+#endif
+
+// NTSTATUS NtSubscribeWnfStateChange [['void']]
+#undef locals_WINDOWS_11__X64_NtSubscribeWnfStateChange
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtSubscribeWnfStateChange
+#endif
+
+// NTSTATUS NtSuspendProcess [['HANDLE ProcessHandle']]
+#define locals_WINDOWS_11__X64_NtSuspendProcess(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSuspendProcess(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtSuspendProcess(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtSuspendThread [['HANDLE ThreadHandle', 'PULONG PreviousSuspendCount']]
+#define locals_WINDOWS_11__X64_NtSuspendThread(ctx, pref) \
+	uint64_t UNUSED(pref##ThreadHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##PreviousSuspendCount) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSuspendThread(ctx, pref) \
+	uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##PreviousSuspendCount) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtSuspendThread(ctx, pref) \
+	const uint64_t &UNUSED(pref##ThreadHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##PreviousSuspendCount) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtSystemDebugControl [['SYSDBG_COMMAND Command', 'PVOID InputBuffer', 'ULONG InputBufferLength', 'PVOID OutputBuffer', 'ULONG OutputBufferLength', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtSystemDebugControl(ctx, pref) \
+	uint32_t UNUSED(pref##Command) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##InputBuffer) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##InputBufferLength) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##OutputBuffer) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##OutputBufferLength) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtSystemDebugControl(ctx, pref) \
+	uint32_t &UNUSED(pref##Command) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtSystemDebugControl(ctx, pref) \
+	const uint32_t &UNUSED(pref##Command) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##InputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##InputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##OutputBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##OutputBufferLength) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtTerminateEnclave [['void']]
+#undef locals_WINDOWS_11__X64_NtTerminateEnclave
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtTerminateEnclave
+#endif
+
+// NTSTATUS NtTerminateJobObject [['HANDLE JobHandle', 'NTSTATUS ExitStatus']]
+#define locals_WINDOWS_11__X64_NtTerminateJobObject(ctx, pref) \
+	uint64_t UNUSED(pref##JobHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##ExitStatus) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtTerminateJobObject(ctx, pref) \
+	uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##ExitStatus) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtTerminateJobObject(ctx, pref) \
+	const uint64_t &UNUSED(pref##JobHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##ExitStatus) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtTestAlert [['']]
+#undef locals_WINDOWS_11__X64_NtTestAlert
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtTestAlert
+#endif
+
+// NTSTATUS NtThawRegistry [['']]
+#undef locals_WINDOWS_11__X64_NtThawRegistry
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtThawRegistry
+#endif
+
+// NTSTATUS NtThawTransactions [['']]
+#undef locals_WINDOWS_11__X64_NtThawTransactions
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtThawTransactions
+#endif
+
+// NTSTATUS NtTraceControl [['ULONG FunctionCode', 'PVOID InBuffer', 'ULONG InBufferLen', 'PVOID OutBuffer', 'ULONG OutBufferLen', 'PULONG ReturnLength']]
+#define locals_WINDOWS_11__X64_NtTraceControl(ctx, pref) \
+	uint32_t UNUSED(pref##FunctionCode) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##InBuffer) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##InBufferLen) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##OutBuffer) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##OutBufferLen) = *(uint32_t *)((ctx)->args[4]); \
+	uint64_t UNUSED(pref##ReturnLength) = *(uint64_t *)((ctx)->args[5]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtTraceControl(ctx, pref) \
+	uint32_t &UNUSED(pref##FunctionCode) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##InBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##InBufferLen) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##OutBuffer) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##OutBufferLen) = *reinterpret_cast<uint32_t *>((ctx)->args[4]); \
+	uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<uint64_t *>((ctx)->args[5]);
+#define creferences_WINDOWS_11__X64_NtTraceControl(ctx, pref) \
+	const uint32_t &UNUSED(pref##FunctionCode) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##InBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##InBufferLen) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##OutBuffer) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##OutBufferLen) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]); \
+	const uint64_t &UNUSED(pref##ReturnLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[5]);
+#endif
+
+// NTSTATUS NtTranslateFilePath [['PFILE_PATH InputFilePath', 'ULONG OutputType', 'PFILE_PATH OutputFilePath', 'PULONG OutputFilePathLength']]
+#define locals_WINDOWS_11__X64_NtTranslateFilePath(ctx, pref) \
+	uint64_t UNUSED(pref##InputFilePath) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##OutputType) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##OutputFilePath) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##OutputFilePathLength) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtTranslateFilePath(ctx, pref) \
+	uint64_t &UNUSED(pref##InputFilePath) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##OutputType) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##OutputFilePath) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##OutputFilePathLength) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtTranslateFilePath(ctx, pref) \
+	const uint64_t &UNUSED(pref##InputFilePath) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##OutputType) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##OutputFilePath) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##OutputFilePathLength) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtUmsThreadYield [['PVOID SchedulerParam']]
+#define locals_WINDOWS_11__X64_NtUmsThreadYield(ctx, pref) \
+	uint64_t UNUSED(pref##SchedulerParam) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUmsThreadYield(ctx, pref) \
+	uint64_t &UNUSED(pref##SchedulerParam) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtUmsThreadYield(ctx, pref) \
+	const uint64_t &UNUSED(pref##SchedulerParam) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtUnloadDriver [['PUNICODE_STRING DriverServiceName']]
+#define locals_WINDOWS_11__X64_NtUnloadDriver(ctx, pref) \
+	uint64_t UNUSED(pref##DriverServiceName) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUnloadDriver(ctx, pref) \
+	uint64_t &UNUSED(pref##DriverServiceName) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtUnloadDriver(ctx, pref) \
+	const uint64_t &UNUSED(pref##DriverServiceName) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtUnloadKey [['POBJECT_ATTRIBUTES TargetKey']]
+#define locals_WINDOWS_11__X64_NtUnloadKey(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUnloadKey(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtUnloadKey(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtUnloadKey2 [['POBJECT_ATTRIBUTES TargetKey', 'ULONG Flags']]
+#define locals_WINDOWS_11__X64_NtUnloadKey2(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Flags) = *(uint32_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUnloadKey2(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<uint32_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtUnloadKey2(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Flags) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtUnloadKeyEx [['POBJECT_ATTRIBUTES TargetKey', 'HANDLE Event']]
+#define locals_WINDOWS_11__X64_NtUnloadKeyEx(ctx, pref) \
+	uint64_t UNUSED(pref##TargetKey) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##Event) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUnloadKeyEx(ctx, pref) \
+	uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##Event) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtUnloadKeyEx(ctx, pref) \
+	const uint64_t &UNUSED(pref##TargetKey) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##Event) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtUnlockFile [['HANDLE FileHandle', 'PIO_STATUS_BLOCK IoStatusBlock', 'PLARGE_INTEGER ByteOffset', 'PLARGE_INTEGER Length', 'ULONG Key']]
+#define locals_WINDOWS_11__X64_NtUnlockFile(ctx, pref) \
+	uint64_t UNUSED(pref##FileHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##IoStatusBlock) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##ByteOffset) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Length) = *(uint64_t *)((ctx)->args[3]); \
+	uint32_t UNUSED(pref##Key) = *(uint32_t *)((ctx)->args[4]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUnlockFile(ctx, pref) \
+	uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Length) = *reinterpret_cast<uint64_t *>((ctx)->args[3]); \
+	uint32_t &UNUSED(pref##Key) = *reinterpret_cast<uint32_t *>((ctx)->args[4]);
+#define creferences_WINDOWS_11__X64_NtUnlockFile(ctx, pref) \
+	const uint64_t &UNUSED(pref##FileHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##IoStatusBlock) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##ByteOffset) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Length) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]); \
+	const uint32_t &UNUSED(pref##Key) = *reinterpret_cast<const uint32_t *>((ctx)->args[4]);
+#endif
+
+// NTSTATUS NtUnlockVirtualMemory [['HANDLE ProcessHandle', 'PVOID *BaseAddress', 'PSIZE_T RegionSize', 'ULONG MapType']]
+#define locals_WINDOWS_11__X64_NtUnlockVirtualMemory(ctx, pref) \
+	uint64_t UNUSED(pref##ProcessHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##BaseAddress) = *(uint64_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##RegionSize) = *(uint64_t *)((ctx)->args[2]); \
+	uint32_t UNUSED(pref##MapType) = *(uint32_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtUnlockVirtualMemory(ctx, pref) \
+	uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint32_t &UNUSED(pref##MapType) = *reinterpret_cast<uint32_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtUnlockVirtualMemory(ctx, pref) \
+	const uint64_t &UNUSED(pref##ProcessHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##BaseAddress) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##RegionSize) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint32_t &UNUSED(pref##MapType) = *reinterpret_cast<const uint32_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtUnmapViewOfSectionEx [['void']]
+#undef locals_WINDOWS_11__X64_NtUnmapViewOfSectionEx
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtUnmapViewOfSectionEx
+#endif
+
+// NTSTATUS NtUnsubscribeWnfStateChange [['void']]
+#undef locals_WINDOWS_11__X64_NtUnsubscribeWnfStateChange
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtUnsubscribeWnfStateChange
+#endif
+
+// NTSTATUS NtUpdateWnfStateData [['void']]
+#undef locals_WINDOWS_11__X64_NtUpdateWnfStateData
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtUpdateWnfStateData
+#endif
+
+// NTSTATUS NtVdmControl [['VDMSERVICECLASS Service', 'PVOID ServiceData']]
+#define locals_WINDOWS_11__X64_NtVdmControl(ctx, pref) \
+	uint32_t UNUSED(pref##Service) = *(uint32_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##ServiceData) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtVdmControl(ctx, pref) \
+	uint32_t &UNUSED(pref##Service) = *reinterpret_cast<uint32_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##ServiceData) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtVdmControl(ctx, pref) \
+	const uint32_t &UNUSED(pref##Service) = *reinterpret_cast<const uint32_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##ServiceData) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtWaitForAlertByThreadId [['void']]
+#undef locals_WINDOWS_11__X64_NtWaitForAlertByThreadId
+#if defined(__cplusplus)
+#undef references_WINDOWS_11__X64_NtWaitForAlertByThreadId
+#endif
+
+// NTSTATUS NtWaitForDebugEvent [['HANDLE DebugObjectHandle', 'BOOLEAN Alertable', 'PLARGE_INTEGER Timeout', 'PDBGUI_WAIT_STATE_CHANGE WaitStateChange']]
+#define locals_WINDOWS_11__X64_NtWaitForDebugEvent(ctx, pref) \
+	uint64_t UNUSED(pref##DebugObjectHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[1]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##WaitStateChange) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitForDebugEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[1]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##WaitStateChange) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtWaitForDebugEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##DebugObjectHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[1]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##WaitStateChange) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtWaitForKeyedEvent [['HANDLE KeyedEventHandle', 'PVOID KeyValue', 'BOOLEAN Alertable', 'PLARGE_INTEGER Timeout']]
+#define locals_WINDOWS_11__X64_NtWaitForKeyedEvent(ctx, pref) \
+	uint64_t UNUSED(pref##KeyedEventHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##KeyValue) = *(uint64_t *)((ctx)->args[1]); \
+	uint32_t UNUSED(pref##Alertable) = *(uint32_t *)((ctx)->args[2]); \
+	uint64_t UNUSED(pref##Timeout) = *(uint64_t *)((ctx)->args[3]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitForKeyedEvent(ctx, pref) \
+	uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##KeyValue) = *reinterpret_cast<uint64_t *>((ctx)->args[1]); \
+	uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<uint32_t *>((ctx)->args[2]); \
+	uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<uint64_t *>((ctx)->args[3]);
+#define creferences_WINDOWS_11__X64_NtWaitForKeyedEvent(ctx, pref) \
+	const uint64_t &UNUSED(pref##KeyedEventHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##KeyValue) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]); \
+	const uint32_t &UNUSED(pref##Alertable) = *reinterpret_cast<const uint32_t *>((ctx)->args[2]); \
+	const uint64_t &UNUSED(pref##Timeout) = *reinterpret_cast<const uint64_t *>((ctx)->args[3]);
+#endif
+
+// NTSTATUS NtWaitForWorkViaWorkerFactory [['HANDLE WorkerFactoryHandle', 'PFILE_IO_COMPLETION_INFORMATION MiniPacket']]
+#define locals_WINDOWS_11__X64_NtWaitForWorkViaWorkerFactory(ctx, pref) \
+	uint64_t UNUSED(pref##WorkerFactoryHandle) = *(uint64_t *)((ctx)->args[0]); \
+	uint64_t UNUSED(pref##MiniPacket) = *(uint64_t *)((ctx)->args[1]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitForWorkViaWorkerFactory(ctx, pref) \
+	uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]); \
+	uint64_t &UNUSED(pref##MiniPacket) = *reinterpret_cast<uint64_t *>((ctx)->args[1]);
+#define creferences_WINDOWS_11__X64_NtWaitForWorkViaWorkerFactory(ctx, pref) \
+	const uint64_t &UNUSED(pref##WorkerFactoryHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]); \
+	const uint64_t &UNUSED(pref##MiniPacket) = *reinterpret_cast<const uint64_t *>((ctx)->args[1]);
+#endif
+
+// NTSTATUS NtWaitHighEventPair [['HANDLE EventPairHandle']]
+#define locals_WINDOWS_11__X64_NtWaitHighEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitHighEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtWaitHighEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+// NTSTATUS NtWaitLowEventPair [['HANDLE EventPairHandle']]
+#define locals_WINDOWS_11__X64_NtWaitLowEventPair(ctx, pref) \
+	uint64_t UNUSED(pref##EventPairHandle) = *(uint64_t *)((ctx)->args[0]);
+#if defined(__cplusplus)
+#define references_WINDOWS_11__X64_NtWaitLowEventPair(ctx, pref) \
+	uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<uint64_t *>((ctx)->args[0]);
+#define creferences_WINDOWS_11__X64_NtWaitLowEventPair(ctx, pref) \
+	const uint64_t &UNUSED(pref##EventPairHandle) = *reinterpret_cast<const uint64_t *>((ctx)->args[0]);
+#endif
+
+
 /* vim: set tabstop=4 softtabstop=4 noexpandtab ft=cpp: */
