@@ -8,7 +8,7 @@ callwitharg
 checkpoint
 collect_code
 correlatetaps
-# cosi
+cosi
 # cosi_strace
 coverage
 dynamic_symbols
@@ -33,13 +33,14 @@ mmio_trace
 net
 network
 osi
+osi_cosi
 osi_linux
 osi_test
 pc_search
 pri
 #pri_dwarf  # disabled: uses removed Dwarf_Loc API (libdwarf 0.8+ dropped it)
 #dwarf2     # disabled: depends on pri_dwarf
-pri_simple
+#pri_simple  # disabled: depends on disabled pri_dwarf (header never generated)
 proc_start_linux
 proc_trace
 recctrl

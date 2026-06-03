@@ -7,10 +7,17 @@
 #include "syscalls2_info.h"
 #include "syscalls2_int_fns.h"
 
-void load_syscall_info(const gchar *arch, syscall_info_t **syscall_info, syscall_meta_t **syscall_meta) {
+void load_syscall_info(const gchar *arch, const gchar *win_variant_override, syscall_info_t **syscall_info, syscall_meta_t **syscall_meta) {
     gchar *syscall_info_dlname = NULL;
 
-    if (panda_os_familyno == OS_WINDOWS) {
+    if (panda_os_familyno == OS_WINDOWS && win_variant_override != NULL) {
+        // panda-plus: the syscall PROFILE was chosen via syscalls2 load-os (e.g.
+        // windows-64-11), but panda_os_variant is forced to 7sp1 because panda's
+        // -os regex rejects windows-64-1x. Load the info dso for the override
+        // variant directly (e.g. syscalls2_dso_info_windows_11_x64.so).
+        syscall_info_dlname = g_strdup_printf("%s_dso_info_%s_%s_%s" HOST_DSOSUF, PLUGIN_NAME, panda_os_family, win_variant_override, arch);
+    }
+    else if (panda_os_familyno == OS_WINDOWS) {
     	// don't support 64-bit Windows (yet) except for Windows 7 SP 0 and 1
     	assert((panda_os_bits == 32) ||
     	        (0 == strcmp(panda_os_variant, "7sp0")) ||

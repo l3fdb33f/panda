@@ -171,6 +171,8 @@ const char * valid_os_re[] = {
     "windows[-_]32[-_]2000",
     "windows[-_]32[-_]7sp[01]",
     "windows[-_]64[-_]7sp[01]",
+    "windows[-_]64[-_]10.*",
+    "windows[-_]64[-_]11.*",
     "linux[-_]32[-_].+",
     "linux[-_]64[-_].+",
     "freebsd[-_]32[-_].+",

@@ -2130,6 +2130,22 @@ PPP_CB_TYPEDEF(void, on_NtAccessCheckByTypeResultListAndAuditAlarmByHandle_enter
 #define TYPEDEFS_PPP_SYSCALL_ON_NTACCESSCHECKBYTYPERESULTLISTANDAUDITALARMBYHANDLE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAccessCheckByTypeResultListAndAuditAlarmByHandle_return, CPUState* cpu, target_ulong pc, uint64_t SubsystemName, uint64_t HandleId, uint64_t ClientToken, uint64_t ObjectTypeName, uint64_t ObjectName, uint64_t SecurityDescriptor, uint64_t PrincipalSelfSid, uint32_t DesiredAccess, uint32_t AuditType, uint32_t Flags, uint64_t ObjectTypeList, uint32_t ObjectTypeListLength, uint64_t GenericMapping, uint32_t ObjectCreation, uint64_t GrantedAccess, uint64_t AccessStatus, uint64_t GenerateOnClose);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTACQUIRECROSSVMMUTANT_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTACQUIRECROSSVMMUTANT_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAcquireCrossVmMutant_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTACQUIRECROSSVMMUTANT_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTACQUIRECROSSVMMUTANT_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAcquireCrossVmMutant_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTACQUIREPROCESSACTIVITYREFERENCE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTACQUIREPROCESSACTIVITYREFERENCE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAcquireProcessActivityReference_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTACQUIREPROCESSACTIVITYREFERENCE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTACQUIREPROCESSACTIVITYREFERENCE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAcquireProcessActivityReference_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTADDATOM_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTADDATOM_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtAddAtom_enter, CPUState* cpu, target_ulong pc, uint64_t AtomName, uint32_t Length, uint64_t Atom);
@@ -2137,6 +2153,14 @@ PPP_CB_TYPEDEF(void, on_NtAddAtom_enter, CPUState* cpu, target_ulong pc, uint64_
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTADDATOM_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTADDATOM_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAddAtom_return, CPUState* cpu, target_ulong pc, uint64_t AtomName, uint32_t Length, uint64_t Atom);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTADDATOMEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTADDATOMEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAddAtomEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTADDATOMEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTADDATOMEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAddAtomEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTADDBOOTENTRY_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTADDBOOTENTRY_ENTER 1
@@ -2170,6 +2194,22 @@ PPP_CB_TYPEDEF(void, on_NtAdjustPrivilegesToken_enter, CPUState* cpu, target_ulo
 #define TYPEDEFS_PPP_SYSCALL_ON_NTADJUSTPRIVILEGESTOKEN_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAdjustPrivilegesToken_return, CPUState* cpu, target_ulong pc, uint64_t TokenHandle, uint32_t DisableAllPrivileges, uint64_t NewState, uint32_t BufferLength, uint64_t PreviousState, uint64_t ReturnLength);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTADJUSTTOKENCLAIMSANDDEVICEGROUPS_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTADJUSTTOKENCLAIMSANDDEVICEGROUPS_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAdjustTokenClaimsAndDeviceGroups_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTADJUSTTOKENCLAIMSANDDEVICEGROUPS_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTADJUSTTOKENCLAIMSANDDEVICEGROUPS_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAdjustTokenClaimsAndDeviceGroups_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTMULTIPLETHREADBYTHREADID_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALERTMULTIPLETHREADBYTHREADID_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAlertMultipleThreadByThreadId_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTMULTIPLETHREADBYTHREADID_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALERTMULTIPLETHREADBYTHREADID_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAlertMultipleThreadByThreadId_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTRESUMETHREAD_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALERTRESUMETHREAD_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtAlertResumeThread_enter, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint64_t PreviousSuspendCount);
@@ -2185,6 +2225,22 @@ PPP_CB_TYPEDEF(void, on_NtAlertThread_enter, CPUState* cpu, target_ulong pc, uin
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREAD_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREAD_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAlertThread_return, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADID_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADID_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAlertThreadByThreadId_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADID_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADID_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAlertThreadByThreadId_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADIDEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADIDEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAlertThreadByThreadIdEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADIDEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALERTTHREADBYTHREADIDEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAlertThreadByThreadIdEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATELOCALLYUNIQUEID_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATELOCALLYUNIQUEID_ENTER 1
@@ -2210,6 +2266,14 @@ PPP_CB_TYPEDEF(void, on_NtAllocateUserPhysicalPages_enter, CPUState* cpu, target
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEUSERPHYSICALPAGES_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAllocateUserPhysicalPages_return, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle, uint64_t NumberOfPages, uint64_t UserPfnArray);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEUSERPHYSICALPAGESEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEUSERPHYSICALPAGESEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAllocateUserPhysicalPagesEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEUSERPHYSICALPAGESEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEUSERPHYSICALPAGESEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAllocateUserPhysicalPagesEx_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEUUIDS_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEUUIDS_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtAllocateUuids_enter, CPUState* cpu, target_ulong pc, uint64_t Time, uint64_t Range, uint64_t Sequence, uint64_t Seed);
@@ -2225,6 +2289,14 @@ PPP_CB_TYPEDEF(void, on_NtAllocateVirtualMemory_enter, CPUState* cpu, target_ulo
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEVIRTUALMEMORY_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEVIRTUALMEMORY_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAllocateVirtualMemory_return, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle, uint64_t BaseAddress, uint64_t ZeroBits, uint64_t RegionSize, uint32_t AllocationType, uint32_t Protect);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEVIRTUALMEMORYEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEVIRTUALMEMORYEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAllocateVirtualMemoryEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEVIRTUALMEMORYEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALLOCATEVIRTUALMEMORYEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAllocateVirtualMemoryEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCACCEPTCONNECTPORT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALPCACCEPTCONNECTPORT_ENTER 1
@@ -2249,6 +2321,14 @@ PPP_CB_TYPEDEF(void, on_NtAlpcConnectPort_enter, CPUState* cpu, target_ulong pc,
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCCONNECTPORT_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALPCCONNECTPORT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAlpcConnectPort_return, CPUState* cpu, target_ulong pc, uint64_t PortHandle, uint64_t PortName, uint64_t ObjectAttributes, uint64_t PortAttributes, uint32_t Flags, uint64_t RequiredServerSid, uint64_t ConnectionMessage, uint64_t BufferLength, uint64_t OutMessageAttributes, uint64_t InMessageAttributes, uint64_t Timeout);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCCONNECTPORTEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALPCCONNECTPORTEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAlpcConnectPortEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCCONNECTPORTEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALPCCONNECTPORTEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAlpcConnectPortEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCCREATEPORT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALPCCREATEPORT_ENTER 1
@@ -2329,6 +2409,14 @@ PPP_CB_TYPEDEF(void, on_NtAlpcDisconnectPort_enter, CPUState* cpu, target_ulong 
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCDISCONNECTPORT_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALPCDISCONNECTPORT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAlpcDisconnectPort_return, CPUState* cpu, target_ulong pc, uint64_t PortHandle, uint32_t Flags);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCIMPERSONATECLIENTCONTAINEROFPORT_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALPCIMPERSONATECLIENTCONTAINEROFPORT_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAlpcImpersonateClientContainerOfPort_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCIMPERSONATECLIENTCONTAINEROFPORT_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTALPCIMPERSONATECLIENTCONTAINEROFPORT_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAlpcImpersonateClientContainerOfPort_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTALPCIMPERSONATECLIENTOFPORT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTALPCIMPERSONATECLIENTOFPORT_ENTER 1
@@ -2418,6 +2506,14 @@ PPP_CB_TYPEDEF(void, on_NtAssignProcessToJobObject_enter, CPUState* cpu, target_
 #define TYPEDEFS_PPP_SYSCALL_ON_NTASSIGNPROCESSTOJOBOBJECT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtAssignProcessToJobObject_return, CPUState* cpu, target_ulong pc, uint64_t JobHandle, uint64_t ProcessHandle);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTASSOCIATEWAITCOMPLETIONPACKET_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTASSOCIATEWAITCOMPLETIONPACKET_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtAssociateWaitCompletionPacket_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTASSOCIATEWAITCOMPLETIONPACKET_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTASSOCIATEWAITCOMPLETIONPACKET_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtAssociateWaitCompletionPacket_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCALLBACKRETURN_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCALLBACKRETURN_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCallbackReturn_enter, CPUState* cpu, target_ulong pc, uint64_t OutputBuffer, uint32_t OutputLength, uint32_t Status);
@@ -2425,6 +2521,14 @@ PPP_CB_TYPEDEF(void, on_NtCallbackReturn_enter, CPUState* cpu, target_ulong pc, 
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCALLBACKRETURN_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCALLBACKRETURN_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCallbackReturn_return, CPUState* cpu, target_ulong pc, uint64_t OutputBuffer, uint32_t OutputLength, uint32_t Status);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCALLENCLAVE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCALLENCLAVE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCallEnclave_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCALLENCLAVE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCALLENCLAVE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCallEnclave_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCANCELIOFILE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCANCELIOFILE_ENTER 1
@@ -2457,6 +2561,38 @@ PPP_CB_TYPEDEF(void, on_NtCancelTimer_enter, CPUState* cpu, target_ulong pc, uin
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCANCELTIMER_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCANCELTIMER_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCancelTimer_return, CPUState* cpu, target_ulong pc, uint64_t TimerHandle, uint64_t CurrentState);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCANCELTIMER2_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCANCELTIMER2_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCancelTimer2_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCANCELTIMER2_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCANCELTIMER2_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCancelTimer2_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCANCELWAITCOMPLETIONPACKET_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCANCELWAITCOMPLETIONPACKET_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCancelWaitCompletionPacket_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCANCELWAITCOMPLETIONPACKET_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCANCELWAITCOMPLETIONPACKET_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCancelWaitCompletionPacket_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCHANGEPROCESSSTATE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCHANGEPROCESSSTATE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtChangeProcessState_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCHANGEPROCESSSTATE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCHANGEPROCESSSTATE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtChangeProcessState_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCHANGETHREADSTATE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCHANGETHREADSTATE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtChangeThreadState_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCHANGETHREADSTATE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCHANGETHREADSTATE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtChangeThreadState_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCLEAREVENT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCLEAREVENT_ENTER 1
@@ -2498,6 +2634,14 @@ PPP_CB_TYPEDEF(void, on_NtCommitEnlistment_enter, CPUState* cpu, target_ulong pc
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCOMMITENLISTMENT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCommitEnlistment_return, CPUState* cpu, target_ulong pc, uint64_t EnlistmentHandle, uint64_t TmVirtualClock);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMMITREGISTRYTRANSACTION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOMMITREGISTRYTRANSACTION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCommitRegistryTransaction_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMMITREGISTRYTRANSACTION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOMMITREGISTRYTRANSACTION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCommitRegistryTransaction_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMMITTRANSACTION_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCOMMITTRANSACTION_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCommitTransaction_enter, CPUState* cpu, target_ulong pc, uint64_t TransactionHandle, uint32_t Wait);
@@ -2513,6 +2657,22 @@ PPP_CB_TYPEDEF(void, on_NtCompactKeys_enter, CPUState* cpu, target_ulong pc, uin
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMPACTKEYS_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCOMPACTKEYS_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCompactKeys_return, CPUState* cpu, target_ulong pc, uint32_t Count, uint64_t KeyArray);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMPAREOBJECTS_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOMPAREOBJECTS_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCompareObjects_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMPAREOBJECTS_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOMPAREOBJECTS_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCompareObjects_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMPARESIGNINGLEVELS_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOMPARESIGNINGLEVELS_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCompareSigningLevels_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMPARESIGNINGLEVELS_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOMPARESIGNINGLEVELS_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCompareSigningLevels_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOMPARETOKENS_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCOMPARETOKENS_ENTER 1
@@ -2554,6 +2714,54 @@ PPP_CB_TYPEDEF(void, on_NtContinue_enter, CPUState* cpu, target_ulong pc, uint64
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCONTINUE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtContinue_return, CPUState* cpu, target_ulong pc, uint64_t ContextRecord, uint32_t TestAlert);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCONTINUEEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCONTINUEEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtContinueEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCONTINUEEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCONTINUEEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtContinueEx_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCONVERTBETWEENAUXILIARYCOUNTERANDPERFORMANCECOUNTER_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCONVERTBETWEENAUXILIARYCOUNTERANDPERFORMANCECOUNTER_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtConvertBetweenAuxiliaryCounterAndPerformanceCounter_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCONVERTBETWEENAUXILIARYCOUNTERANDPERFORMANCECOUNTER_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCONVERTBETWEENAUXILIARYCOUNTERANDPERFORMANCECOUNTER_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtConvertBetweenAuxiliaryCounterAndPerformanceCounter_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOPYFILECHUNK_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOPYFILECHUNK_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCopyFileChunk_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCOPYFILECHUNK_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCOPYFILECHUNK_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCopyFileChunk_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATECPUPARTITION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATECPUPARTITION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateCpuPartition_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATECPUPARTITION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATECPUPARTITION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateCpuPartition_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMEVENT_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMEVENT_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateCrossVmEvent_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMEVENT_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMEVENT_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateCrossVmEvent_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMMUTANT_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMMUTANT_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateCrossVmMutant_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMMUTANT_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATECROSSVMMUTANT_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateCrossVmMutant_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDEBUGOBJECT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDEBUGOBJECT_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCreateDebugObject_enter, CPUState* cpu, target_ulong pc, uint64_t DebugObjectHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint32_t Flags);
@@ -2569,6 +2777,22 @@ PPP_CB_TYPEDEF(void, on_NtCreateDirectoryObject_enter, CPUState* cpu, target_ulo
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDIRECTORYOBJECT_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDIRECTORYOBJECT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateDirectoryObject_return, CPUState* cpu, target_ulong pc, uint64_t DirectoryHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDIRECTORYOBJECTEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDIRECTORYOBJECTEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateDirectoryObjectEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDIRECTORYOBJECTEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEDIRECTORYOBJECTEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateDirectoryObjectEx_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEENCLAVE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEENCLAVE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateEnclave_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEENCLAVE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEENCLAVE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateEnclave_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEENLISTMENT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEENLISTMENT_ENTER 1
@@ -2610,6 +2834,22 @@ PPP_CB_TYPEDEF(void, on_NtCreateIoCompletion_enter, CPUState* cpu, target_ulong 
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIOCOMPLETION_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateIoCompletion_return, CPUState* cpu, target_ulong pc, uint64_t IoCompletionHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint32_t Count);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIORING_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIORING_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateIoRing_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIORING_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIORING_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateIoRing_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIRTIMER_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIRTIMER_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateIRTimer_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIRTIMER_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEIRTIMER_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateIRTimer_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEJOBOBJECT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEJOBOBJECT_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCreateJobObject_enter, CPUState* cpu, target_ulong pc, uint64_t JobHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes);
@@ -2650,6 +2890,14 @@ PPP_CB_TYPEDEF(void, on_NtCreateKeyTransacted_enter, CPUState* cpu, target_ulong
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEKEYTRANSACTED_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateKeyTransacted_return, CPUState* cpu, target_ulong pc, uint64_t KeyHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint32_t TitleIndex, uint64_t Class, uint32_t CreateOptions, uint64_t TransactionHandle, uint64_t Disposition);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATELOWBOXTOKEN_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATELOWBOXTOKEN_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateLowBoxToken_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATELOWBOXTOKEN_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATELOWBOXTOKEN_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateLowBoxToken_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEMAILSLOTFILE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEMAILSLOTFILE_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCreateMailslotFile_enter, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint64_t IoStatusBlock, uint32_t CreateOptions, uint32_t MailslotQuota, uint32_t MaximumMessageSize, uint64_t ReadTimeout);
@@ -2681,6 +2929,14 @@ PPP_CB_TYPEDEF(void, on_NtCreatePagingFile_enter, CPUState* cpu, target_ulong pc
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPAGINGFILE_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPAGINGFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreatePagingFile_return, CPUState* cpu, target_ulong pc, uint64_t PageFileName, uint64_t MinimumSize, uint64_t MaximumSize, uint32_t Priority);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPARTITION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPARTITION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreatePartition_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPARTITION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPARTITION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreatePartition_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPORT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPORT_ENTER 1
@@ -2714,6 +2970,14 @@ PPP_CB_TYPEDEF(void, on_NtCreateProcessEx_enter, CPUState* cpu, target_ulong pc,
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROCESSEX_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateProcessEx_return, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint64_t ParentProcess, uint32_t Flags, uint64_t SectionHandle, uint64_t DebugPort, uint64_t ExceptionPort, uint32_t JobMemberLevel);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROCESSSTATECHANGE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROCESSSTATECHANGE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateProcessStateChange_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROCESSSTATECHANGE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROCESSSTATECHANGE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateProcessStateChange_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROFILE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROFILE_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCreateProfile_enter, CPUState* cpu, target_ulong pc, uint64_t ProfileHandle, uint64_t Process, uint64_t RangeBase, uint64_t RangeSize, uint32_t BucketSize, uint64_t Buffer, uint32_t BufferSize, uint32_t ProfileSource, uint64_t Affinity);
@@ -2730,6 +2994,14 @@ PPP_CB_TYPEDEF(void, on_NtCreateProfileEx_enter, CPUState* cpu, target_ulong pc,
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEPROFILEEX_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateProfileEx_return, CPUState* cpu, target_ulong pc, uint64_t ProfileHandle, uint64_t Process, uint64_t ProfileBase, uint64_t ProfileSize, uint32_t BucketSize, uint64_t Buffer, uint32_t BufferSize, uint32_t ProfileSource, uint32_t GroupAffinityCount, uint64_t GroupAffinity);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEREGISTRYTRANSACTION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEREGISTRYTRANSACTION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateRegistryTransaction_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEREGISTRYTRANSACTION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEREGISTRYTRANSACTION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateRegistryTransaction_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATERESOURCEMANAGER_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATERESOURCEMANAGER_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCreateResourceManager_enter, CPUState* cpu, target_ulong pc, uint64_t ResourceManagerHandle, uint32_t DesiredAccess, uint64_t TmHandle, uint64_t RmGuid, uint64_t ObjectAttributes, uint32_t CreateOptions, uint64_t Description);
@@ -2745,6 +3017,14 @@ PPP_CB_TYPEDEF(void, on_NtCreateSection_enter, CPUState* cpu, target_ulong pc, u
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATESECTION_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATESECTION_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateSection_return, CPUState* cpu, target_ulong pc, uint64_t SectionHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint64_t MaximumSize, uint32_t SectionPageProtection, uint32_t AllocationAttributes, uint64_t FileHandle);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATESECTIONEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATESECTIONEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateSectionEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATESECTIONEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATESECTIONEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateSectionEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATESEMAPHORE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATESEMAPHORE_ENTER 1
@@ -2778,6 +3058,14 @@ PPP_CB_TYPEDEF(void, on_NtCreateThreadEx_enter, CPUState* cpu, target_ulong pc, 
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETHREADEX_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateThreadEx_return, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint64_t ProcessHandle, uint64_t StartRoutine, uint64_t Argument, uint32_t CreateFlags, uint64_t ZeroBits, uint64_t StackSize, uint64_t MaximumStackSize, uint64_t AttributeList);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETHREADSTATECHANGE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETHREADSTATECHANGE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateThreadStateChange_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETHREADSTATECHANGE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETHREADSTATECHANGE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateThreadStateChange_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETIMER_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETIMER_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCreateTimer_enter, CPUState* cpu, target_ulong pc, uint64_t TimerHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint32_t TimerType);
@@ -2786,6 +3074,14 @@ PPP_CB_TYPEDEF(void, on_NtCreateTimer_enter, CPUState* cpu, target_ulong pc, uin
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETIMER_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateTimer_return, CPUState* cpu, target_ulong pc, uint64_t TimerHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint32_t TimerType);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETIMER2_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETIMER2_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateTimer2_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETIMER2_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETIMER2_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateTimer2_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKEN_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKEN_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtCreateToken_enter, CPUState* cpu, target_ulong pc, uint64_t TokenHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint32_t TokenType, uint64_t AuthenticationId, uint64_t ExpirationTime, uint64_t User, uint64_t Groups, uint64_t Privileges, uint64_t Owner, uint64_t PrimaryGroup, uint64_t DefaultDacl, uint64_t TokenSource);
@@ -2793,6 +3089,14 @@ PPP_CB_TYPEDEF(void, on_NtCreateToken_enter, CPUState* cpu, target_ulong pc, uin
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKEN_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKEN_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateToken_return, CPUState* cpu, target_ulong pc, uint64_t TokenHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint32_t TokenType, uint64_t AuthenticationId, uint64_t ExpirationTime, uint64_t User, uint64_t Groups, uint64_t Privileges, uint64_t Owner, uint64_t PrimaryGroup, uint64_t DefaultDacl, uint64_t TokenSource);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKENEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKENEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateTokenEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKENEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETOKENEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateTokenEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATETRANSACTION_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATETRANSACTION_ENTER 1
@@ -2825,6 +3129,22 @@ PPP_CB_TYPEDEF(void, on_NtCreateWaitablePort_enter, CPUState* cpu, target_ulong 
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWAITABLEPORT_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWAITABLEPORT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtCreateWaitablePort_return, CPUState* cpu, target_ulong pc, uint64_t PortHandle, uint64_t ObjectAttributes, uint32_t MaxConnectionInfoLength, uint32_t MaxMessageLength, uint32_t MaxPoolUsage);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWAITCOMPLETIONPACKET_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWAITCOMPLETIONPACKET_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateWaitCompletionPacket_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWAITCOMPLETIONPACKET_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWAITCOMPLETIONPACKET_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateWaitCompletionPacket_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWNFSTATENAME_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWNFSTATENAME_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtCreateWnfStateName_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWNFSTATENAME_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWNFSTATENAME_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtCreateWnfStateName_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWORKERFACTORY_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTCREATEWORKERFACTORY_ENTER 1
@@ -2922,6 +3242,22 @@ PPP_CB_TYPEDEF(void, on_NtDeleteValueKey_enter, CPUState* cpu, target_ulong pc, 
 #define TYPEDEFS_PPP_SYSCALL_ON_NTDELETEVALUEKEY_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtDeleteValueKey_return, CPUState* cpu, target_ulong pc, uint64_t KeyHandle, uint64_t ValueName);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATEDATA_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATEDATA_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtDeleteWnfStateData_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATEDATA_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATEDATA_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtDeleteWnfStateData_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATENAME_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATENAME_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtDeleteWnfStateName_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATENAME_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTDELETEWNFSTATENAME_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtDeleteWnfStateName_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDEVICEIOCONTROLFILE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTDEVICEIOCONTROLFILE_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtDeviceIoControlFile_enter, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t Event, uint64_t ApcRoutine, uint64_t ApcContext, uint64_t IoStatusBlock, uint32_t IoControlCode, uint64_t InputBuffer, uint32_t InputBufferLength, uint64_t OutputBuffer, uint32_t OutputBufferLength);
@@ -2929,6 +3265,14 @@ PPP_CB_TYPEDEF(void, on_NtDeviceIoControlFile_enter, CPUState* cpu, target_ulong
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDEVICEIOCONTROLFILE_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTDEVICEIOCONTROLFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtDeviceIoControlFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t Event, uint64_t ApcRoutine, uint64_t ApcContext, uint64_t IoStatusBlock, uint32_t IoControlCode, uint64_t InputBuffer, uint32_t InputBufferLength, uint64_t OutputBuffer, uint32_t OutputBufferLength);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDIRECTGRAPHICSCALL_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTDIRECTGRAPHICSCALL_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtDirectGraphicsCall_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDIRECTGRAPHICSCALL_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTDIRECTGRAPHICSCALL_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtDirectGraphicsCall_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTDISABLELASTKNOWNGOOD_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTDISABLELASTKNOWNGOOD_ENTER 1
@@ -3034,6 +3378,14 @@ PPP_CB_TYPEDEF(void, on_NtExtendSection_enter, CPUState* cpu, target_ulong pc, u
 #define TYPEDEFS_PPP_SYSCALL_ON_NTEXTENDSECTION_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtExtendSection_return, CPUState* cpu, target_ulong pc, uint64_t SectionHandle, uint64_t NewSectionSize);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFILTERBOOTOPTION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTFILTERBOOTOPTION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtFilterBootOption_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFILTERBOOTOPTION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTFILTERBOOTOPTION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtFilterBootOption_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKEN_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKEN_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtFilterToken_enter, CPUState* cpu, target_ulong pc, uint64_t ExistingTokenHandle, uint32_t Flags, uint64_t SidsToDisable, uint64_t PrivilegesToDelete, uint64_t RestrictedSids, uint64_t NewTokenHandle);
@@ -3041,6 +3393,14 @@ PPP_CB_TYPEDEF(void, on_NtFilterToken_enter, CPUState* cpu, target_ulong pc, uin
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKEN_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKEN_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtFilterToken_return, CPUState* cpu, target_ulong pc, uint64_t ExistingTokenHandle, uint32_t Flags, uint64_t SidsToDisable, uint64_t PrivilegesToDelete, uint64_t RestrictedSids, uint64_t NewTokenHandle);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKENEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKENEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtFilterTokenEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKENEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTFILTERTOKENEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtFilterTokenEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFINDATOM_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTFINDATOM_ENTER 1
@@ -3057,6 +3417,14 @@ PPP_CB_TYPEDEF(void, on_NtFlushBuffersFile_enter, CPUState* cpu, target_ulong pc
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHBUFFERSFILE_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHBUFFERSFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtFlushBuffersFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t IoStatusBlock);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHBUFFERSFILEEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHBUFFERSFILEEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtFlushBuffersFileEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHBUFFERSFILEEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHBUFFERSFILEEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtFlushBuffersFileEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHINSTALLUILANGUAGE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTFLUSHINSTALLUILANGUAGE_ENTER 1
@@ -3146,6 +3514,22 @@ PPP_CB_TYPEDEF(void, on_NtFsControlFile_enter, CPUState* cpu, target_ulong pc, u
 #define TYPEDEFS_PPP_SYSCALL_ON_NTFSCONTROLFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtFsControlFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t Event, uint64_t ApcRoutine, uint64_t ApcContext, uint64_t IoStatusBlock, uint32_t IoControlCode, uint64_t InputBuffer, uint32_t InputBufferLength, uint64_t OutputBuffer, uint32_t OutputBufferLength);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCACHEDSIGNINGLEVEL_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTGETCACHEDSIGNINGLEVEL_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtGetCachedSigningLevel_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCACHEDSIGNINGLEVEL_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTGETCACHEDSIGNINGLEVEL_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtGetCachedSigningLevel_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCOMPLETEWNFSTATESUBSCRIPTION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTGETCOMPLETEWNFSTATESUBSCRIPTION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtGetCompleteWnfStateSubscription_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCOMPLETEWNFSTATESUBSCRIPTION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTGETCOMPLETEWNFSTATESUBSCRIPTION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtGetCompleteWnfStateSubscription_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCONTEXTTHREAD_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTGETCONTEXTTHREAD_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtGetContextThread_enter, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint64_t ThreadContext);
@@ -3161,6 +3545,14 @@ PPP_CB_TYPEDEF(void, on_NtGetCurrentProcessorNumber_enter, CPUState* cpu, target
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCURRENTPROCESSORNUMBER_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTGETCURRENTPROCESSORNUMBER_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtGetCurrentProcessorNumber_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCURRENTPROCESSORNUMBEREX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTGETCURRENTPROCESSORNUMBEREX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtGetCurrentProcessorNumberEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETCURRENTPROCESSORNUMBEREX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTGETCURRENTPROCESSORNUMBEREX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtGetCurrentProcessorNumberEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTGETDEVICEPOWERSTATE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTGETDEVICEPOWERSTATE_ENTER 1
@@ -3250,6 +3642,14 @@ PPP_CB_TYPEDEF(void, on_NtImpersonateThread_enter, CPUState* cpu, target_ulong p
 #define TYPEDEFS_PPP_SYSCALL_ON_NTIMPERSONATETHREAD_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtImpersonateThread_return, CPUState* cpu, target_ulong pc, uint64_t ServerThreadHandle, uint64_t ClientThreadHandle, uint64_t SecurityQos);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTINITIALIZEENCLAVE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTINITIALIZEENCLAVE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtInitializeEnclave_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTINITIALIZEENCLAVE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTINITIALIZEENCLAVE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtInitializeEnclave_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTINITIALIZENLSFILES_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTINITIALIZENLSFILES_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtInitializeNlsFiles_enter, CPUState* cpu, target_ulong pc, uint64_t BaseAddress, uint64_t DefaultLocaleId, uint64_t DefaultCasingTableSize);
@@ -3314,6 +3714,14 @@ PPP_CB_TYPEDEF(void, on_NtLoadDriver_enter, CPUState* cpu, target_ulong pc, uint
 #define TYPEDEFS_PPP_SYSCALL_ON_NTLOADDRIVER_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtLoadDriver_return, CPUState* cpu, target_ulong pc, uint64_t DriverServiceName);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTLOADENCLAVEDATA_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTLOADENCLAVEDATA_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtLoadEnclaveData_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTLOADENCLAVEDATA_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTLOADENCLAVEDATA_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtLoadEnclaveData_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtLoadKey_enter, CPUState* cpu, target_ulong pc, uint64_t TargetKey, uint64_t SourceFile);
@@ -3329,6 +3737,14 @@ PPP_CB_TYPEDEF(void, on_NtLoadKey2_enter, CPUState* cpu, target_ulong pc, uint64
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY2_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY2_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtLoadKey2_return, CPUState* cpu, target_ulong pc, uint64_t TargetKey, uint64_t SourceFile, uint32_t Flags);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY3_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY3_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtLoadKey3_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY3_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEY3_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtLoadKey3_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEYEX_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTLOADKEYEX_ENTER 1
@@ -3386,6 +3802,22 @@ PPP_CB_TYPEDEF(void, on_NtMakeTemporaryObject_enter, CPUState* cpu, target_ulong
 #define TYPEDEFS_PPP_SYSCALL_ON_NTMAKETEMPORARYOBJECT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtMakeTemporaryObject_return, CPUState* cpu, target_ulong pc, uint64_t Handle);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEHOTPATCH_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEHOTPATCH_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtManageHotPatch_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEHOTPATCH_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEHOTPATCH_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtManageHotPatch_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEPARTITION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEPARTITION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtManagePartition_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEPARTITION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTMANAGEPARTITION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtManagePartition_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMAPCMFMODULE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTMAPCMFMODULE_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtMapCMFModule_enter, CPUState* cpu, target_ulong pc, uint32_t What, uint32_t Index, uint64_t CacheIndexOut, uint64_t CacheFlagsOut, uint64_t ViewSizeOut, uint64_t BaseAddress);
@@ -3418,6 +3850,14 @@ PPP_CB_TYPEDEF(void, on_NtMapViewOfSection_enter, CPUState* cpu, target_ulong pc
 #define TYPEDEFS_PPP_SYSCALL_ON_NTMAPVIEWOFSECTION_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtMapViewOfSection_return, CPUState* cpu, target_ulong pc, uint64_t SectionHandle, uint64_t ProcessHandle, uint64_t BaseAddress, uint64_t ZeroBits, uint64_t CommitSize, uint64_t SectionOffset, uint64_t ViewSize, uint32_t InheritDisposition, uint32_t AllocationType, uint32_t Win32Protect);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMAPVIEWOFSECTIONEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTMAPVIEWOFSECTIONEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtMapViewOfSectionEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMAPVIEWOFSECTIONEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTMAPVIEWOFSECTIONEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtMapViewOfSectionEx_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTMODIFYBOOTENTRY_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTMODIFYBOOTENTRY_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtModifyBootEntry_enter, CPUState* cpu, target_ulong pc, uint64_t BootEntry);
@@ -3442,6 +3882,14 @@ PPP_CB_TYPEDEF(void, on_NtNotifyChangeDirectoryFile_enter, CPUState* cpu, target
 #define TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGEDIRECTORYFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtNotifyChangeDirectoryFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t Event, uint64_t ApcRoutine, uint64_t ApcContext, uint64_t IoStatusBlock, uint64_t Buffer, uint32_t Length, uint32_t CompletionFilter, uint32_t WatchTree);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGEDIRECTORYFILEEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGEDIRECTORYFILEEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtNotifyChangeDirectoryFileEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGEDIRECTORYFILEEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGEDIRECTORYFILEEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtNotifyChangeDirectoryFileEx_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGEKEY_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGEKEY_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtNotifyChangeKey_enter, CPUState* cpu, target_ulong pc, uint64_t KeyHandle, uint64_t Event, uint64_t ApcRoutine, uint64_t ApcContext, uint64_t IoStatusBlock, uint32_t CompletionFilter, uint32_t WatchTree, uint64_t Buffer, uint32_t BufferSize, uint32_t Asynchronous);
@@ -3465,6 +3913,14 @@ PPP_CB_TYPEDEF(void, on_NtNotifyChangeSession_enter, CPUState* cpu, target_ulong
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGESESSION_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTNOTIFYCHANGESESSION_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtNotifyChangeSession_return, CPUState* cpu, target_ulong pc, uint64_t Session, uint32_t IoStateSequence, uint64_t Reserved, uint32_t Action, uint32_t IoState, uint32_t IoState2, uint64_t Buffer, uint32_t BufferSize);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENCPUPARTITION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTOPENCPUPARTITION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtOpenCpuPartition_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENCPUPARTITION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTOPENCPUPARTITION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtOpenCpuPartition_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENDIRECTORYOBJECT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTOPENDIRECTORYOBJECT_ENTER 1
@@ -3578,6 +4034,14 @@ PPP_CB_TYPEDEF(void, on_NtOpenObjectAuditAlarm_enter, CPUState* cpu, target_ulon
 #define TYPEDEFS_PPP_SYSCALL_ON_NTOPENOBJECTAUDITALARM_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtOpenObjectAuditAlarm_return, CPUState* cpu, target_ulong pc, uint64_t SubsystemName, uint64_t HandleId, uint64_t ObjectTypeName, uint64_t ObjectName, uint64_t SecurityDescriptor, uint64_t ClientToken, uint32_t DesiredAccess, uint32_t GrantedAccess, uint64_t Privileges, uint32_t ObjectCreation, uint32_t AccessGranted, uint64_t GenerateOnClose);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENPARTITION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTOPENPARTITION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtOpenPartition_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENPARTITION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTOPENPARTITION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtOpenPartition_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENPRIVATENAMESPACE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTOPENPRIVATENAMESPACE_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtOpenPrivateNamespace_enter, CPUState* cpu, target_ulong pc, uint64_t NamespaceHandle, uint32_t DesiredAccess, uint64_t ObjectAttributes, uint64_t BoundaryDescriptor);
@@ -3609,6 +4073,14 @@ PPP_CB_TYPEDEF(void, on_NtOpenProcessTokenEx_enter, CPUState* cpu, target_ulong 
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENPROCESSTOKENEX_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTOPENPROCESSTOKENEX_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtOpenProcessTokenEx_return, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle, uint32_t DesiredAccess, uint32_t HandleAttributes, uint64_t TokenHandle);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENREGISTRYTRANSACTION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTOPENREGISTRYTRANSACTION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtOpenRegistryTransaction_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENREGISTRYTRANSACTION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTOPENREGISTRYTRANSACTION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtOpenRegistryTransaction_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTOPENRESOURCEMANAGER_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTOPENRESOURCEMANAGER_ENTER 1
@@ -3810,6 +4282,14 @@ PPP_CB_TYPEDEF(void, on_NtProtectVirtualMemory_enter, CPUState* cpu, target_ulon
 #define TYPEDEFS_PPP_SYSCALL_ON_NTPROTECTVIRTUALMEMORY_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtProtectVirtualMemory_return, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle, uint64_t BaseAddress, uint64_t RegionSize, uint32_t NewProtectWin32, uint64_t OldProtect);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTPSSCAPTUREVASPACEBULK_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTPSSCAPTUREVASPACEBULK_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtPssCaptureVaSpaceBulk_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTPSSCAPTUREVASPACEBULK_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTPSSCAPTUREVASPACEBULK_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtPssCaptureVaSpaceBulk_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTPULSEEVENT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTPULSEEVENT_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtPulseEvent_enter, CPUState* cpu, target_ulong pc, uint64_t EventHandle, uint64_t PreviousState);
@@ -3825,6 +4305,14 @@ PPP_CB_TYPEDEF(void, on_NtQueryAttributesFile_enter, CPUState* cpu, target_ulong
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYATTRIBUTESFILE_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYATTRIBUTESFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtQueryAttributesFile_return, CPUState* cpu, target_ulong pc, uint64_t ObjectAttributes, uint64_t FileInformation);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYAUXILIARYCOUNTERFREQUENCY_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYAUXILIARYCOUNTERFREQUENCY_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueryAuxiliaryCounterFrequency_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYAUXILIARYCOUNTERFREQUENCY_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYAUXILIARYCOUNTERFREQUENCY_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueryAuxiliaryCounterFrequency_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYBOOTENTRYORDER_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYBOOTENTRYORDER_ENTER 1
@@ -3874,6 +4362,14 @@ PPP_CB_TYPEDEF(void, on_NtQueryDirectoryFile_enter, CPUState* cpu, target_ulong 
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYDIRECTORYFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtQueryDirectoryFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t Event, uint64_t ApcRoutine, uint64_t ApcContext, uint64_t IoStatusBlock, uint64_t FileInformation, uint32_t Length, uint32_t FileInformationClass, uint32_t ReturnSingleEntry, uint64_t FileName, uint32_t RestartScan);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYDIRECTORYFILEEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYDIRECTORYFILEEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueryDirectoryFileEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYDIRECTORYFILEEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYDIRECTORYFILEEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueryDirectoryFileEx_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYDIRECTORYOBJECT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYDIRECTORYOBJECT_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtQueryDirectoryObject_enter, CPUState* cpu, target_ulong pc, uint64_t DirectoryHandle, uint64_t Buffer, uint32_t Length, uint32_t ReturnSingleEntry, uint32_t RestartScan, uint64_t Context, uint64_t ReturnLength);
@@ -3921,6 +4417,22 @@ PPP_CB_TYPEDEF(void, on_NtQueryInformationAtom_enter, CPUState* cpu, target_ulon
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONATOM_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONATOM_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtQueryInformationAtom_return, CPUState* cpu, target_ulong pc, uint32_t Atom, uint32_t InformationClass, uint64_t AtomInformation, uint32_t AtomInformationLength, uint64_t ReturnLength);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONBYNAME_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONBYNAME_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueryInformationByName_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONBYNAME_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONBYNAME_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueryInformationByName_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONCPUPARTITION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONCPUPARTITION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueryInformationCpuPartition_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONCPUPARTITION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONCPUPARTITION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueryInformationCpuPartition_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONENLISTMENT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYINFORMATIONENLISTMENT_ENTER 1
@@ -4034,6 +4546,14 @@ PPP_CB_TYPEDEF(void, on_NtQueryIoCompletion_enter, CPUState* cpu, target_ulong p
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYIOCOMPLETION_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtQueryIoCompletion_return, CPUState* cpu, target_ulong pc, uint64_t IoCompletionHandle, uint32_t IoCompletionInformationClass, uint64_t IoCompletionInformation, uint32_t IoCompletionInformationLength, uint64_t ReturnLength);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYIORINGCAPABILITIES_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYIORINGCAPABILITIES_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueryIoRingCapabilities_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYIORINGCAPABILITIES_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYIORINGCAPABILITIES_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueryIoRingCapabilities_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYKEY_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYKEY_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtQueryKey_enter, CPUState* cpu, target_ulong pc, uint64_t KeyHandle, uint32_t KeyInformationClass, uint64_t KeyInformation, uint32_t Length, uint64_t ResultLength);
@@ -4138,6 +4658,14 @@ PPP_CB_TYPEDEF(void, on_NtQuerySecurityObject_enter, CPUState* cpu, target_ulong
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYSECURITYOBJECT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtQuerySecurityObject_return, CPUState* cpu, target_ulong pc, uint64_t Handle, uint32_t SecurityInformation, uint64_t SecurityDescriptor, uint32_t Length, uint64_t LengthNeeded);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYSECURITYPOLICY_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYSECURITYPOLICY_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQuerySecurityPolicy_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYSECURITYPOLICY_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYSECURITYPOLICY_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQuerySecurityPolicy_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYSEMAPHORE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYSEMAPHORE_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtQuerySemaphore_enter, CPUState* cpu, target_ulong pc, uint64_t SemaphoreHandle, uint32_t SemaphoreInformationClass, uint64_t SemaphoreInformation, uint32_t SemaphoreInformationLength, uint64_t ReturnLength);
@@ -4234,6 +4762,22 @@ PPP_CB_TYPEDEF(void, on_NtQueryVolumeInformationFile_enter, CPUState* cpu, targe
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYVOLUMEINFORMATIONFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtQueryVolumeInformationFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t IoStatusBlock, uint64_t FsInformation, uint32_t Length, uint32_t FsInformationClass);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATEDATA_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATEDATA_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueryWnfStateData_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATEDATA_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATEDATA_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueryWnfStateData_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATENAMEINFORMATION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATENAMEINFORMATION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueryWnfStateNameInformation_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATENAMEINFORMATION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUERYWNFSTATENAMEINFORMATION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueryWnfStateNameInformation_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREAD_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREAD_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtQueueApcThread_enter, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint64_t ApcRoutine, uint64_t ApcArgument1, uint64_t ApcArgument2, uint64_t ApcArgument3);
@@ -4249,6 +4793,14 @@ PPP_CB_TYPEDEF(void, on_NtQueueApcThreadEx_enter, CPUState* cpu, target_ulong pc
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREADEX_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREADEX_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtQueueApcThreadEx_return, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint64_t UserApcReserveHandle, uint64_t ApcRoutine, uint64_t ApcArgument1, uint64_t ApcArgument2, uint64_t ApcArgument3);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREADEX2_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREADEX2_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtQueueApcThreadEx2_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREADEX2_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTQUEUEAPCTHREADEX2_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtQueueApcThreadEx2_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTRAISEEXCEPTION_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTRAISEEXCEPTION_ENTER 1
@@ -4305,6 +4857,14 @@ PPP_CB_TYPEDEF(void, on_NtReadVirtualMemory_enter, CPUState* cpu, target_ulong p
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTREADVIRTUALMEMORY_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTREADVIRTUALMEMORY_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtReadVirtualMemory_return, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle, uint64_t BaseAddress, uint64_t Buffer, uint64_t BufferSize, uint64_t NumberOfBytesRead);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTREADVIRTUALMEMORYEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTREADVIRTUALMEMORYEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtReadVirtualMemoryEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTREADVIRTUALMEMORYEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTREADVIRTUALMEMORYEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtReadVirtualMemoryEx_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTRECOVERENLISTMENT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTRECOVERENLISTMENT_ENTER 1
@@ -4522,6 +5082,14 @@ PPP_CB_TYPEDEF(void, on_NtResumeThread_enter, CPUState* cpu, target_ulong pc, ui
 #define TYPEDEFS_PPP_SYSCALL_ON_NTRESUMETHREAD_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtResumeThread_return, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint64_t PreviousSuspendCount);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTREVERTCONTAINERIMPERSONATION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTREVERTCONTAINERIMPERSONATION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtRevertContainerImpersonation_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTREVERTCONTAINERIMPERSONATION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTREVERTCONTAINERIMPERSONATION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtRevertContainerImpersonation_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKCOMPLETE_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKCOMPLETE_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtRollbackComplete_enter, CPUState* cpu, target_ulong pc, uint64_t EnlistmentHandle, uint64_t TmVirtualClock);
@@ -4537,6 +5105,14 @@ PPP_CB_TYPEDEF(void, on_NtRollbackEnlistment_enter, CPUState* cpu, target_ulong 
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKENLISTMENT_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKENLISTMENT_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtRollbackEnlistment_return, CPUState* cpu, target_ulong pc, uint64_t EnlistmentHandle, uint64_t TmVirtualClock);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKREGISTRYTRANSACTION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKREGISTRYTRANSACTION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtRollbackRegistryTransaction_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKREGISTRYTRANSACTION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKREGISTRYTRANSACTION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtRollbackRegistryTransaction_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKTRANSACTION_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTROLLBACKTRANSACTION_ENTER 1
@@ -4610,6 +5186,22 @@ PPP_CB_TYPEDEF(void, on_NtSetBootOptions_enter, CPUState* cpu, target_ulong pc, 
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETBOOTOPTIONS_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetBootOptions_return, CPUState* cpu, target_ulong pc, uint64_t BootOptions, uint32_t FieldsToChange);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetCachedSigningLevel_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetCachedSigningLevel_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL2_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL2_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetCachedSigningLevel2_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL2_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETCACHEDSIGNINGLEVEL2_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetCachedSigningLevel2_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETCONTEXTTHREAD_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETCONTEXTTHREAD_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtSetContextThread_enter, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint64_t ThreadContext);
@@ -4682,6 +5274,14 @@ PPP_CB_TYPEDEF(void, on_NtSetEventBoostPriority_enter, CPUState* cpu, target_ulo
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETEVENTBOOSTPRIORITY_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetEventBoostPriority_return, CPUState* cpu, target_ulong pc, uint64_t EventHandle);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETEVENTEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETEVENTEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetEventEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETEVENTEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETEVENTEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetEventEx_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETHIGHEVENTPAIR_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETHIGHEVENTPAIR_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtSetHighEventPair_enter, CPUState* cpu, target_ulong pc, uint64_t EventPairHandle);
@@ -4697,6 +5297,14 @@ PPP_CB_TYPEDEF(void, on_NtSetHighWaitLowEventPair_enter, CPUState* cpu, target_u
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETHIGHWAITLOWEVENTPAIR_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETHIGHWAITLOWEVENTPAIR_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetHighWaitLowEventPair_return, CPUState* cpu, target_ulong pc, uint64_t EventPairHandle);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONCPUPARTITION_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONCPUPARTITION_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationCpuPartition_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONCPUPARTITION_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONCPUPARTITION_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationCpuPartition_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONDEBUGOBJECT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONDEBUGOBJECT_ENTER 1
@@ -4721,6 +5329,14 @@ PPP_CB_TYPEDEF(void, on_NtSetInformationFile_enter, CPUState* cpu, target_ulong 
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONFILE_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetInformationFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t IoStatusBlock, uint64_t FileInformation, uint32_t Length, uint32_t FileInformationClass);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONIORING_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONIORING_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationIoRing_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONIORING_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONIORING_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationIoRing_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONJOBOBJECT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONJOBOBJECT_ENTER 1
@@ -4762,6 +5378,14 @@ PPP_CB_TYPEDEF(void, on_NtSetInformationResourceManager_enter, CPUState* cpu, ta
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONRESOURCEMANAGER_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetInformationResourceManager_return, CPUState* cpu, target_ulong pc, uint64_t ResourceManagerHandle, uint32_t ResourceManagerInformationClass, uint64_t ResourceManagerInformation, uint32_t ResourceManagerInformationLength);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONSYMBOLICLINK_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONSYMBOLICLINK_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationSymbolicLink_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONSYMBOLICLINK_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONSYMBOLICLINK_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationSymbolicLink_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONTHREAD_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONTHREAD_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtSetInformationThread_enter, CPUState* cpu, target_ulong pc, uint64_t ThreadHandle, uint32_t ThreadInformationClass, uint64_t ThreadInformation, uint32_t ThreadInformationLength);
@@ -4794,6 +5418,14 @@ PPP_CB_TYPEDEF(void, on_NtSetInformationTransactionManager_enter, CPUState* cpu,
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONTRANSACTIONMANAGER_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetInformationTransactionManager_return, CPUState* cpu, target_ulong pc, uint64_t TmHandle, uint32_t TransactionManagerInformationClass, uint64_t TransactionManagerInformation, uint32_t TransactionManagerInformationLength);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONVIRTUALMEMORY_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONVIRTUALMEMORY_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationVirtualMemory_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONVIRTUALMEMORY_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONVIRTUALMEMORY_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetInformationVirtualMemory_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONWORKERFACTORY_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETINFORMATIONWORKERFACTORY_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtSetInformationWorkerFactory_enter, CPUState* cpu, target_ulong pc, uint64_t WorkerFactoryHandle, uint32_t WorkerFactoryInformationClass, uint64_t WorkerFactoryInformation, uint32_t WorkerFactoryInformationLength);
@@ -4825,6 +5457,14 @@ PPP_CB_TYPEDEF(void, on_NtSetIoCompletionEx_enter, CPUState* cpu, target_ulong p
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETIOCOMPLETIONEX_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETIOCOMPLETIONEX_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetIoCompletionEx_return, CPUState* cpu, target_ulong pc, uint64_t IoCompletionHandle, uint64_t IoCompletionReserveHandle, uint64_t KeyContext, uint64_t ApcContext, uint32_t IoStatus, uint64_t IoStatusInformation);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETIRTIMER_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETIRTIMER_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetIRTimer_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETIRTIMER_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETIRTIMER_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetIRTimer_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETLDTENTRIES_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETLDTENTRIES_ENTER 1
@@ -4922,6 +5562,14 @@ PPP_CB_TYPEDEF(void, on_NtSetTimer_enter, CPUState* cpu, target_ulong pc, uint64
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETTIMER_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetTimer_return, CPUState* cpu, target_ulong pc, uint64_t TimerHandle, uint64_t DueTime, uint64_t TimerApcRoutine, uint64_t TimerContext, uint32_t WakeTimer, int32_t Period, uint64_t PreviousState);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETTIMER2_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETTIMER2_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetTimer2_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETTIMER2_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETTIMER2_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetTimer2_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETTIMEREX_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETTIMEREX_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtSetTimerEx_enter, CPUState* cpu, target_ulong pc, uint64_t TimerHandle, uint32_t TimerSetInformationClass, uint64_t TimerSetInformation, uint32_t TimerSetInformationLength);
@@ -4961,6 +5609,14 @@ PPP_CB_TYPEDEF(void, on_NtSetVolumeInformationFile_enter, CPUState* cpu, target_
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETVOLUMEINFORMATIONFILE_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSETVOLUMEINFORMATIONFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSetVolumeInformationFile_return, CPUState* cpu, target_ulong pc, uint64_t FileHandle, uint64_t IoStatusBlock, uint64_t FsInformation, uint32_t Length, uint32_t FsInformationClass);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETWNFPROCESSNOTIFICATIONEVENT_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETWNFPROCESSNOTIFICATIONEVENT_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSetWnfProcessNotificationEvent_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSETWNFPROCESSNOTIFICATIONEVENT_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSETWNFPROCESSNOTIFICATIONEVENT_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSetWnfProcessNotificationEvent_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSHUTDOWNSYSTEM_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSHUTDOWNSYSTEM_ENTER 1
@@ -5010,6 +5666,22 @@ PPP_CB_TYPEDEF(void, on_NtStopProfile_enter, CPUState* cpu, target_ulong pc, uin
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSTOPPROFILE_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtStopProfile_return, CPUState* cpu, target_ulong pc, uint64_t ProfileHandle);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSUBMITIORING_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSUBMITIORING_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSubmitIoRing_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSUBMITIORING_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSUBMITIORING_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSubmitIoRing_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSUBSCRIBEWNFSTATECHANGE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSUBSCRIBEWNFSTATECHANGE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtSubscribeWnfStateChange_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSUBSCRIBEWNFSTATECHANGE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTSUBSCRIBEWNFSTATECHANGE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtSubscribeWnfStateChange_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSUSPENDPROCESS_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSUSPENDPROCESS_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtSuspendProcess_enter, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle);
@@ -5033,6 +5705,14 @@ PPP_CB_TYPEDEF(void, on_NtSystemDebugControl_enter, CPUState* cpu, target_ulong 
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTSYSTEMDEBUGCONTROL_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTSYSTEMDEBUGCONTROL_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtSystemDebugControl_return, CPUState* cpu, target_ulong pc, uint32_t Command, uint64_t InputBuffer, uint32_t InputBufferLength, uint64_t OutputBuffer, uint32_t OutputBufferLength, uint64_t ReturnLength);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTTERMINATEENCLAVE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTTERMINATEENCLAVE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtTerminateEnclave_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTTERMINATEENCLAVE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTTERMINATEENCLAVE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtTerminateEnclave_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTTERMINATEJOBOBJECT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTTERMINATEJOBOBJECT_ENTER 1
@@ -5170,6 +5850,30 @@ PPP_CB_TYPEDEF(void, on_NtUnmapViewOfSection_enter, CPUState* cpu, target_ulong 
 #define TYPEDEFS_PPP_SYSCALL_ON_NTUNMAPVIEWOFSECTION_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtUnmapViewOfSection_return, CPUState* cpu, target_ulong pc, uint64_t ProcessHandle, uint64_t BaseAddress);
 #endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTUNMAPVIEWOFSECTIONEX_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTUNMAPVIEWOFSECTIONEX_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtUnmapViewOfSectionEx_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTUNMAPVIEWOFSECTIONEX_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTUNMAPVIEWOFSECTIONEX_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtUnmapViewOfSectionEx_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTUNSUBSCRIBEWNFSTATECHANGE_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTUNSUBSCRIBEWNFSTATECHANGE_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtUnsubscribeWnfStateChange_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTUNSUBSCRIBEWNFSTATECHANGE_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTUNSUBSCRIBEWNFSTATECHANGE_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtUnsubscribeWnfStateChange_return, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTUPDATEWNFSTATEDATA_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTUPDATEWNFSTATEDATA_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtUpdateWnfStateData_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTUPDATEWNFSTATEDATA_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTUPDATEWNFSTATEDATA_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtUpdateWnfStateData_return, CPUState* cpu, target_ulong pc);
+#endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTVDMCONTROL_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTVDMCONTROL_ENTER 1
 PPP_CB_TYPEDEF(void, on_NtVdmControl_enter, CPUState* cpu, target_ulong pc, uint32_t Service, uint64_t ServiceData);
@@ -5177,6 +5881,14 @@ PPP_CB_TYPEDEF(void, on_NtVdmControl_enter, CPUState* cpu, target_ulong pc, uint
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTVDMCONTROL_RETURN
 #define TYPEDEFS_PPP_SYSCALL_ON_NTVDMCONTROL_RETURN 1
 PPP_CB_TYPEDEF(void, on_NtVdmControl_return, CPUState* cpu, target_ulong pc, uint32_t Service, uint64_t ServiceData);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTWAITFORALERTBYTHREADID_ENTER
+#define TYPEDEFS_PPP_SYSCALL_ON_NTWAITFORALERTBYTHREADID_ENTER 1
+PPP_CB_TYPEDEF(void, on_NtWaitForAlertByThreadId_enter, CPUState* cpu, target_ulong pc);
+#endif
+#ifndef TYPEDEFS_PPP_SYSCALL_ON_NTWAITFORALERTBYTHREADID_RETURN
+#define TYPEDEFS_PPP_SYSCALL_ON_NTWAITFORALERTBYTHREADID_RETURN 1
+PPP_CB_TYPEDEF(void, on_NtWaitForAlertByThreadId_return, CPUState* cpu, target_ulong pc);
 #endif
 #ifndef TYPEDEFS_PPP_SYSCALL_ON_NTWAITFORDEBUGEVENT_ENTER
 #define TYPEDEFS_PPP_SYSCALL_ON_NTWAITFORDEBUGEVENT_ENTER 1
